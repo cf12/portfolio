@@ -1,0 +1,18 @@
+.wrapper {
+    position: absolute;
+    display: flex;
+    width: 100%;
+}
+
+.wrapper > .button {
+    padding: 2px 5px 2px 5px;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper > .button-main {
+    padding: auto 20px auto 10px;
+    font-size: 28px;
+}
