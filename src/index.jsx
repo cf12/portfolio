@@ -7,16 +7,10 @@ import {
 } from 'react-router-dom'
 
 import './index.css'
-import Header from './Header'
-
-const AppMain = () => {
-  return (
-    <Header />
-  )
-}
+import PageMain from './PageMain'
 
 ReactDOM.render((
   <HashRouter>
-    <Route path="/" component={AppMain} />
+    <Route path="/" component={PageMain} />
   </HashRouter>
 ), document.getElementById('root'))
