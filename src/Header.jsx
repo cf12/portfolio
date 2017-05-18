@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import './Header.css'
+import './fonts/SourceSansPro-Regular.ttf'
 
 class Header extends Component {
   // constructor () {
@@ -10,14 +12,14 @@ class Header extends Component {
     return (
       <div>
         <span className="wrapper">
-          <div className="button button-main">
-            <p> CF12 </p>
+          <div className="button button-main no-nav-style">
+            <Link to="/"> CF12 </Link>
           </div>
-          <div className="button button-about">
-            <p> ABOUT </p>
+          <div className="button button-about no-nav-style">
+            <Link to="/about"> ABOUT </Link>
           </div>
-          <div className="button button-projects">
-            <p> PROJECTS </p>
+          <div className="button button-projects no-nav-style">
+            <Link to="/projects"> PROJECTS </Link>
           </div>
         </span>
       </div>

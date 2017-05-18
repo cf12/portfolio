@@ -1,18 +1,27 @@
+@font-face {
+    font-family: "Source Sans";
+    src: url("fonts/SourceSansPro-Regular.ttf");
+}
+
+no-nav-style:visited no-nav-style:hover no-nav-style:focus no-nav-style:active { text-decoration: none }
+
 .wrapper {
+    font-family: "Source Sans", SansSerif;
+    color: white;
     position: absolute;
     display: flex;
+    align-items: center;
+    top: 0;
     width: 100%;
 }
 
 .wrapper > .button {
-    padding: 2px 5px 2px 5px;
-    justify-content: center;
-    align-content: center;
-    display: flex;
-    flex-direction: row;
+    position: relative;
+    margin: auto 5px;
 }
 
 .wrapper > .button-main {
-    padding: auto 20px auto 10px;
-    font-size: 28px;
+    position: relative;
+    margin: auto 40px;
+    font-size: 50px;
 }
