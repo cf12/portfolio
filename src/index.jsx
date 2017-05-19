@@ -3,8 +3,10 @@ import ReactDOM from 'react-dom'
 import {
   HashRouter,
   Route,
-  Link,
 } from 'react-router-dom'
+
+import './fonts/Muli/Muli-Regular.ttf'
+import './fonts/Agent/Agent300.ttf'
 
 import './index.css'
 import PageMain from './PageMain'
