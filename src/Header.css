@@ -1,27 +1,27 @@
-@font-face {
-    font-family: "Source Sans";
-    src: url("fonts/SourceSansPro-Regular.ttf");
+.no-nav-style {
+    text-decoration: none;
+    color: inherit;
 }
 
-no-nav-style:visited no-nav-style:hover no-nav-style:focus no-nav-style:active { text-decoration: none }
-
 .wrapper {
-    font-family: "Source Sans", SansSerif;
     color: white;
     position: absolute;
     display: flex;
     align-items: center;
     top: 0;
+    padding-top: 10px;
     width: 100%;
 }
 
 .wrapper > .button {
+    font-family: "Muli", sans-serif;
     position: relative;
-    margin: auto 5px;
+    margin: auto 20px;
 }
 
 .wrapper > .button-main {
+    font-family: "Agent", sans-serif;
     position: relative;
-    margin: auto 40px;
+    margin: 10px 40px;
     font-size: 50px;
 }
