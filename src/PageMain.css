@@ -40,35 +40,67 @@
     z-index: -2;
     position: absolute;
     top: 800px;
-    color: black;
+
+    max-width: 1600px;
+    height: 800px;
 }
 
 .body-main-1 {
     position: relative;
-    width: 100%;
-    height: 800px;
+    display: inline-block;
 
     color: white;
     text-shadow: 2px 2px 5px #000;
     font-family: Muli, sans-serif;
 }
 
-.body-main-1 > .left {
+.body-main-1 > .left-pane {
     position: relative;
-    background: linear-gradient(to right, #00bff0, #00e86c);
+    background: linear-gradient(to right, #00bff0, #00e295);
     float: left;
-    height: 100%;
+    height: 530px;
     max-width: 60%;
-    min-width: 60%;
-    padding: 10px 20px;
 }
 
-.body-main-1 > .right {
+.body-main-1 > .left-pane > .text-wrapper {
+    margin: 10px 20px;
+}
+
+.body-main-1 > .right-pane {
     position: relative;
-    float: right;
-    margin: auto;
-    max-width: 37%;
+    max-width: 40%;
+    height: 530px;
     overflow: hidden;
+    float: right;
+}
+
+.body-main-2 {
+    position: relative;
+    display: inline-block;
+
+    color: white;
+    text-shadow: 2px 2px 5px #000;
+    font-family: Muli, sans-serif;
+}
+
+.body-main-2 > .left-pane {
+    position: relative;
+    max-width: 40%;
+    height: 530px;
+    overflow: hidden;
+    float: left;
+}
+
+.body-main-2 > .right-pane {
+    position: relative;
+    background: linear-gradient(to left, #00bff0, #00e295);
+    height: 530px;
+    max-width: 60%;
+    float: right;
+}
+
+.body-main-2 > .right-pane > .text-wrapper {
+    margin: 10px 20px;
 }
 
 .main-title {

@@ -8,6 +8,7 @@ import {
 import './fonts/Muli/Muli-Regular.ttf'
 import './fonts/Agent/Agent300.ttf'
 
+import './normalize.css'
 import './index.css'
 import PageMain from './PageMain'
 
