@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Header from './Header'
+import Footer from './Footer'
 import './PageMain.css'
 import Bg1 from './images/para1_bg.png'
 
@@ -41,6 +42,8 @@ class PageMain extends Component {
             </div>
           </div>
         </div>
+
+        <Footer />
       </div>
     )
   }

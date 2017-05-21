@@ -5,10 +5,9 @@ import './Footer.css'
 class Footer extends Component {
   render () {
     return (
-      <div>
-        <span className="wrapper">
-        </span>
-      </div>
+      <span className="wrapper-footer">
+        <p className="disclaimer"> Copyright &copy; 2017 CF12 / Brian Xiang </p>
+      </span>
     )
   }
 }
