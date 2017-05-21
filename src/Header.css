@@ -3,23 +3,22 @@
     color: inherit;
 }
 
-.wrapper {
+.wrapper-header {
     color: white;
     position: absolute;
     display: flex;
     align-items: center;
     top: 0;
-    padding-top: 10px;
     width: 100%;
 }
 
-.wrapper > .button {
+.wrapper-header > .button {
     font-family: "Muli", sans-serif;
     position: relative;
     margin: auto 20px;
 }
 
-.wrapper > .button-main {
+.wrapper-header > .button-main {
     font-family: "Agent", sans-serif;
     position: relative;
     margin: 10px 40px;

@@ -10,7 +10,7 @@ class Header extends Component {
   render () {
     return (
       <div>
-        <span className="wrapper">
+        <span className="wrapper-header">
           <div className="button button-main">
             <Link to="/" className="no-nav-style"> CF12 </Link>
           </div>
