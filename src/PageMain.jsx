@@ -1,8 +1,12 @@
 import React, { Component } from 'react'
+import Particles from 'react-particles-js'
+
 import Header from './Header'
 import Footer from './Footer'
 import './PageMain.css'
 import Bg1 from './images/para1_bg.png'
+
+const particlejsConfig = require('./config/particlejs-config.json')
 
 class PageMain extends Component {
   render () {
@@ -11,6 +15,9 @@ class PageMain extends Component {
         <Header />
 
         <div className="wrapper-showcase">
+          <div className="showcase-particles">
+            <Particles params={particlejsConfig} />
+          </div>
           <p className="showcase-title"> CF12 </p>
           <p className="showcase-subtitle"> Placeholder text, and more placeholder text </p>
         </div>
@@ -20,7 +27,11 @@ class PageMain extends Component {
             <div className="left-pane">
               <div className="text-wrapper">
                 <p className="main-title"> About Me </p>
-                <p className="main-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque metus massa, porttitor id ex quis, ullamcorper mollis neque. Aenean bibendum venenatis massa. Pellentesque et sodales ex. Nam varius ligula et ante suscipit, non posuere libero elementum. Maecenas ac justo sem. Vivamus euismod in risus vel dapibus. Nullam et urna eget tortor scelerisque feugiat ut et urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin aliquet tempus magna laoreet sagittis. Maecenas vulputate erat orci, ac euismod elit suscipit at. In consectetur laoreet turpis vitae maximus. Pellentesque finibus sed ipsum sed hendrerit. Morbi urna tellus, bibendum nec odio et, dictum vulputate nibh. </p>
+                <p className="main-text">
+                  I am a 14 year old attending Roberto Clemente Middle School, who is currently pursuing a career in Computer Science. I mainly work on
+                  front end design, but I also work on back end NodeJS and a bit of python. for class. I have worked on many projects involving Discord
+                  bots, TF2 trade bots, and more things related to bots. Speaking of bots, I really like designing bots.
+                </p>
               </div>
             </div>
 
@@ -31,13 +42,33 @@ class PageMain extends Component {
 
           <div className="body-main-2">
             <div className="left-pane">
-              <img className="main-image" src={Bg1} alt="Not found." />
+              <div className="container">
+                <div className="Heading">
+                  <p> <u> What I'm Decent At </u> </p>
+                  <img className="Icon" src='./icons/ic_thumb_up_black_24px.svg' alt="404 Not Found" />
+                </div>
+
+                <ul>
+                  <li className="main-text"> Backend NodeJS Development </li>
+                  <li className="main-text"> Frontend HTML, CSS, and JS development </li>
+                  <li className="main-text"> Discord Bot Development </li>
+                  <li className="main-text"> A tiny bit of Java </li>
+                  <li className="main-text"> Python </li>
+                </ul>
+              </div>
             </div>
 
             <div className="right-pane">
-              <div className="text-wrapper">
-                <p className="main-title"> About Me </p>
-                <p className="main-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque metus massa, porttitor id ex quis, ullamcorper mollis neque. Aenean bibendum venenatis massa. Pellentesque et sodales ex. Nam varius ligula et ante suscipit, non posuere libero elementum. Maecenas ac justo sem. Vivamus euismod in risus vel dapibus. Nullam et urna eget tortor scelerisque feugiat ut et urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin aliquet tempus magna laoreet sagittis. Maecenas vulputate erat orci, ac euismod elit suscipit at. In consectetur laoreet turpis vitae maximus. Pellentesque finibus sed ipsum sed hendrerit. Morbi urna tellus, bibendum nec odio et, dictum vulputate nibh. </p>
+              <div className="container">
+                <div className="Heading">
+                  <p> <u> What I'm Terrible At </u> </p>
+                  <img className="Icon" src={require('./icons/ic_thumb_down_black_24px.svg')} alt="404 Not Found" />
+                </div>
+                <ul>
+                  <li className="main-text"> Any type of animation / modeling </li>
+                  <li className="main-text"> C++ (Still working on it!)</li>
+                  <li className="main-text"> GoLang </li>
+                </ul>
               </div>
             </div>
           </div>
