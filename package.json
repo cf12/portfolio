@@ -5,11 +5,10 @@
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-inlinesvg": "^0.6.0",
     "react-particles-js": "^1.5.0",
     "react-router": "^4.1.1",
-    "react-router-dom": "^4.1.1",
-    "svg-inline-loader": "^0.7.1",
-    "svg-inline-react": "^2.1.0"
+    "react-router-dom": "^4.1.1"
   },
   "devDependencies": {
     "autoprefixer": "6.7.2",
@@ -40,14 +39,16 @@
     "http-proxy-middleware": "0.17.3",
     "jest": "18.1.0",
     "json-loader": "0.5.4",
+    "node-sass": "^4.5.3",
     "object-assign": "4.1.1",
     "postcss-loader": "1.2.2",
     "promise": "7.1.1",
     "react-dev-utils": "^0.5.2",
+    "sass-loader": "^6.0.5",
     "standard": "^10.0.2",
     "style-loader": "0.13.1",
     "url-loader": "0.5.7",
-    "webpack": "1.14.0",
+    "webpack": "^1.14.0",
     "webpack-dev-server": "1.16.2",
     "webpack-manifest-plugin": "1.1.0",
     "whatwg-fetch": "2.0.2"
