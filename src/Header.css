@@ -4,6 +4,7 @@
 }
 
 .wrapper-header {
+    z-index: 5;
     color: white;
     position: absolute;
     display: flex;
