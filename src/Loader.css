@@ -1,0 +1,44 @@
+@keyframes bounce {
+    40% { transform: translateY(-30px) }
+    80% { transform: translateY(0) }
+}
+
+.wrapper-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background-color: #141619;
+}
+
+.loader {
+    z-index: 11;
+    width: 100px;
+}
+
+.ball-1, .ball-2, .ball-3 {
+    margin: 4px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.ball-1 {
+    animation: bounce 1.0s ease-in-out infinite;
+}
+
+.ball-2 {
+    animation: bounce 1.0s ease-in-out infinite;
+    animation-delay: 0.15s;
+}
+
+.ball-3 {
+    animation: bounce 1.0s ease-in-out infinite;
+    animation-delay: 0.3s;
+}

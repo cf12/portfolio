@@ -1,23 +1,20 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import './Header.css'
+import ScrollChor from 'react-scrollchor'
 
 class Header extends Component {
-  // constructor () {
-  //   super()
-  // }
-
   render () {
     return (
-      <span className="wrapper-header">
-        <div className="button button-main">
-          <Link to="/" className="no-nav-style"> CF12 </Link>
+      <span className='wrapper-header'>
+        <div className='button button-main'>
+          <Link to='' className='no-nav-style'> CF12 </Link>
         </div>
-        <div className="button button-about no-nav-style">
-          <Link to="/about" className="no-nav-style"> ABOUT </Link>
+        <div className='button button-about no-nav-style'>
+          <ScrollChor to='#about' animate={{ duration: 800 }} className='no-nav-style'> ABOUT </ScrollChor>
         </div>
-        <div className="button button-projects no-nav-style">
-          <Link to="/projects" className="no-nav-style"> PROJECTS </Link>
+        <div className='button button-projects no-nav-style'>
+          <ScrollChor to='#projects' animate={{ offset: -18, duration: 800 }} className='no-nav-style'> PROJECTS </ScrollChor>
         </div>
       </span>
     )
