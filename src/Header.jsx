@@ -11,10 +11,13 @@ class Header extends Component {
           <Link to='' className='no-nav-style'> CF12 </Link>
         </div>
         <div className='button button-about no-nav-style'>
-          <ScrollChor to='#about' animate={{ duration: 800 }} className='no-nav-style'> ABOUT </ScrollChor>
+          <ScrollChor to='#about' animate={{ duration: 600 }} className='no-nav-style'> ABOUT </ScrollChor>
         </div>
         <div className='button button-projects no-nav-style'>
-          <ScrollChor to='#projects' animate={{ offset: -18, duration: 800 }} className='no-nav-style'> PROJECTS </ScrollChor>
+          <ScrollChor to='#projects' animate={{ offset: -18, duration: 600 }} className='no-nav-style'> PROJECTS </ScrollChor>
+        </div>
+        <div className='button button-projects no-nav-style'>
+          <ScrollChor to='#projects' animate={{ duration: 600 }} className='no-nav-style'> SOCIAL </ScrollChor>
         </div>
       </span>
     )
