@@ -115,7 +115,7 @@ class PageMain extends Component {
 
               <div className='project-item' id='project2'>
                 <img className='picture' src={require('./images/project2_bg.png')} alt='404 File Not Found' />
-                <p className='title' style={{fontSize: '40px'}}> Minecraft Server Management </p>
+                <p className='title'> Minecraft Server Management </p>
                 <p className='desc'> I've created and managed many custom Minecraft servers in the past few years, and the majority of my knowledge in scripting for Windows and Linux have come from managing Minecraft servers. Additionally, I've developed a few small plugins for my servers in Java. </p>
                 {/*<div className='button'>*/}
                   {/*<a className='no-nav-style' href='https://github.com/CF12/' target='_blank'> Link to GitHub </a>*/}
@@ -129,6 +129,26 @@ class PageMain extends Component {
                 {/*<div className='button'>*/}
                   {/*<a className='no-nav-style' href='https://github.com/CF12/' target='_blank'> Link to GitHub </a>*/}
                 {/*</div>*/}
+              </div>
+            </div>
+          </div>
+
+          <div className='body-social' id='social'>
+            <div className='container'>
+              <p className='title'> Social </p>
+              <div className='container-cards'>
+                <div className='card'>
+                  <img className='image' alt='404 Not found' />
+                  <p className='info'> Twitter </p>
+                </div>
+                <div className='card'>
+                  <img className='image' alt='404 Not found' />
+                  <p className='info'> GitHub </p>
+                </div>
+                <div className='card'>
+                  <img className='image' alt='404 Not found' />
+                  <p className='info'> Codepen </p>
+                </div>
               </div>
             </div>
           </div>
