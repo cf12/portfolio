@@ -1,5 +1,5 @@
 @keyframes bounce {
-    40% { transform: translateY(-30px) }
+    40% { transform: translateY(-40px) }
     80% { transform: translateY(0) }
 }
 
@@ -16,7 +16,7 @@
 
 .loader {
     z-index: 11;
-    width: 100px;
+    width: 120px;
 }
 
 .ball-1, .ball-2, .ball-3 {
@@ -24,7 +24,7 @@
     display: inline-block;
     width: 20px;
     height: 20px;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 50%;
     background-color: white;
 }
@@ -35,10 +35,10 @@
 
 .ball-2 {
     animation: bounce 1.0s ease-in-out infinite;
-    animation-delay: 0.15s;
+    animation-delay: 0.10s;
 }
 
 .ball-3 {
     animation: bounce 1.0s ease-in-out infinite;
-    animation-delay: 0.3s;
+    animation-delay: 0.2s;
 }
