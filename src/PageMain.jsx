@@ -54,7 +54,7 @@ class PageMain extends Component {
             </div>
 
             <div className='right-pane'>
-              <img className='main-image' src={require('./images/para1_bg.png')} alt='Not found.' />
+              <img className='main-image' src={require('./images/para1_bg.gif')} alt='Not found.' />
             </div>
           </div>
 
@@ -130,6 +130,15 @@ class PageMain extends Component {
                   {/*<a className='no-nav-style' href='https://github.com/CF12/' target='_blank'> Link to GitHub </a>*/}
                 {/*</div>*/}
               </div>
+
+              <div className='project-item' id='project4'>
+                <img className='picture' src={require('./images/project3_bg.png')} alt='404 File Not Found' />
+                <p className='title'> Bonk.io in PyGame </p>
+                <p className='desc'> As a project for school, my partner and I attempted recreating a popular web game called bonk.io. The premise of the game was to bounce around as a ball, and knock people off the map to win. We attempted recreating this game in PyGame, and we even set up a server to serve connections in order to fulfill the multiplayer experience. </p>
+                <div className='button'>
+                  <a className='no-nav-style' href='https://github.com/yayes2/PythonGame' target='_blank'> Link to GitHub project </a>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -137,16 +146,45 @@ class PageMain extends Component {
             <div className='container'>
               <p className='title'> Social </p>
               <div className='container-cards'>
-                <div className='card'>
-                  <img className='image' alt='404 Not found' />
+                <div className='card' id='card-twitter'>
+                  <div className='container' />
+                  <svg className='image' width='32px' height='32px' viewBox='0 0 32 32'>
+                    <path fill='#FFF  ' d='M32,6.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6C25.7,3.8,24,3,22.2,3
+                      c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5C10.3,10.8,5.5,8.2,2.2,4.2c-0.6,1-0.9,2.1-0.9,3.3c0,2.3,1.2,4.3,2.9,5.5
+                      c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1
+                      c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1C2.9,27.9,6.4,29,10.1,29c12.1,0,18.7-10,18.7-18.7
+                      c0-0.3,0-0.6,0-0.8C30,8.5,31.1,7.4,32,6.1z' />
+                  </svg>
                   <p className='info'> Twitter </p>
                 </div>
-                <div className='card'>
-                  <img className='image' alt='404 Not found' />
+                <div className='card' id='card-github'>
+                  <div className='container' />
+                  <svg className='image' width='32px' height='32px' viewBox='0 0 32 32'>
+                    <path fill='#FFF  ' d="M16,0.4c-8.8,0-16,7.2-16,16c0,7.1,4.6,13.1,10.9,15.2
+                      c0.8,0.1,1.1-0.3,1.1-0.8c0-0.4,0-1.4,0-2.7c-4.5,1-5.4-2.1-5.4-2.1c-0.7-1.8-1.8-2.3-1.8-2.3c-1.5-1,0.1-1,0.1-1
+                      c1.6,0.1,2.5,1.6,2.5,1.6c1.4,2.4,3.7,1.7,4.7,1.3c0.1-1,0.6-1.7,1-2.1c-3.6-0.4-7.3-1.8-7.3-7.9c0-1.7,0.6-3.2,1.6-4.3
+                      c-0.2-0.4-0.7-2,0.2-4.2c0,0,1.3-0.4,4.4,1.6c1.3-0.4,2.6-0.5,4-0.5c1.4,0,2.7,0.2,4,0.5C23.1,6.6,24.4,7,24.4,7
+                      c0.9,2.2,0.3,3.8,0.2,4.2c1,1.1,1.6,2.5,1.6,4.3c0,6.1-3.7,7.5-7.3,7.9c0.6,0.5,1.1,1.5,1.1,3c0,2.1,0,3.9,0,4.4
+                      c0,0.4,0.3,0.9,1.1,0.8C27.4,29.5,32,23.5,32,16.4C32,7.6,24.8,0.4,16,0.4z" />
+                  </svg>
                   <p className='info'> GitHub </p>
                 </div>
-                <div className='card'>
-                  <img className='image' alt='404 Not found' />
+                <div className='card' id='card-codepen'>
+                  <div className='container' />
+                  <svg className='image' width='32px' height='32px' viewBox='0 0 32 32'>
+                    <path fill='#FFF  ' d="M32,10.9C32,10.9,32,10.9,32,10.9c0-0.1,0-0.1,0-0.2c0,0,0,0,0-0.1c0,0,0-0.1,0-0.1c0,0,0,0,0-0.1
+                      c0,0,0-0.1,0-0.1c0,0,0,0,0-0.1c0,0,0-0.1-0.1-0.1c0,0,0,0,0-0.1c0,0,0-0.1-0.1-0.1c0,0,0,0-0.1-0.1c0,0-0.1,0-0.1-0.1
+                      c0,0,0,0-0.1,0c0,0,0,0,0,0L16.8,0.2c-0.5-0.3-1.1-0.3-1.5,0L0.6,10c0,0,0,0,0,0c0,0,0,0-0.1,0c0,0-0.1,0-0.1,0.1c0,0,0,0-0.1,0.1
+                      c0,0,0,0-0.1,0.1c0,0,0,0,0,0.1c0,0,0,0.1-0.1,0.1c0,0,0,0,0,0.1c0,0,0,0.1,0,0.1c0,0,0,0,0,0.1c0,0,0,0.1,0,0.1c0,0,0,0,0,0.1
+                      c0,0,0,0.1,0,0.1c0,0,0,0,0,0.1c0,0.1,0,0.1,0,0.2v9.7c0,0.1,0,0.1,0,0.2c0,0,0,0,0,0.1c0,0,0,0.1,0,0.1c0,0,0,0,0,0.1
+                      c0,0,0,0.1,0,0.1c0,0,0,0,0,0.1c0,0,0,0.1,0,0.1c0,0,0,0,0,0.1c0,0,0,0.1,0.1,0.1c0,0,0,0,0,0.1c0,0,0,0.1,0.1,0.1c0,0,0,0,0.1,0.1
+                      c0,0,0.1,0,0.1,0.1c0,0,0,0,0.1,0c0,0,0,0,0,0l14.6,9.8c0.2,0.2,0.5,0.2,0.8,0.2c0.3,0,0.5-0.1,0.8-0.2L31.4,22c0,0,0,0,0,0
+                      c0,0,0,0,0.1,0c0,0,0.1,0,0.1-0.1c0,0,0,0,0.1-0.1c0,0,0,0,0.1-0.1c0,0,0,0,0-0.1c0,0,0-0.1,0.1-0.1c0,0,0,0,0-0.1c0,0,0-0.1,0-0.1
+                      c0,0,0,0,0-0.1c0,0,0-0.1,0-0.1c0,0,0,0,0-0.1c0,0,0-0.1,0-0.1c0,0,0,0,0-0.1c0-0.1,0-0.1,0-0.2v-9.7C32,11.1,32,11,32,10.9z
+                       M17.4,3.9l10.8,7.2l-4.8,3.2l-6-4V3.9z M14.6,3.9v6.4l-6,4l-4.8-3.2L14.6,3.9z M2.8,13.7L6.2,16l-3.4,2.3V13.7z M14.6,28.1
+                      L3.9,20.9l4.8-3.2l6,4V28.1z M16,19.3L11.1,16l4.9-3.3l4.9,3.3L16,19.3z M17.4,28.1v-6.4l6-4l4.8,3.2L17.4,28.1z M29.2,18.3L25.8,16
+                      l3.4-2.3V18.3z" />
+                  </svg>
                   <p className='info'> Codepen </p>
                 </div>
               </div>
@@ -193,6 +231,18 @@ $(document).ready(() => {
         .attr('src', require(`./images/project${i}_bg.png`))
     })
   }
+
+  $('#card-twitter *').click(() => {
+    window.open('https://twitter.com/OfficialCF12', '_blank')
+  })
+
+  $('#card-github *').click(() => {
+    window.open('https://github.com/CF12', '_blank')
+  })
+
+  $('#card-codepen *').click(() => {
+    window.open('https://codepen.io/CF12/', '_blank')
+  })
 })
 
 export default PageMain

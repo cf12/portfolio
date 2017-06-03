@@ -1,3 +1,28 @@
+@font-face {
+    font-family: "Muli";
+    src: url(fonts/Muli/Muli-Regular.ttf);
+}
+
+@font-face {
+    font-family: "MuliSemiBold";
+    src: url(fonts/Muli/Muli-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "MuliBoldItalic";
+    src: url(fonts/Muli/Muli-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: "Agent";
+    src: url(fonts/Agent/Agent300.ttf);
+}
+
+@font-face {
+    font-family: "Komika";
+    src: url(fonts/Komika/KOMIKAX_.ttf)
+}
+
 body {
     margin: 0;
     padding: 0;

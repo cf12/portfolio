@@ -2,10 +2,154 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aee61f21-b30f-400d-9c46-88a99e71f452" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/License.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/social-media-icons.ai" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/CF12-512.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/para1_bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/project1_bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/social-media-icons.sketch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-500px.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-behance.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-blogger.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-buffer.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-buysellads.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-codepen.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-creative-market.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-deviantart.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-dribbble.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-dropbox.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-envato.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-evernote.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-facebook.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-feedly.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-flickr.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-github.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-google-plus.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-instagram.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-lastfm.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-linkedin.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-myspace.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-paypal.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-pinterest.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-product-hunt.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-reddit.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-rss.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-shopify.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-skype.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-slack.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-soundcloud.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-spotify.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-trello.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-tumblr.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-twitter.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-vimeo.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-vine.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-whatsapp.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-wordpress.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-yelp.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_logo-youtube.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_round-behance.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_round-deviantart.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_round-dribbble.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_round-dropbox.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_round-evernote.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_round-facebook.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_round-github.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_round-google-plus.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_round-instagram.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_round-linkedin.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_round-pinterest.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_round-product-hunt.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_round-skype.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_round-slack.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_round-spotify.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_round-tumblr.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_round-twitter.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_round-vimeo.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_round-wordpress.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_round-youtube.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-500px.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-behance.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-blogger.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-buffer.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-buysellads.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-codepen.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-creative-market.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-deviantart.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-dribbble.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-dropbox.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-envato.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-evernote.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-facebook.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-feedly.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-flickr.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-github.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-google-plus.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-instagram.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-lastfm.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-linkedin.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-myspace.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-paypal.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-pinterest.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-product-hunt.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-reddit.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-rss.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-shopify.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-skype.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-slack.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-soundcloud.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-spotify.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-trello.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-tumblr.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-twitter.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-vimeo.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-vine.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-whatsapp.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-wordpress.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-yelp.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-1_square-youtube.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-2_round-500px.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-2_round-blogger.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-2_round-buffer.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-2_round-buysellads.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-2_round-codepen.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-2_round-creative-market.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-2_round-envato.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-2_round-feedly.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-2_round-flickr.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-2_round-lastfm.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-2_round-myspace.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-2_round-paypal.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-2_round-reddit.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-2_round-rss.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-2_round-soundcloud.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-2_round-spotify-12.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-2_round-trello.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-2_round-vine.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-2_round-whatsapp.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/nucleo-social-icons/svg/social-2_round-yelp.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/social-1_logo-codepen.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/social-1_logo-github.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/social-1_logo-google-plus.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icons/social/social-1_logo-twitter.svg" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/final-project-2017.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/para1_bg.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/images/project1_bg.png" afterPath="$PROJECT_DIR$/src/images/project1_bg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/webpack.config.dev.js" afterPath="$PROJECT_DIR$/config/webpack.config.dev.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Header.css" afterPath="$PROJECT_DIR$/src/Header.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Header.jsx" afterPath="$PROJECT_DIR$/src/Header.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Loader.css" afterPath="$PROJECT_DIR$/src/Loader.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PageMain.css" afterPath="$PROJECT_DIR$/src/PageMain.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PageMain.jsx" afterPath="$PROJECT_DIR$/src/PageMain.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.css" afterPath="$PROJECT_DIR$/src/index.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,24 +166,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PageMain.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PageMain.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/PageMain.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="149" column="51" lean-forward="true" selection-start-line="149" selection-start-column="51" selection-end-line="149" selection-end-column="51" />
+            <state relative-caret-position="163">
+              <caret line="125" column="41" lean-forward="false" selection-start-line="125" selection-start-column="41" selection-end-line="125" selection-end-column="81" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
-                <marker date="1496111952518" expanded="true" signature="9718:9804" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PageMain.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PageMain.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PageMain.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="270" column="18" lean-forward="false" selection-start-line="270" selection-start-column="18" selection-end-line="270" selection-end-column="18" />
+            <state relative-caret-position="425">
+              <caret line="175" column="55" lean-forward="true" selection-start-line="175" selection-start-column="55" selection-end-line="175" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -60,8 +203,8 @@
       <file leaf-file-name="Loader.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Loader.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+            <state relative-caret-position="442">
+              <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -70,11 +213,21 @@
       <file leaf-file-name="Header.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Header.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+            <state relative-caret-position="323">
+              <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Header.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Header.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="41" column="17" lean-forward="true" selection-start-line="41" selection-start-column="17" selection-end-line="42" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -108,9 +261,11 @@
       <find>Muli</find>
       <find>react</find>
       <find>title</find>
-      <find>&quot;</find>
       <find>NODE</find>
       <find>port</find>
+      <find>&quot;</find>
+      <find>yayes</find>
+      <find>para1</find>
     </findStrings>
     <replaceStrings>
       <replace>className</replace>
@@ -132,7 +287,6 @@
         <option value="$PROJECT_DIR$/src/App.jsx" />
         <option value="$PROJECT_DIR$/src/Main.jsx" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/normalize.css" />
         <option value="$PROJECT_DIR$/src/Footer.css" />
         <option value="$PROJECT_DIR$/src/icons/ic_thumb_up_black_24px.svg" />
@@ -140,18 +294,19 @@
         <option value="$PROJECT_DIR$/src/PageMain.scss" />
         <option value="$PROJECT_DIR$/config/webpack.config.prod.js" />
         <option value="$PROJECT_DIR$/src/Footer.jsx" />
-        <option value="$PROJECT_DIR$/src/Header.css" />
         <option value="$PROJECT_DIR$/src/Loader.jsx" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/config/webpack.config.dev.js" />
         <option value="$PROJECT_DIR$/src/index.jsx" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
-        <option value="$PROJECT_DIR$/src/Loader.css" />
         <option value="$PROJECT_DIR$/scripts/start.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/config/webpack.config.dev.js" />
+        <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/Header.jsx" />
-        <option value="$PROJECT_DIR$/src/PageMain.jsx" />
+        <option value="$PROJECT_DIR$/src/Header.css" />
+        <option value="$PROJECT_DIR$/src/Loader.css" />
         <option value="$PROJECT_DIR$/src/PageMain.css" />
+        <option value="$PROJECT_DIR$/src/PageMain.jsx" />
       </list>
     </option>
   </component>
@@ -196,6 +351,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -218,12 +375,42 @@
               <item name="final-project-2017" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="final-project-2017" type="b2602c69:ProjectViewProjectNode" />
+              <item name="final-project-2017" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="final-project-2017" type="b2602c69:ProjectViewProjectNode" />
+              <item name="final-project-2017" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+              <item name="Komika" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="final-project-2017" type="b2602c69:ProjectViewProjectNode" />
+              <item name="final-project-2017" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="icons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="final-project-2017" type="b2602c69:ProjectViewProjectNode" />
+              <item name="final-project-2017" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="icons" type="462c0819:PsiDirectoryNode" />
+              <item name="social" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="final-project-2017" type="b2602c69:ProjectViewProjectNode" />
+              <item name="final-project-2017" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -249,6 +436,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\brian\MEGA\Code\Web\final-project-2017\src\images" />
       <recent name="C:\Users\brian\MEGA\Code\Web\final-project-2017\src" />
       <recent name="C:\Users\brian\MEGA\Code\Web\final-project-2017\src\icons" />
       <recent name="C:\Users\brian\MEGA\Code\Web\final-project-2017\src\config" />
@@ -318,7 +506,8 @@
       <workItem from="1495410403310" duration="30849000" />
       <workItem from="1495678462770" duration="9256000" />
       <workItem from="1495831263715" duration="30065000" />
-      <workItem from="1495924983841" duration="33123000" />
+      <workItem from="1495924983841" duration="54877000" />
+      <workItem from="1496284454615" duration="19322000" />
     </task>
     <task id="LOCAL-00001" summary="Began project, and working on headers and fonts">
       <created>1495043008641</created>
@@ -390,11 +579,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496026019183</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Work on social">
+      <created>1496112191048</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1496112191048</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167514000" />
+    <option name="totallyTimeSpent" value="208590000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -402,19 +598,19 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18958333" sideWeight="0.4922179" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896462" sideWeight="0.5083333" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896462" sideWeight="0.51111114" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896462" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24115334" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24115334" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896462" sideWeight="0.49166667" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896462" sideWeight="0.4888889" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5077821" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -447,45 +643,14 @@
     <MESSAGE value="Major work on adding projects, loading screens, and animations using jQuery" />
     <MESSAGE value="Adjusted port" />
     <MESSAGE value="Readjusted port" />
-    <option name="LAST_COMMIT_MESSAGE" value="Readjusted port" />
+    <MESSAGE value="Work on social" />
+    <option name="LAST_COMMIT_MESSAGE" value="Work on social" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/webpack.config.prod.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2805">
-          <caret line="165" column="46" lean-forward="false" selection-start-line="165" selection-start-column="46" selection-end-line="165" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Footer.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Header.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -510,7 +675,6 @@
           <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
-            <marker date="1496111952518" expanded="true" signature="9718:9804" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -527,7 +691,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding />
+          <folding>
+            <element signature="e#0#25#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -661,13 +827,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-router-dom/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1207">
@@ -687,17 +846,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Header.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -705,7 +853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -713,7 +860,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -721,7 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -729,22 +874,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="41" column="49" lean-forward="true" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/webpack.config.dev.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="44" column="47" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="216" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -765,21 +894,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Loader.css">
+    <entry file="file://$PROJECT_DIR$/src/icons/social/social-1_logo-twitter.svg">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="10" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#25#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/webpack.config.dev.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="158" column="9" lean-forward="true" selection-start-line="158" selection-start-column="9" selection-end-line="158" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/icons/social/social-1_logo-github.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="61" lean-forward="true" selection-start-line="5" selection-start-column="61" selection-end-line="10" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/icons/social/social-1_logo-codepen.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/CF12-512.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Header.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="41" column="17" lean-forward="true" selection-start-line="41" selection-start-column="17" selection-end-line="42" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Header.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        <state relative-caret-position="323">
+          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Loader.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -793,22 +985,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PageMain.jsx">
+    <entry file="file://$PROJECT_DIR$/src/PageMain.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="149" column="51" lean-forward="true" selection-start-line="149" selection-start-column="51" selection-end-line="149" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-            <marker date="1496111952518" expanded="true" signature="9718:9804" ph="{...}" />
-          </folding>
+        <state relative-caret-position="425">
+          <caret line="175" column="55" lean-forward="true" selection-start-line="175" selection-start-column="55" selection-end-line="175" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PageMain.css">
+    <entry file="file://$PROJECT_DIR$/src/PageMain.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="270" column="18" lean-forward="false" selection-start-line="270" selection-start-column="18" selection-end-line="270" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="163">
+          <caret line="125" column="41" lean-forward="false" selection-start-line="125" selection-start-column="41" selection-end-line="125" selection-end-column="81" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

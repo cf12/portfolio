@@ -11,7 +11,8 @@
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
     "react-scrollable-anchor": "^0.4.2",
-    "react-scrollchor": "^3.0.0"
+    "react-scrollchor": "^3.0.0",
+    "react-svg-loader": "^1.1.1"
   },
   "devDependencies": {
     "autoprefixer": "6.7.2",
