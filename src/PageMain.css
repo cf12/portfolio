@@ -163,7 +163,6 @@ p {
 }
 
 .body-projects .wrapper-projects {
-    z-index: -20;
     position: relative;
     display: flex;
     margin: auto 30px;
@@ -171,6 +170,7 @@ p {
 }
 
 .body-projects .wrapper-projects .project-item {
+    z-index: 2;
     background-color: white;
     font-family: "Muli", sans-serif;
     border-radius: 5px;
