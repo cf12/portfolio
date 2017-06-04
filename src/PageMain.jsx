@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import Particles from 'react-particles-js'
+import GifPlayer from 'react-gif-player'
 
 import Loader from './Loader.jsx'
 import Header from './Header.jsx'
 import Footer from './Footer.jsx'
 import './PageMain.css'
+import './gifplayer.css'
 
 const $ = require('jquery')
 const particlejsConfig = require('./config/particlejs-config.json')
@@ -105,7 +107,7 @@ class PageMain extends Component {
             <div className='wrapper-projects'>
 
               <div className='project-item' id='project1'>
-                <img className='picture' src={require('./images/project1_bg.png')} alt='404 File Not Found' />
+                <GifPlayer className='picture' gif={require('./images/project1_bg.gif')} still={require('./images/project1_bg.png')} alt='404 File Not Found' />
                 <p className='title'> Discord Bots </p>
                 <p className='desc'> When I was introduced to Node.JS and JavaScript, I began learning the language by coding Discord Bots. It was a great introduction to programming in node for me because it was an opportunity for me to create something realistic and interactive for my group on Discord. In fact, all of my Discord bots are still being used actively as of today. </p>
                 <div className='button'>
@@ -114,7 +116,7 @@ class PageMain extends Component {
               </div>
 
               <div className='project-item' id='project2'>
-                <img className='picture' src={require('./images/project2_bg.png')} alt='404 File Not Found' />
+                <GifPlayer className='picture' gif={require('./images/project2_bg.gif')} still={require('./images/project2_bg.png')} alt='404 File Not Found' />
                 <p className='title'> Minecraft Server Management </p>
                 <p className='desc'> I've created and managed many custom Minecraft servers in the past few years, and the majority of my knowledge in scripting for Windows and Linux have come from managing Minecraft servers. Additionally, I've developed a few small plugins for my servers in Java. </p>
                 {/*<div className='button'>*/}
@@ -123,20 +125,20 @@ class PageMain extends Component {
               </div>
 
               <div className='project-item' id='project3'>
-                <img className='picture' src={require('./images/project3_bg.png')} alt='404 File Not Found' />
+                <GifPlayer className='picture' gif={require('./images/project3_bg.gif')} still={require('./images/project3_bg.png')} alt='404 File Not Found' />
                 <p className='title'> WiFi Hotspot Project </p>
                 <p className='desc'> During April, my friend and I worked on deploying a project onto a Raspberry Pi that provided others free wifi off of our own cellular data plans during a long period of time on the road. Our project ended up failing due to issues with our captive portals, but the back end of our project worked quite nicely. </p>
-                {/*<div className='button'>*/}
-                  {/*<a className='no-nav-style' href='https://github.com/CF12/' target='_blank'> Link to GitHub </a>*/}
-                {/*</div>*/}
+                <div className='button'>
+                  <a className='no-nav-style' href='https://github.com/LCCNetwork' target='_blank'> Link to GitHub Projects </a>
+                </div>
               </div>
 
               <div className='project-item' id='project4'>
-                <img className='picture' src={require('./images/project3_bg.png')} alt='404 File Not Found' />
+                <GifPlayer className='picture' gif={require('./images/project4_bg.gif')} still={require('./images/project4_bg.png')} alt='404 File Not Found' />
                 <p className='title'> Bonk.io in PyGame </p>
                 <p className='desc'> As a project for school, my partner and I attempted recreating a popular web game called bonk.io. The premise of the game was to bounce around as a ball, and knock people off the map to win. We attempted recreating this game in PyGame, and we even set up a server to serve connections in order to fulfill the multiplayer experience. </p>
                 <div className='button'>
-                  <a className='no-nav-style' href='https://github.com/yayes2/PythonGame' target='_blank'> Link to GitHub project </a>
+                  <a className='no-nav-style' href='https://github.com/yayes2/PythonGame' target='_blank'> Link to GitHub Project </a>
                 </div>
               </div>
             </div>
@@ -220,17 +222,19 @@ $(document).ready(() => {
     }, 300)
   }, 2000)
 
-  for (let i = 0; i <= 3; i++) {
-    let $projectPic = $(`#project${i} > .picture`)
-
-    $('#project' + i).hover(() => {
-      $projectPic
-        .attr('src', require(`./images/project${i}_bg.gif`))
-    }, () => {
-      $projectPic
-        .attr('src', require(`./images/project${i}_bg.png`))
-    })
-  }
+  // for (let i = 0; i <= 4; i++) {
+  //   let $projectPic = $(`#project${i} > .picture`)
+  //
+  //   $('#project' + i).hover(() => {
+  //     $projectPic
+  //       // .attr('src', require(`./images/project${i}_bg.gif`))
+  //       .replaceWith(<GifPlayer className='picture' gif={require(`./images/project${i}_bg.gif`)} />)
+  //   }, () => {
+  //     $projectPic
+  //       // .attr('src', require(`./images/project${i}_bg.png`))
+  //       .replaceWith(<img className='picture' src={require(`./images/project${i}_bg.png`)} alt='404 File Not Found' />)
+  //   })
+  // }
 
   $('#card-twitter *').click(() => {
     window.open('https://twitter.com/OfficialCF12', '_blank')
