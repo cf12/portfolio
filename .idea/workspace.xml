@@ -1,46 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aee61f21-b30f-400d-9c46-88a99e71f452" name="Default" comment="More work on the projects section, and">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/648f5a7e32afa592233a83c99e5ab0ad.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/92860f9d8b244fd8a21ec0fd726d795e.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/948114af9fe60735a6de25fa281c190c.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/a401afc3d1bb36f4de72835d1257746e.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/b05df0c8b9e32485c4e2a75d614bf860.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/static/media/para1_bg.fd8a62e5.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/static/media/project1_bg.3f2cadad.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/static/media/project1_bg.ee031463.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/static/media/project2_bg.66f30a57.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/static/media/project2_bg.9843be47.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/static/media/project3_bg.e0e281ab.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/static/media/project3_bg.fbaeb785.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/static/media/project4_bg.1653a601.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/static/media/project4_bg.289980e3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fonts/Komika/KOMIKAX_.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/project4_bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/project4_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/asset-manifest.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/static/css/main.a38895cd.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/static/css/main.a38895cd.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/static/js/main.bdc87f9e.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/static/js/main.bdc87f9e.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fonts/Komika/Komika.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/gifplayer.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/final-project-2017.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PageMain.css" afterPath="$PROJECT_DIR$/src/PageMain.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PageMain.jsx" afterPath="$PROJECT_DIR$/src/PageMain.jsx" />
+    <list default="true" id="aee61f21-b30f-400d-9c46-88a99e71f452" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -414,7 +376,7 @@
       <workItem from="1495678462770" duration="9256000" />
       <workItem from="1495831263715" duration="30065000" />
       <workItem from="1495924983841" duration="54877000" />
-      <workItem from="1496284454615" duration="34264000" />
+      <workItem from="1496284454615" duration="34504000" />
     </task>
     <task id="LOCAL-00001" summary="Began project, and working on headers and fonts">
       <created>1495043008641</created>
@@ -500,23 +462,30 @@
       <option name="project" value="LOCAL" />
       <updated>1496459884740</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Working on deploying to Git Pages">
+      <created>1496590249810</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1496590249810</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223532000" />
+    <option name="totallyTimeSpent" value="223772000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18958333" sideWeight="0.4922179" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18958333" sideWeight="0.4922179" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24115334" sideWeight="0.5083333" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896462" sideWeight="0.5125" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896462" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24115334" sideWeight="0.49166667" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32896462" sideWeight="0.4888889" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32896462" sideWeight="0.4875" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5077821" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -558,7 +527,8 @@
     <MESSAGE value="Readjusted port" />
     <MESSAGE value="Work on social" />
     <MESSAGE value="Added more projects, and finished social section" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more projects, and finished social section" />
+    <MESSAGE value="Working on deploying to Git Pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on deploying to Git Pages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -899,8 +869,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="190">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding />
         </state>
       </provider>
