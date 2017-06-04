@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aee61f21-b30f-400d-9c46-88a99e71f452" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/648f5a7e32afa592233a83c99e5ab0ad.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/92860f9d8b244fd8a21ec0fd726d795e.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/948114af9fe60735a6de25fa281c190c.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/a401afc3d1bb36f4de72835d1257746e.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/asset-manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/b05df0c8b9e32485c4e2a75d614bf860.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/static/css/main.a38895cd.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/static/css/main.a38895cd.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/static/js/main.bdc87f9e.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/static/js/main.bdc87f9e.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/static/media/para1_bg.fd8a62e5.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/static/media/project1_bg.3f2cadad.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/static/media/project1_bg.ee031463.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/static/media/project2_bg.66f30a57.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/static/media/project2_bg.9843be47.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/static/media/project3_bg.e0e281ab.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/static/media/project3_bg.fbaeb785.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/static/media/project4_bg.1653a601.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/static/media/project4_bg.289980e3.gif" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="aee61f21-b30f-400d-9c46-88a99e71f452" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -392,7 +369,7 @@
       <workItem from="1495678462770" duration="9256000" />
       <workItem from="1495831263715" duration="30065000" />
       <workItem from="1495924983841" duration="54877000" />
-      <workItem from="1496284454615" duration="34754000" />
+      <workItem from="1496284454615" duration="34772000" />
     </task>
     <task id="LOCAL-00001" summary="Began project, and working on headers and fonts">
       <created>1495043008641</created>
@@ -485,11 +462,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496590249810</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Moved build to docs folder">
+      <created>1496590733554</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1496590733554</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224022000" />
+    <option name="totallyTimeSpent" value="224040000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -545,7 +529,8 @@
     <MESSAGE value="Work on social" />
     <MESSAGE value="Added more projects, and finished social section" />
     <MESSAGE value="Working on deploying to Git Pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on deploying to Git Pages" />
+    <MESSAGE value="Moved build to docs folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved build to docs folder" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
