@@ -127,7 +127,7 @@ class PageMain extends Component {
               <div className='project-item' id='project3'>
                 <GifPlayer className='picture' gif={require('./images/project3_bg.gif')} still={require('./images/project3_bg.png')} alt='404 File Not Found' />
                 <p className='title'> WiFi Hotspot Project </p>
-                <p className='desc'> During April, my friend and I worked on deploying a project onto a Raspberry Pi that provided others free wifi off of our own cellular data plans during a long period of time on the road. Our project ended up failing due to issues with our captive portals, but the back end of our project worked quite nicely. </p>
+                <p className='desc'> During April, Aidan and I worked on deploying a project onto a Raspberry Pi that provided others free wifi off of our own cellular data plans during a long period of time on the road. Our project ended up failing due to issues with our captive portals, but the back end of our project worked quite nicely. </p>
                 <div className='button'>
                   <a className='no-nav-style' href='https://github.com/LCCNetwork' target='_blank'> Link to GitHub Projects </a>
                 </div>
@@ -136,7 +136,7 @@ class PageMain extends Component {
               <div className='project-item' id='project4'>
                 <GifPlayer className='picture' gif={require('./images/project4_bg.gif')} still={require('./images/project4_bg.png')} alt='404 File Not Found' />
                 <p className='title'> Bonk.io in PyGame </p>
-                <p className='desc'> As a project for school, my partner and I attempted recreating a popular web game called bonk.io. The premise of the game was to bounce around as a ball, and knock people off the map to win. We attempted recreating this game in PyGame, and we even set up a server to serve connections in order to fulfill the multiplayer experience. </p>
+                <p className='desc'> As a project for school, Aidan and I attempted recreating a popular web game called bonk.io. The premise of the game was to bounce around as a ball, and knock people off the map to win. We attempted recreating this game in PyGame, and we even set up a server to serve connections in order to fulfill the multiplayer experience. </p>
                 <div className='button'>
                   <a className='no-nav-style' href='https://github.com/yayes2/PythonGame' target='_blank'> Link to GitHub Project </a>
                 </div>
