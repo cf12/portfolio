@@ -6,7 +6,6 @@ import Loader from './Loader.jsx'
 import Header from './Header.jsx'
 import Footer from './Footer.jsx'
 import './PageMain.css'
-import './gifplayer.css'
 
 const $ = require('jquery')
 const particlejsConfig = require('./config/particlejs-config.json')
