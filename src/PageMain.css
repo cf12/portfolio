@@ -304,3 +304,35 @@ p {
     font-size: 40px;
     text-align: center;
 }
+
+.gif_player {
+    display: inline-block;
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+}
+
+.gif_player .play_button {
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-left: 50px solid white;
+    border-bottom: 30px solid transparent;
+    color: #fff;
+    cursor: pointer;
+    left: 50%;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s, opacity 0.3s ease-in;
+}
+
+.gif_player:hover .play_button {
+    transform: translate(-50%, -50%) scale(1.25);
+}
+
+.gif_player.playing .play_button {
+    transform: translate(-50%, -50%) scale(0.001);
+    opacity: 0.5;
+}
