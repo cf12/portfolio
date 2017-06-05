@@ -167,10 +167,10 @@ p {
     display: flex;
     margin: auto 30px;
     overflow-x: scroll;
+    padding: 10px;
 }
 
 .body-projects .wrapper-projects .project-item {
-    z-index: 2;
     background-color: white;
     font-family: "Muli", sans-serif;
     border-radius: 5px;
@@ -181,12 +181,12 @@ p {
     height: 600px;
     margin-right: 60px;
     position: relative;
-
+    transition: box-shadow 0.15s ease-in-out;
 }
 
 .body-projects .wrapper-projects .project-item:hover {
-    transition: box-shadow 0.2s ease-in-out;
-    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.15s ease-in-out;
+    box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.4);
 }
 
 .body-projects .wrapper-projects .project-item .picture {
