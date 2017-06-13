@@ -15,3 +15,10 @@ For my portfolio, I used a wide assortment of open source dependencies which inc
 - jQuery [ https://github.com/jquery/jquery ]
 - particles.js [ https://github.com/VincentGarreau/particles.js/ ]
 - React Gif Player [ https://github.com/benwiley4000/react-gif-player ]
+
+## Coding Standards
+This project uses the Standard JS Coding Style. Most of my Javascript projects are coded with the Standard JS Coding Style.
+You can learn more about the project here: https://standardjs.com/
+
+[![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+
