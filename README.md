@@ -9,12 +9,8 @@ In the branch **gh-pages**, I've compiled the website to be viewable, and it is 
 
 ## Dependencies
 For my portfolio, I used a wide assortment of open source dependencies which includes the following:
-- Create React App [ https://github.com/facebookincubator/create-react-app ]
 - React [ https://github.com/facebook/react ]
 - Webpack [ https://github.com/webpack/webpack ]
-- jQuery [ https://github.com/jquery/jquery ]
-- particles.js [ https://github.com/VincentGarreau/particles.js/ ]
-- React Gif Player [ https://github.com/benwiley4000/react-gif-player ]
 
 ## Coding Standards
 This project uses the Standard JS Coding Style. Most of my Javascript projects are coded with the Standard JS Coding Style.

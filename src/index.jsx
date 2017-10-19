@@ -1,19 +1,10 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import {
-  HashRouter,
-  Route,
-} from 'react-router-dom'
+import { render } from 'react-dom'
 
-import './fonts/Muli/Muli-Regular.ttf'
-import './fonts/Agent/Agent300.ttf'
+class App extends React.Component {
+  render () {
+    return <p> Hello World! </p>
+  }
+}
 
-import './normalize.css'
-import './index.css'
-import PageMain from './PageMain.jsx'
-
-ReactDOM.render((
-  <HashRouter>
-    <Route path="/" component={PageMain} />
-  </HashRouter>
-), document.getElementById('root'))
+render(<App />, document.getElementById('app'))
