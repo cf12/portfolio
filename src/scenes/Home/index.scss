@@ -1,0 +1,32 @@
+.showcase {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  //background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  background: linear-gradient(to right, #5B86E5, #36D1DC);
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .showcase__pic {
+    width: 18vw;
+    border-radius: 9999px;
+    box-shadow: 0.2vw 0.2vw 4vw rgba(0, 0, 0, 80);
+  }
+
+  .showcase__subtitle {
+    font-family: Montserrat, sans-serif;
+    font-size: 2vw;
+    padding-top: 5vh;
+    color: white;
+    text-align: center;
+    text-shadow: 0.1vw 0.1vw 1vw rgba(0, 0, 0, 80);
+  }
+}
+
+.body {
+  width: 100%;
+  height: 200px;
+  background-color: aliceBlue;
+}
