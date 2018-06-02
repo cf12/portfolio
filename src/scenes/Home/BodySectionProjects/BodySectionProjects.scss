@@ -1,0 +1,29 @@
+.project {
+
+}
+
+.project__image-wrapper {
+  img {
+    border: 5px solid black;
+    border-radius: 360px;
+    width: 512px;
+
+    transition:
+      border-radius 0.2s ease-in-out,
+      width 0.2s ease-in-out;
+    // transition:  0.2s ease-in-out;
+  }
+
+  img:hover {
+    width: 620px;
+    // border-radius: 320px;
+  }
+}
+
+.project__title {
+
+}
+
+.project__description {
+
+}

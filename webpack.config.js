@@ -1,24 +1,34 @@
-var webpack = require('webpack')
-var path = require('path')
+const webpack = require('webpack')
+const path = require('path')
 
-var BUILD_DIR = path.resolve(__dirname, 'build/')
-var APP_DIR = path.resolve(__dirname, 'src/')
+const BUILD_DIR = path.resolve(__dirname, 'build/')
+const APP_DIR = path.resolve(__dirname, 'src/')
 
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
-const extractSass = new ExtractTextPlugin({
+const extractStyles = new ExtractTextPlugin({
   filename: '[name].css'
 })
 
-var config = {
+const HtmlWebPackPlugin = require('html-webpack-plugin')
+const WebpackBar = require('webpackbar')
+const DashboardPlugin = require('webpack-dashboard/plugin')
+
+const config = {
   entry: APP_DIR + '/index.jsx',
   output: {
     path: BUILD_DIR,
     filename: 'bundle.js'
   },
 
+  devServer: {
+    contentBase: APP_DIR,
+    compress: true,
+    port: 3000
+  },
+
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.jsx?/,
         include: APP_DIR,
@@ -26,13 +36,21 @@ var config = {
       },
       {
         test: /\.html$/,
-        loader: 'file-loader?name=[name].[ext]!extract-loader!html-loader'
+        loader: 'html-loader',
+        options: { minimize: true }
       },
       {
         test: /\.scss$/,
-        use: extractSass.extract({
+        use: extractStyles.extract({
           fallback: 'style-loader',
-          use: ['css-loader', 'sass-loader']
+          use: ['css-loader', 'sass-loader', 'postcss-loader']
+        })
+      },
+      {
+        test: /\.css$/,
+        use: extractStyles.extract({
+          fallback: 'style-loader',
+          use: 'css-loader'
         })
       },
       {
@@ -49,7 +67,13 @@ var config = {
   },
 
   plugins: [
-    extractSass
+    new HtmlWebPackPlugin({
+      template: APP_DIR + '/index.html',
+      filename: './index.html'
+    }),
+    extractStyles,
+    // new WebpackBar(),
+    new DashboardPlugin()
   ]
 }
 
