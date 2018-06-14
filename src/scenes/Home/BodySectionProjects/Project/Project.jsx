@@ -12,12 +12,16 @@ export default class ProjectEntry extends React.Component {
 
   render () {
     return (
-      <div className='project flex--column flex--center'>
-        <div className='project__image-wrapper'>
-          <img src={require('../../../../assets/images/lmao.png')} />
+      <div className='project'>
+
+        <div className='flex--row flex--center--items'>
+          <div className='project__image__border'>
+            <img className='project__image' src={require('../../../../assets/images/lmao.png')} />
+          </div>
+
+          <p className='project__title'>{this.title}</p>
         </div>
 
-        <p className='project__title'>{this.title}</p>
         <p className='project__description'>{this.description}</p>
       </div>
     )
