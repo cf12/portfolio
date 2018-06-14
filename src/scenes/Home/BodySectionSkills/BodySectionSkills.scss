@@ -1,5 +1,11 @@
 .body__section--skills {
+  
+  background: radial-gradient(ellipse closest-side at center, #3e4fc1, #49506b)
+}
 
+.body__section--skills__title {
+  color: white !important;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
 }
 
 .body__section--skills__wrapper {

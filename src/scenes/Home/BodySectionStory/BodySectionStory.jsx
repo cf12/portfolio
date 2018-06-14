@@ -12,7 +12,7 @@ export default class BodySectionStory extends React.Component {
 
         <div className='flex--row'>
           <div className='body__avatar'>
-            <img src={require('../../../assets/images/lmao.png')} />
+            <img src={require('../../../assets/images/avatar.png')} />
           </div>
 
           <div className='flex--center flex--column'>

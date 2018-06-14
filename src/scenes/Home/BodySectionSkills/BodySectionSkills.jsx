@@ -8,7 +8,7 @@ export default class BodySectionSkills extends React.Component {
   render () {
     return (
       <div className='body__section body__section--skills flex--center'>
-        <p className='body__title'>SKILLS</p>
+        <p className='body__title body__section--skills__title'>SKILLS</p>
         <div className='body__separator--big' />
 
         <div className='body__section--skills__wrapper flex--center flex--row'>
