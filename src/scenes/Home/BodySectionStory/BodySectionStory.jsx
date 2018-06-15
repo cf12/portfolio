@@ -10,7 +10,7 @@ export default class BodySectionStory extends React.Component {
         <p className='body__title'>MY STORY</p>
         <div className='body__separator--big' />
 
-        <div className='flex--row'>
+        <div className='body__wrapper--story flex--row'>
           <div className='body__avatar'>
             <img src={require('../../../assets/images/avatar.png')} />
           </div>
