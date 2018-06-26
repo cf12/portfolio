@@ -1,0 +1,12 @@
+.slideshow__button {
+
+  width: 100px;
+  height: 100px;
+
+  transition:
+    box-shadow 0.5s ease;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

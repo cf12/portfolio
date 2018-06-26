@@ -1,0 +1,31 @@
+import React from 'react'
+import Anime from 'react-anime'
+import Waypoint from 'react-waypoint'
+
+export default class OnLoadAnime extends React.PureComponent {
+  constructor () {
+    super()
+
+    this.state = {
+      show: false
+    }
+  }
+
+  load () {
+    this.setState({ show: true })
+  }
+
+  render () {
+    if (this.state.show) {
+      return (
+        <Anime {...this.props}>
+          {this.props.children}
+        </Anime>
+      )
+    } else {
+      return (
+        <Waypoint onEnter={this.load.bind(this)} />
+      )
+    }
+  }
+}

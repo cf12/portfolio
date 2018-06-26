@@ -11,8 +11,6 @@ const extractStyles = new ExtractTextPlugin({
 })
 
 const HtmlWebPackPlugin = require('html-webpack-plugin')
-const WebpackBar = require('webpackbar')
-const DashboardPlugin = require('webpack-dashboard/plugin')
 
 const config = {
   entry: APP_DIR + '/index.jsx',
@@ -72,8 +70,6 @@ const config = {
       filename: './index.html'
     }),
     extractStyles,
-    // new WebpackBar(),
-    new DashboardPlugin()
   ]
 }
 
