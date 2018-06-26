@@ -9,6 +9,7 @@ import Showcase from './Showcase/Showcase.jsx'
 import BodySectionStory from './BodySectionStory/BodySectionStory.jsx'
 import BodySectionSkills from './BodySectionSkills/BodySectionSkills.jsx'
 import BodySectionProjects from './BodySectionProjects/BodySectionProjects.jsx'
+import BodySectionContact from './BodySectionContact/BodySectionContact.jsx'
 
 export default class Home extends React.Component {
   render () {
@@ -21,6 +22,7 @@ export default class Home extends React.Component {
           <BodySectionStory />
           <BodySectionSkills />
           <BodySectionProjects />
+          <BodySectionContact />
         </div>
 
         <Footer />

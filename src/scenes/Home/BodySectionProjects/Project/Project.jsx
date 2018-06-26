@@ -2,35 +2,50 @@ import React from 'react'
 
 import './Project.scss'
 
-export default class ProjectEntry extends React.PureComponent {
+export default class Project extends React.PureComponent {
   constructor (props) {
     super()
 
-    this.state = {
-      title: props.title,
-      description: props.description,
-      fileName: props.fileName
+    this.playVideo = () => {
+      this.refs.video.play()
     }
-  }
 
-  componentWillReceiveProps (newProps) {
-    this.setState({
-      title: newProps.title,
-      description: newProps.description,
-      fileName: newProps.fileName
-    })
+    this.rewindVideo = () => {
+      this.refs.video.pause()
+      this.refs.video.currentTime = 0
+    }
+
+    this.title = props.title
+    this.description = props.description
+    this.name = props.name
   }
 
   render () {
     return (
-      <div className='project flex--center flex--column'>
-        <img className='project__background' src={require('../../../../assets/images/projects/project1.jpg')} />
+      <a
+        href='/asd'
+        className='project flex--center flex--column'
+        onMouseEnter={this.playVideo}
+        onMouseLeave={this.rewindVideo}
+      >
+        <video
+          className='project__video'
+          ref='video'
+          src={`../../../../assets/projects/${this.name}/video.mp4`}
+          type='video/mp4'
+          muted loop
+        />
+        <img
+          className='project__background'
+          src={require(`../../../../assets/projects/${this.name}/background.jpg`)}
+          ref='background'
+        />
 
-        <div className='project__text-wrapper flex--center flex--column'>
-          <p className='project__title'>{this.state.title}</p>
-          <p className='project__description'>{this.state.description}</p>
+        <div className='project__overlay-wrapper flex--center flex--column' ref='overlayWrapper'>
+          <p className='project__title'>{this.title}</p>
+          <p className='project__description'>{this.description}</p>
         </div>
-      </div>
+      </a>
     )
   }
 }

@@ -13,8 +13,8 @@ export default class BodySectionSkills extends React.Component {
 
         <div className='body__section--skills__wrapper flex--center flex--row'>
           {
-            skills.map((entry) => {
-              return <SkillEntry title={entry.title} desc={entry.description} />
+            skills.map((entry, index) => {
+              return <SkillEntry key={index} title={entry.title} desc={entry.description} />
             })
           }
         </div>
