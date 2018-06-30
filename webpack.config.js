@@ -25,6 +25,13 @@ const config = {
     port: 3000
   },
 
+  resolve: {
+    modules: [
+      path.resolve('./src'),
+      path.resolve('./node_modules')
+    ]
+  },
+
   module: {
     rules: [
       {
@@ -34,6 +41,7 @@ const config = {
       },
       {
         test: /\.html$/,
+        include: APP_DIR,
         loader: 'html-loader',
         options: { minimize: true }
       },
@@ -53,10 +61,12 @@ const config = {
       },
       {
         test: /\.(ttf|otf|eot|svg|woff(2)?)$/,
+        include: APP_DIR,
         loader: 'file-loader'
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
+        include: APP_DIR,
         loaders: [
           'file-loader?hash=sha512&digest=hex&name=[hash].[ext]'
         ]
@@ -69,7 +79,7 @@ const config = {
       template: APP_DIR + '/index.html',
       filename: './index.html'
     }),
-    extractStyles,
+    extractStyles
   ]
 }
 

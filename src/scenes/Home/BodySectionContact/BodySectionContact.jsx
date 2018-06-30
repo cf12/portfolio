@@ -1,5 +1,5 @@
 import React from 'react'
-import OnLoadAnime from '../../../components/OnLoadAnime.jsx'
+import OnLoadAnime from 'components/OnLoadAnime.jsx'
 import fontawesome from '@fortawesome/fontawesome'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -28,18 +28,20 @@ export default class BodySectionContact extends React.Component {
 
   render () {
     return (
-      <div className='body__section body__section--contact flex--center'>
+      <div name='contact' className='body__section body__section--contact flex--center'>
 
-        <OnLoadAnime
-          duration={600}
-          delay={100}
-          easing='easeOutElastic'
-          translateY={[-100, 0]}
-          opacity={[0, 1]} >
+        <div className='body__title-wrapper flex--center flex--column'>
+          <OnLoadAnime
+            duration={600}
+            delay={100}
+            easing='easeOutElastic'
+            translateY={[-100, 0]}
+            opacity={[0, 1]} >
 
-          <p className='body__title'>CONTACT ME</p>
-          <div className='body__separator--big' />
-        </OnLoadAnime>
+            <p className='body__title'>CONTACT ME</p>
+            <div className='body__separator--big' />
+          </OnLoadAnime>
+        </div>
 
         <div className='contact__wrapper flex--row flex--center'>
 

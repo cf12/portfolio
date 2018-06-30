@@ -1,5 +1,5 @@
 import React from 'react'
-import OnLoadAnime from '../../../components/OnLoadAnime.jsx'
+import OnLoadAnime from 'components/OnLoadAnime.jsx'
 
 import './BodySectionStory.scss'
 
@@ -7,17 +7,18 @@ export default class BodySectionStory extends React.Component {
   render () {
     return (
       <div className='body__section body__section--story flex--center'>
+        <div className='body__title-wrapper flex--center flex--column'>
+          <OnLoadAnime
+            duration={600}
+            delay={100}
+            easing='easeOutElastic'
+            translateY={[-100, 0]}
+            opacity={[0, 1]} >
 
-        <OnLoadAnime
-          duration={600}
-          delay={100}
-          easing='easeOutElastic'
-          translateY={[-100, 0]}
-          opacity={[0, 1]} >
-
-          <p className='body__title'>MY STORY</p>
-          <div className='body__separator--big' />
-        </OnLoadAnime>
+            <p className='body__title'>MY STORY</p>
+            <div className='body__separator--big' />
+          </OnLoadAnime>
+        </div>
 
         <div className='body__wrapper--story flex--row'>
           <div className='body__avatar'>

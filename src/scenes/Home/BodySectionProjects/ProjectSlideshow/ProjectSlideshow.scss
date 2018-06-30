@@ -1,0 +1,54 @@
+.slideshow__button {
+  width: 100px;
+  height: 100px;
+
+  transition:
+    transform 0.1s ease;
+
+  &:hover {
+    cursor: pointer;
+    user-select: none;
+  }
+}
+
+.slideshow__button--right:hover {
+  transform: translateX(10px);
+}
+
+.slideshow__button--left:hover {
+  transform: translateX(-10px);
+}
+
+.slideshow__container {
+  width: 1344px;
+  height: 756px;
+  margin: 0 30px;
+}
+
+.slideshow__counter {
+  margin: 20px;
+
+  & > div {
+    margin: 5px;
+
+    &:hover {
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+}
+
+.slideshow__counter__button--unselected {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #afafaf;
+}
+
+.slideshow__counter__button--selected {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #2496f7;
+  border: 2px solid #2496f7;
+}

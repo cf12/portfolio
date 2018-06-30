@@ -31,13 +31,13 @@ export default class Project extends React.PureComponent {
         <video
           className='project__video'
           ref='video'
-          src={`../../../../assets/projects/${this.name}/video.mp4`}
+          src={`assets/projects/${this.name}/video.webm`}
           type='video/mp4'
           muted loop
         />
         <img
           className='project__background'
-          src={require(`../../../../assets/projects/${this.name}/background.jpg`)}
+          src={require(`assets/projects/${this.name}/background.jpg`)}
           ref='background'
         />
 
