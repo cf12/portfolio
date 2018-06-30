@@ -24,7 +24,10 @@ export default class OnLoadAnime extends React.PureComponent {
       )
     } else {
       return (
-        <Waypoint onEnter={this.load.bind(this)} />
+        <Waypoint
+          key='waypoint'
+          onEnter={this.load.bind(this)}
+          topOffset='-50%' />
       )
     }
   }

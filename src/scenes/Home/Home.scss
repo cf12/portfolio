@@ -13,8 +13,11 @@ a {
   flex-direction: column;
   width: 100%;
   height: auto;
-  // margin: 40px 0;
   padding: 80px 0;
+
+  .body__title-wrapper {
+    height: 150px;
+  }
 
   .body__title {
     margin: 0;

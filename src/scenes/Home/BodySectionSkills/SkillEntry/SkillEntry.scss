@@ -1,18 +1,20 @@
 .skill-entry__wrapper {
-  margin: 15px;
-  padding: 20px;
   width: 350px;
   height: 200px;
+  margin: 15px;
+  padding: 20px;
+}
+
+.skill-entry__container {
+  width: inherit;
+  height: inherit;
+  padding: 20px;
 
   color: white;
 
-  // border: 1px solid #ededed;
-  border-radius: 2px;
-  // background-color: #5B86E5;
-  background: linear-gradient(-220deg, #418fe0, #7728e9);
+  background: linear-gradient(-220deg, #e07f41, #952ffa);
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
 }
-
 
 .skill-entry__title {
   text-align: center;
