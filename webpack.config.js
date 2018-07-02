@@ -46,6 +46,11 @@ const config = {
         options: { minimize: true }
       },
       {
+        test: /\.json$/,
+        loader: 'json-loader',
+        type: 'javascript/auto'
+      },
+      {
         test: /\.scss$/,
         use: extractStyles.extract({
           fallback: 'style-loader',
