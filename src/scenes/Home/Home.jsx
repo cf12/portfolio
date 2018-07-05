@@ -5,6 +5,7 @@ import './Home.scss'
 
 import NavBar from 'components/NavBar/NavBar.jsx'
 import Footer from 'components/Footer/Footer.jsx'
+import ToTopButton from 'components/ToTopButton/ToTopButton.jsx'
 
 import Showcase from './Showcase/Showcase.jsx'
 import BodySectionStory from './BodySectionStory/BodySectionStory.jsx'
@@ -17,6 +18,7 @@ export default class Home extends React.Component {
     return (
       <div>
         <NavBar />
+        <ToTopButton />
         <Showcase />
 
         <div className='body flex--center flex--column'>

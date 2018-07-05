@@ -1,13 +1,9 @@
 import React from 'react'
-import fontawesome from '@fortawesome/fontawesome'
 import OnLoadAnime from '../../../components/OnLoadAnime.jsx'
-import { faChevronCircleRight, faChevronCircleLeft } from '@fortawesome/free-solid-svg-icons'
 
 import './BodySectionProjects.scss'
 
 import ProjectSlideshow from './ProjectSlideshow/ProjectSlideshow.jsx'
-
-fontawesome.library.add(faChevronCircleRight, faChevronCircleLeft)
 
 export default class BodySectionProjects extends React.PureComponent {
   render () {

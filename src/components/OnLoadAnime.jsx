@@ -18,7 +18,7 @@ export default class OnLoadAnime extends React.PureComponent {
   render () {
     if (this.state.show) {
       return (
-        <Anime {...this.props}>
+        <Anime key='anime' {...this.props}>
           {this.props.children}
         </Anime>
       )

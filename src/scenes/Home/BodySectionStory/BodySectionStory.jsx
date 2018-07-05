@@ -42,23 +42,29 @@ export default class BodySectionStory extends React.Component {
               translateX={[200, 0]}
               opacity={[0, 1]} >
 
-              <p className='body__paragraph'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Praesent fermentum, lacus vitae porttitor accumsan, lacus
-                arcu egestas mi, id molestie sem lacus ac purus. Fusce dictum
-                nisi at mauris vestibulum, in placerat lacus ornare. Fusce
-                turpis risus, laoreet sit amet nibh vitae, cursus imperdiet
-                erat. Quisque consequat felis non arcu ultricies commodo.
-                Donec ullamcorper est nisl, eu tincidunt metus mattis quis.
-                Curabitur auctor semper urna quis pharetra. Nulla hendrerit
-                maximus lacus id mollis. Vivamus eget nisi eu lectus tempus
-                mollis. Phasellus sem ex, cursus quis massa id, pulvinar
-                convallis sem. Aliquam sodales ligula vitae interdum varius.
-                Orci varius natoque penatibus et magnis dis parturient montes,
-                nascetur ridiculus mus. In fringilla, nunc at maximus accumsan,
-                orci nisi condimentum velit, volutpat finibus velit urna viverra
-                lorem. Sed imperdiet ornare tellus, sed consequat nisi ultrices a.
-              </p>
+              <div className='body__paragraph'>
+                <p>
+                  Hey! My name is Brian Xiang. I am a high school sophomore, who's working to pursue a
+                  career in Web Development and Computer Science. I've created many various & unique
+                  projects over the past two years, most of which can be found under the Projects
+                  section, and I specialize in web design / NodeJS backend management.
+                </p>
+
+                <p>
+                  I wasn't born a developer. Growing up, I never really had a vision of becoming a developer.
+                  I started with codeacademy courses on Python, JavaScript, and Linux. Eventually, my fellow
+                  companion from Middle School, Aidan, showed me the reigns of NodeJS, web technologies, and
+                  we developed many applications and projects together for much of the duration of Middle School.
+                </p>
+
+                <p>
+                  Recently, I've picked up interest in cybersecurity, and have been participating in numerous
+                  cybersecurity CTFs; competitions designed to promote and expose people to the fascinating
+                  field of Cybersecurity. I believe that our world has a great need for more
+                  cyber security awareness, and CTFs a beautiful opportunity to learn about how you can
+                  secure your applications, and protect your users.
+                </p>
+              </div>
             </OnLoadAnime>
           </div>
         </div>
