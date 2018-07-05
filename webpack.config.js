@@ -35,7 +35,7 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.jsx?/,
+        test: /\.(js|jsx?)/,
         include: APP_DIR,
         loader: 'babel-loader'
       },

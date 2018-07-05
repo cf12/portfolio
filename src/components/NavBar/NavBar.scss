@@ -11,3 +11,21 @@
     margin: 0 20px;
   }
 }
+
+@keyframes animation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.navbar--active-bg::before {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: white;
+  animation: all 0.5s ease animation;
+}
