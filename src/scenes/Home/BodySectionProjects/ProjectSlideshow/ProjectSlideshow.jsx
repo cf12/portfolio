@@ -1,14 +1,10 @@
 import React from 'react'
 import OnLoadAnime from 'components/OnLoadAnime.jsx'
-import fontawesome from '@fortawesome/fontawesome'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-import { faChevronRight, faChevronLeft } from '@fortawesome/fontawesome-free-solid'
 
 import './ProjectSlideshow.scss'
 
 import Project from './Project/Project.jsx'
-
-fontawesome.library.add(faChevronRight, faChevronLeft)
 
 export default class ProjectSlideshow extends React.PureComponent {
   constructor () {

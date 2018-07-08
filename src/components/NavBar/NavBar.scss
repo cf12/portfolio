@@ -1,10 +1,19 @@
+@keyframes slidein {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 .navbar {
   position: fixed;
   z-index: 1;
   top: 0;
 
   width: 100%;
-  height: 80px;
+  height: 60px;
   padding: 10px;
 
   & > a {
@@ -12,20 +21,15 @@
   }
 }
 
-@keyframes animation {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
 .navbar--active-bg::before {
+  content: "";
   position: absolute;
   left: 0;
   height: 100%;
   width: 0;
-  background-color: white;
-  animation: all 0.5s ease animation;
+
+  background-color: #363636;
+  border-bottom: 2px solid white;
+  animation: slidein 0.6s ease;
+  animation-fill-mode: forwards;
 }

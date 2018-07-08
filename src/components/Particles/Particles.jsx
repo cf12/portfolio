@@ -5,7 +5,7 @@ import OnLoadAnime from 'components/OnLoadAnime.jsx'
 import './Particles.scss'
 
 const config = require('./config.json')
-console.log(config)
+
 export default class Particles extends React.Component {
   render () {
     return (
