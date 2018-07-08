@@ -3,7 +3,7 @@ import OnLoadAnime from 'components/OnLoadAnime.jsx'
 
 import './Showcase.scss'
 
-import Particles from 'components/Particles/Particles.js'
+import Particles from 'components/Particles/Particles.jsx'
 
 export default class Showcase extends React.Component {
   render () {
@@ -31,7 +31,7 @@ export default class Showcase extends React.Component {
             Just another average keyboard smasher on the internet
           </p>
         </OnLoadAnime>
-        
+
         <Particles />
       </div>
     )

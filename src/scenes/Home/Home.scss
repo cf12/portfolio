@@ -31,7 +31,7 @@ a {
 
   .body__paragraph {
     margin: 0;
-    color: #8d8d8d;
+    color: #676767;
     font-family: Montserrat, sans-serif;
     font-size: 18px;
     line-height: 30px;
@@ -43,32 +43,4 @@ a {
     height: 5px;
     background: linear-gradient(to right, #5a73eb, #9253eb);
   }
-}
-
-.flex--row {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-}
-
-.flex--column {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-}
-
-.flex--center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.flex--center--items {
-  display: flex;
-  align-items: center;
-}
-
-.flex--center--content {
-  display: flex;
-  justify-content: center;
 }

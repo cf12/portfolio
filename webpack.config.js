@@ -16,13 +16,15 @@ const config = {
   entry: APP_DIR + '/index.jsx',
   output: {
     path: BUILD_DIR,
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: '/'
   },
 
   devServer: {
     contentBase: APP_DIR,
     compress: true,
-    port: 3000
+    port: 3000,
+    historyApiFallback: true
   },
 
   resolve: {

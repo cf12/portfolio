@@ -21,6 +21,7 @@
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.8",
     "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "@fortawesome/fontawesome-svg-core": "^1.2.0",
     "@fortawesome/free-brands-svg-icons": "^5.1.0",
     "@fortawesome/free-regular-svg-icons": "^5.1.0",
     "@fortawesome/free-solid-svg-icons": "^5.1.0",
@@ -48,6 +49,8 @@
     "react-anime": "^2.1.0",
     "react-dom": "^16.3.1",
     "react-particles-js": "^2.2.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
     "react-scroll": "^1.7.9",
     "react-waypoint": "^8.0.2",
     "resolve-url-loader": "^2.2.0",
