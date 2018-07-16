@@ -30,7 +30,7 @@ export default class BodySectionStory extends React.Component {
               rotate={[-10, 0]}
               opacity={[0, 1]} >
 
-              <img src={require('../../../assets/images/avatar.png')} />
+              <img src={require('assets/images/avatar.png')} alt='Avatar' />
             </OnLoadAnime>
           </div>
 
@@ -44,17 +44,19 @@ export default class BodySectionStory extends React.Component {
 
               <div className='body__paragraph'>
                 <p>
-                  Hey! My name is Brian Xiang. I am a high school sophomore, who's working to pursue a
-                  career in Web Development and Computer Science. I've created many various & unique
-                  projects over the past two years, most of which can be found under the Projects
-                  section, and I specialize in web design / NodeJS backend management.
+                  Hello! My name is Brian Xiang. I'm an amateur web developer, and a hobbyist graphic designer /
+                  video producer. I've designed many various & unique projects over the past two years,
+                  many of which can be found under the Projects section, and I'm aiming towards a career
+                  in professional Web Development and Computer Science.
                 </p>
 
                 <p>
-                  I wasn't born a developer. Growing up, I never really had a vision of becoming a developer.
-                  I started with codeacademy courses on Python, JavaScript, and Linux. Eventually, my fellow
-                  companion from Middle School, Aidan, showed me the reigns of NodeJS, web technologies, and
-                  we developed many applications and projects together for much of the duration of Middle School.
+                  I've come a long way since when I created my first "Hello World". Over the years,
+                  I've enjoyed learning about the depths of Computer Science. It's amazing how
+                  there's a field for everything in Computer Science: Cybersecurity, Game Development,
+                  and Engineering are just a few examples. Over the course of my life, I yearn to
+                  touch on every single one of these fields. It's fascinating how broadly the
+                  Computer Science field spreads to everything.
                 </p>
 
                 <p>
@@ -62,7 +64,8 @@ export default class BodySectionStory extends React.Component {
                   cybersecurity CTFs; competitions designed to promote and expose people to the fascinating
                   field of Cybersecurity. I believe that our world has a great need for more
                   cyber security awareness, and CTFs a beautiful opportunity to learn about how you can
-                  secure your applications, and protect your users.
+                  secure your applications, and protect your users. When I'm creating applications on the web,
+                  I put a lot of effort into securing my applications.
                 </p>
               </div>
             </OnLoadAnime>

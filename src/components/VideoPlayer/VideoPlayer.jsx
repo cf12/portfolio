@@ -7,6 +7,24 @@ export default class VideoPlayer extends React.PureComponent {
     super()
 
     this.toggleVideo = this.toggleVideo.bind(this)
+    this.playVideo = this.playVideo.bind(this)
+    this.rewindVideo = this.rewindVideo.bind(this)
+
+    this.sizeStyle = {
+      width: props.width,
+      height: props.height
+    }
+
+    if (props.hover) {
+      this.containerProps = {
+        onMouseEnter: this.playVideo,
+        onMouseLeave: this.rewindVideo
+      }
+    } else {
+      this.containerProps = {
+        onClick: this.toggleVideo
+      }
+    }
 
     this.state = {
       playing: false
@@ -19,6 +37,10 @@ export default class VideoPlayer extends React.PureComponent {
     this.setState({ playing: !this.state.playing })
   }
 
+  playVideo () {
+    this.refs.video.play()
+  }
+
   rewindVideo () {
     this.refs.video.pause()
     this.refs.video.currentTime = 0
@@ -27,16 +49,21 @@ export default class VideoPlayer extends React.PureComponent {
   render () {
     return (
       <div
+        style={this.sizeStyle}
         className={'video-player__container ' + this.props.className}
-        onClick={this.toggleVideo} >
+        {...this.containerProps} >
 
-        <div className='video-player__control-overlay flex--center'>
-          <div className={'video-player__control-button ' + (this.state.playing ? 'paused' : '')} />
-        </div>
+        {
+          (this.props.overlay) ?
+            <div className='video-player__control-overlay flex--center'>
+              <div className={'video-player__control-button ' + (this.state.playing ? 'paused' : '')} />
+            </div> : undefined
+        }
+
         <video
           className='video-player__video'
           ref='video'
-          src={this.props.path}
+          src={this.props.src}
           type='video/webm'
           muted loop
         />

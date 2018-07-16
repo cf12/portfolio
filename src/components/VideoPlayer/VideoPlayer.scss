@@ -1,6 +1,7 @@
 .video-player__container {
   position: relative;
-  max-width: 1152px;
+  width: 1152px;
+  height: 648px;
   box-shadow: 1px 1px 20px 2px rgba(0, 0, 0, 0.3);
 
   &:hover > .video-player__control-overlay {
@@ -36,6 +37,7 @@
   }
 
   .video-player__video {
-    max-width: inherit;
+    width: inherit;
+    height: inherit;
   }
 }

@@ -1,7 +1,6 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from 'react-router-dom'
-
-import VideoPlayer from 'components/VideoPlayer/VideoPlayer.jsx'
 
 import './Project.scss'
 
@@ -19,7 +18,6 @@ export default class Project extends React.PureComponent {
     }
 
     this.title = props.title
-    this.description = props.description
     this.name = props.name
   }
 
@@ -34,7 +32,7 @@ export default class Project extends React.PureComponent {
         <video
           className='project__video'
           ref='video'
-          src={`assets/projects/${this.name}/video.webm`}
+          src={require(`assets/projects/${this.name}/video.webm`)}
           type='video/webm'
           muted loop
         />
@@ -43,11 +41,16 @@ export default class Project extends React.PureComponent {
           className='project__background'
           src={require(`assets/projects/${this.name}/background.jpg`)}
           ref='background'
+          alt=''
         />
 
         <div className='project__overlay-wrapper flex--center flex--column' ref='overlayWrapper'>
           <p className='project__title'>{this.title}</p>
-          <p className='project__description'>{this.description}</p>
+          <FontAwesomeIcon
+            className='project__icon'
+            size='3x'
+            color='white'
+            icon={['far', 'arrow-alt-circle-down']} />
         </div>
       </Link>
     )

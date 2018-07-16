@@ -14,7 +14,10 @@ export default class NotFound extends React.Component {
       <div className='not-found__container flex--center flex--column'>
         <ToHomepageButton />
 
-        <p className='not-found__icon'>🤔</p>
+        <img
+          className='not-found__icon'
+          src={require(`assets/icons/thinking.svg`)}
+          alt='' />
 
         <h1 className='not-found__title'>404 - Page Not Found</h1>
         <p className='not-found__message'>

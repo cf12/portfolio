@@ -1,19 +1,22 @@
 import React from 'react'
+import axios from 'axios'
+import querystring from 'querystring'
 import OnLoadAnime from 'components/OnLoadAnime.jsx'
-import fontawesome from '@fortawesome/fontawesome'
-import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import { TextField } from '@material-ui/core'
+import ReCAPTCHA from 'react-google-recaptcha'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { TextField, Button } from '@material-ui/core'
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
-import green from '@material-ui/core/colors/green'
+import { green, blue } from '@material-ui/core/colors'
 
 import './BodySectionContact.scss'
 
-fontawesome.library.add(fab)
+import config from 'assets/config.json'
 
+const _ = require('lodash')
 const textFieldTheme = createMuiTheme({
   palette: {
-    primary: green
+    primary: green,
+    secondary: blue
   }
 })
 
@@ -21,15 +24,52 @@ export default class BodySectionContact extends React.Component {
   constructor () {
     super()
 
-    this.handleChange = () => {
+    this.onVerify = this.onVerify.bind(this)
+    this.isFulfilled = this.isFulfilled.bind(this)
+    this.submit = this.submit.bind(this)
 
+    this.state = {
+      fields: {
+        name: null,
+        email: null,
+        description: null
+      },
+      verified: false,
+      fulfilled: false
     }
+  }
+
+  submit () {
+    axios.get(config.contactEndpoint + '?' + querystring.stringify(this.state.fields))
+    .then((res) => {
+      console.log(res.header)
+      console.log('Success!')
+    })
+  }
+
+  isFulfilled () {
+    const fieldsVerified = _.values(this.state.fields).every(entry => { return entry })
+    this.setState({ fulfilled: (fieldsVerified && this.state.verified) })
+  }
+
+  onFieldUpdate (field, event) {
+    this.setState(_.merge(this.state, {
+      fields: {
+        [field]: event.target.value
+      }
+    }))
+
+    this.isFulfilled()
+  }
+
+  onVerify (token) {
+    this.setState({ verified: !this.state.verified })
+    this.isFulfilled()
   }
 
   render () {
     return (
-      <div name='contact' className='body__section body__section--contact flex--center'>
-
+      <div className='body__section body__section--contact flex--center'>
         <div className='body__title-wrapper flex--center flex--column'>
           <OnLoadAnime
             duration={600}
@@ -50,7 +90,7 @@ export default class BodySectionContact extends React.Component {
               You can contact me at the following social media, or by using the contact form on the right:
             </p>
             <div className='social-wrapper flex--center'>
-              <a href='https://github.com/cf12' target='_blank'>
+              <a href='https://github.com/cf12'>
                 <FontAwesomeIcon
                   icon={['fab', 'github']}
                   size='8x'
@@ -58,7 +98,7 @@ export default class BodySectionContact extends React.Component {
                 />
               </a>
 
-              <a href='https://codepen.io/CF12' target='_blank'>
+              <a href='https://codepen.io/CF12'>
                 <FontAwesomeIcon
                   icon={['fab', 'codepen']}
                   size='8x'
@@ -66,7 +106,7 @@ export default class BodySectionContact extends React.Component {
                 />
               </a>
 
-              <a href='https://twitter.com/OfficialCF12' target='_blank'>
+              <a href='https://twitter.com/OfficialCF12'>
                 <FontAwesomeIcon
                   icon={['fab', 'twitter']}
                   size='8x'
@@ -78,33 +118,54 @@ export default class BodySectionContact extends React.Component {
 
           <div className='side--right flex--center'>
             <form className='contact-form flex--column flex--center'>
-              <p className='text--form-header'>
-                Contact Form
-              </p>
+              <p className='text--form-header'>Contact Form</p>
               <MuiThemeProvider theme={textFieldTheme}>
                 <TextField
                   id='name'
-                  label='Full Name'
-                  margin='dense'
                   className='field'
-                  required
-                />
+                  onChange={(event) => { this.onFieldUpdate('name', event) }}
+                  error={this.state.fields.name === ''}
+                  margin='dense'
+                  label='Full Name'
+                  required />
+
                 <TextField
                   id='email'
-                  label='Email'
-                  margin='dense'
                   className='field'
-                  required
-                />
+                  onChange={(event) => { this.onFieldUpdate('email', event) }}
+                  error={this.state.fields.email === ''}
+                  margin='dense'
+                  label='Email'
+                  required />
+
                 <TextField
                   id='description'
-                  label='Description'
-                  margin='dense'
                   className='field'
+                  onChange={(event) => { this.onFieldUpdate('description', event) }}
+                  error={this.state.fields.description === ''}
+                  margin='dense'
+                  label='Description'
                   multiline
                   required
-                  rows={4}
-                />
+                  rows={6} />
+
+                <ReCAPTCHA
+                  className='submit-recaptcha'
+                  sitekey={config.reCaptchaToken}
+                  onChange={this.onVerify} />
+
+                <Button
+                  color='secondary'
+                  size='large'
+                  variant='contained'
+                  onClick={this.submit}
+                  disabled={!this.state.fulfilled} >
+
+                  Submit
+                  <FontAwesomeIcon
+                    className='submit-button__icon'
+                    icon={['fas', 'paper-plane']} />
+                </Button>
               </MuiThemeProvider>
             </form>
           </div>

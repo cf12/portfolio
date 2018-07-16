@@ -1,34 +1,30 @@
 import React from 'react'
-import OnLoadAnime from '../../../../components/OnLoadAnime.jsx'
+
+import OnLoadAnime from 'components/OnLoadAnime.jsx'
 
 import './SkillEntry.scss'
 
-export default class SkillEntry extends React.Component {
-  constructor (props) {
-    super()
+const SkillEntry = (props) => {
+  return (
+    <div className='skill-entry__container flex--column'>
+      <OnLoadAnime
+        duration={800}
+        delay={(props.index + 1) * 80}
+        easing='easeOutElastic'
+        scale={[0.1, 1]}
+        opacity={[0, 1]} >
 
-    this.iconName = props.iconName
-    this.index = props.index
-    this.title = props.title
-    this.desc = props.desc
-  }
+        <div className='flex--center flex--column'>
+          <img
+            className='skill-entry__icon'
+            src={require(`assets/icons/devicons/${props.iconName}.svg`)}
+            alt='' />
 
-  render () {
-    return (
-      <div className='skill-entry__wrapper'>
-        <OnLoadAnime
-          duration={800}
-          delay={(this.index + 1) * 80}
-          easing='easeOutElastic'
-          scale={[0.1, 1]}
-          opacity={[0, 1]} >
-
-          <div className='skill-entry__container'>
-            <p className='skill-entry__title'>{this.title}</p>
-            <p className='skill-entry__desc'>{this.desc}</p>
-          </div>
-        </OnLoadAnime>
-      </div>
-    )
-  }
+          <h3 className='skill-entry__title'>{props.title}</h3>
+        </div>
+      </OnLoadAnime>
+    </div>
+  )
 }
+
+export default SkillEntry

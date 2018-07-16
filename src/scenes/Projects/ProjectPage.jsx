@@ -1,5 +1,5 @@
 import React from 'react'
-import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import VideoPlayer from 'components/VideoPlayer/VideoPlayer.jsx'
 import ToHomepageButton from 'components/ToHomepageButton/ToHomepageButton.jsx'
@@ -36,7 +36,12 @@ export default class Project extends React.Component {
 
         <div className='project-page__hero flex--center flex--column'>
           <h1 className='project-page__hero__title'>{this.content.title}</h1>
-          <VideoPlayer className='project-page__video' path={`../assets/projects/${this.name}/video.webm`} />
+          <VideoPlayer
+            className='project-page__video'
+            width='1152px'
+            height='648px'
+            src={require(`assets/projects/${this.name}/video.webm`)}
+            overlay />
         </div>
 
         <div className='project-page__body flex--center flex--row'>
@@ -64,9 +69,7 @@ export default class Project extends React.Component {
           </div>
 
           <div className='project-page__paragraphs flex--column'>
-            {
-              this.content.paragraphs.map((entry, key) => <p key={key}>{entry}</p>)
-            }
+            { this.content.content }
           </div>
         </div>
 
