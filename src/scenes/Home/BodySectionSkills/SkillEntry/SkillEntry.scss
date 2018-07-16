@@ -1,32 +1,41 @@
-.skill-entry__wrapper {
-  width: 350px;
-  height: 200px;
-  margin: 15px;
-  padding: 20px;
-}
-
 .skill-entry__container {
-  width: inherit;
-  height: inherit;
-  padding: 20px;
+  width: 200px;
+  height: 100px;
+  margin: 50px 40px;
 
   color: white;
 
-  background: linear-gradient(-220deg, #e07f41, #952ffa);
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
-}
+  .skill-entry__icon {
+    max-width: 80px;
+    max-height: 80px;
+    color: white;
+  }
 
-.skill-entry__title {
-  text-align: center;
-  font-family: Montserrat, sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  letter-spacing: 1px;
-}
+  .skill-entry__title {
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+  }
 
-.skill-entry__desc {
-  text-align: center;
-  font-family: Montserrat, sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.3px;
+  .skill-entry__divider {
+    width: 50%;
+    margin: 15px 0;
+
+    border: solid 1px white;
+    border-radius: 30px;
+
+    background-color: white;
+  }
+
+  .skill-entry__desc {
+    height: 100%;
+    margin: 0;
+
+    text-align: left;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+  }
 }

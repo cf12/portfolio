@@ -1,5 +1,9 @@
 .body__section--skills {
-  background: radial-gradient(ellipse closest-side at center, #3e4fc1, #49506b);
+  background: linear-gradient(-220deg, #e76e21, #952ffa);
+
+  .body__section--skills__wrapper {
+    width: 1200px;
+  }
 }
 
 .body__section--skills__title {

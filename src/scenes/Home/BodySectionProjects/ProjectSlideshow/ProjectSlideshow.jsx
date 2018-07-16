@@ -1,10 +1,12 @@
 import React from 'react'
 import OnLoadAnime from 'components/OnLoadAnime.jsx'
-import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+import Project from './Project/Project.jsx'
 
 import './ProjectSlideshow.scss'
 
-import Project from './Project/Project.jsx'
+import projects from 'assets/projects/projects.js'
 
 export default class ProjectSlideshow extends React.PureComponent {
   constructor () {
@@ -30,10 +32,17 @@ export default class ProjectSlideshow extends React.PureComponent {
       })
     }
 
-    this.projectsLength = Object.keys(projects).length
+    this.projects = []
 
-    this.projects = projects.map((value, index) =>
-      <Project key={index} title={value.title} description={value.description} name={value.name} />)
+    Object.keys(projects).forEach(key => {
+      const entry = projects[key]
+
+      this.projects.push(
+        <Project key={key} title={entry.title} description={entry.description} name={key} />
+      )
+    })
+
+    this.projectsLength = Object.keys(projects).length
 
     this.state = {
       index: 0,
@@ -67,7 +76,7 @@ export default class ProjectSlideshow extends React.PureComponent {
 
   render () {
     return (
-      <div>
+      <div className='flex--center flex--column'>
         <div className='flex--center flex--row'>
           <FontAwesomeIcon
             icon='chevron-circle-left'
@@ -117,21 +126,3 @@ export default class ProjectSlideshow extends React.PureComponent {
     )
   }
 }
-
-const projects = [
-  {
-    title: 'Hello World!',
-    description: 'Lorem Ipsum',
-    name: 'project1'
-  },
-  {
-    title: 'Hello Other World!',
-    description: 'Lorem',
-    name: 'project2'
-  },
-  {
-    title: 'Hello Another World!',
-    description: 'Ipsum',
-    name: 'project3'
-  }
-]

@@ -2,13 +2,17 @@ import React from 'react'
 import Anime from 'react-anime'
 import Waypoint from 'react-waypoint'
 
-export default class OnLoadAnime extends React.PureComponent {
+export default class OnLoadAnime extends React.Component {
   constructor () {
     super()
 
     this.state = {
       show: false
     }
+  }
+
+  shouldComponentUpdate () {
+    return !this.state.show
   }
 
   load () {

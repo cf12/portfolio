@@ -1,8 +1,17 @@
+@keyframes hover {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
 .project {
   width: 1344px;
   height: 756px;
 
-  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0.5);
 
   &:hover > .project__overlay-wrapper {
     opacity: 1;
@@ -11,63 +20,48 @@
   &:hover > .project__background {
     opacity: 0;
   }
-}
 
-.project__video {
-  position: absolute;
-  z-index: -2;
+  .project__video {
+    position: absolute;
+    z-index: -2;
+  }
 
-  width: inherit;
-  height: inherit;
-}
+  .project__background {
+    position: absolute;
+    z-index: -2;
 
-.project__background {
-  position: absolute;
-  z-index: -2;
+    width: inherit;
+    height: inherit;
 
-  width: inherit;
-  height: inherit;
+    opacity: 1;
 
-  opacity: 1;
-
-  transition:
+    transition:
     opacity 0.2s ease;
-}
+  }
 
-.project__overlay-wrapper {
-  position: absolute;
-  z-index: -1;
+  .project__overlay-wrapper {
+    position: absolute;
+    z-index: -1;
 
-  width: inherit;
-  height: inherit;
+    width: inherit;
+    height: inherit;
 
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
 
-  transition:
-    opacity 0.2s ease;
-}
+    transition: opacity 0.2s ease;
 
-.project__image__border {
-  padding: 6px;
-  background: linear-gradient(to right, #5B86E5, #36D1DC);
-  border-radius: 360px;
-}
+    .project__title {
+      margin: 26px 0;
+      color: white;
+      font-family: Montserrat, sans-serif;
+      font-size: 72px;
+      font-weight: 500;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    }
 
-.project__image {
-  width: 84px;
-  border-radius: 360px;
-}
-
-.project__title {
-  color: white;
-  font-family: Montserrat, sans-serif;
-  font-size: 64px;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-}
-
-.project__description {
-  color: white;
-  font-family: Montserrat, sans-serif;
-  font-size: 12px;
+    .project__icon {
+      animation: hover 1.5s infinite;
+    }
+  }
 }

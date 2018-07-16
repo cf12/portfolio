@@ -16,7 +16,10 @@ export default class Showcase extends React.Component {
           rotate={[-560, 0]}
           opacity={[0, 1]} >
 
-          <img className='showcase__pic' src={require('../../../assets/images/profile-pic.png')} />
+          <img
+            className='showcase__pic'
+            src={require('assets/images/profile-pic.png')}
+            alt='Profile' />
 
         </OnLoadAnime>
 

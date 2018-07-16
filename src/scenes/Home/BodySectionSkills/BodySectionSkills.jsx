@@ -1,9 +1,10 @@
 import React from 'react'
+
 import OnLoadAnime from 'components/OnLoadAnime.jsx'
 
-import './BodySectionSkills.scss'
-
 import SkillEntry from './SkillEntry/SkillEntry.jsx'
+
+import './BodySectionSkills.scss'
 
 export default class BodySectionSkills extends React.Component {
   render () {
@@ -25,7 +26,7 @@ export default class BodySectionSkills extends React.Component {
         <div className='body__section--skills__wrapper flex--center flex--row'>
           {
             skills.map((entry, index) => {
-              return <SkillEntry key={index} index={index} title={entry.title} desc={entry.description} />
+              return <SkillEntry key={index} index={index} {...entry} />
             })
           }
         </div>
@@ -36,27 +37,47 @@ export default class BodySectionSkills extends React.Component {
 
 const skills = [
   {
-    title: 'Web Stack (JavaScript, HTML, CSS)',
-    description: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum '
+    title: 'HTML',
+    iconName: 'html5'
+  },
+  {
+    title: 'CSS',
+    iconName: 'css3'
+  },
+  {
+    title: 'JavaScript',
+    iconName: 'javascript'
+  },
+  {
+    title: 'NodeJS',
+    iconName: 'nodejs'
+  },
+  {
+    title: 'Sass',
+    iconName: 'sass'
+  },
+  {
+    title: 'ReactJS',
+    iconName: 'react'
   },
   {
     title: 'Python',
-    description: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum '
+    iconName: 'python',
   },
   {
     title: 'Java',
-    description: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum '
+    iconName: 'java',
   },
   {
     title: 'C / C++',
-    description: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum '
+    iconName: 'c',
   },
   {
-    title: 'C / C++',
-    description: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum '
+    title: 'Adobe Photoshop',
+    iconName: 'photoshop',
   },
   {
-    title: 'C / C++',
-    description: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum '
+    title: 'Adobe Premiere Pro',
+    iconName: 'premiere',
   }
 ]

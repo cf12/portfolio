@@ -28,13 +28,13 @@
     .text--description {
       color: white;
       text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
-      font-family: "Montserrat", sans-serif;
+      font-family: Montserrat, sans-serif;
       font-size: 28px;
     }
 
     .text--form-header {
-      font-family: 'Roboto', sans-serif;
-      font-size: 18px;
+      font-family: Montserrat, sans-serif;
+      font-size: 20px;
     }
 
     .contact-form {
@@ -54,6 +54,14 @@
 
     .field {
       width: 500px;
+    }
+
+    .submit-recaptcha {
+      margin: 18px 0;
+    }
+
+    .submit-button__icon {
+      margin-left: 8px;
     }
   }
 }

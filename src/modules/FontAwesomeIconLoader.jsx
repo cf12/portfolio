@@ -3,14 +3,18 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import {
   faClock,
   faCalendarPlus,
-  faCalendarCheck
+  faCalendarCheck,
+  faArrowAltCircleDown
 } from '@fortawesome/free-regular-svg-icons'
 
 import {
   faChevronCircleLeft,
   faChevronCircleRight,
-  faArrowAltCircleLeft
+  faArrowAltCircleLeft,
+  faPaperPlane
 } from '@fortawesome/free-solid-svg-icons'
+
+import { fab } from '@fortawesome/free-brands-svg-icons'
 
 library.add(
   faClock,
@@ -18,5 +22,8 @@ library.add(
   faCalendarCheck,
   faChevronCircleLeft,
   faChevronCircleRight,
-  faArrowAltCircleLeft
+  faArrowAltCircleLeft,
+  faArrowAltCircleDown,
+  faPaperPlane,
+  fab
 )
