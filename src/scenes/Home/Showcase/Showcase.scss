@@ -9,18 +9,22 @@
   justify-content: center;
   align-items: center;
 
-  .showcase__pic {
-    width: 360px;
-    border-radius: 9999px;
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, .8);
-  }
+  .content {
+    z-index: 1;
 
-  .showcase__subtitle {
-    font-family: Montserrat, sans-serif;
-    font-size: 48px;
-    padding-top: 5vh;
-    color: white;
-    text-align: center;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, .8);
+    .showcase__pic {
+      width: 360px;
+      border-radius: 9999px;
+      box-shadow: 5px 5px 30px rgba(0, 0, 0, .8);
+    }
+
+    .showcase__subtitle {
+      font-family: Montserrat, sans-serif;
+      font-size: 40px;
+      margin-top: 80px;
+      color: white;
+      text-align: center;
+      text-shadow: 1px 1px 4px black;
+    }
   }
 }

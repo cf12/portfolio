@@ -1,6 +1,6 @@
 .button__frame {
-  width: 180px;
   height: 60px;
+  margin: 0 38px;
 
   color: white;
 
@@ -9,9 +9,11 @@
 
 .button__text {
   position: relative;
-  font-family: "Montserrat", sans-serif;
-  font-size: 28px;
-  text-shadow: 1px 1px 5px black;
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  text-shadow: 1px 1px 3px black;
+
+  transition: all 0.2s ease;
 
   &:before {
     content: "";
@@ -33,42 +35,6 @@
 
   &:hover {
     cursor: pointer;
+    text-shadow: 1px 1px 3px #865800;
   }
 }
-
-// .button__frame {
-//   position: relative;
-//   font-family: "Montserrat", sans-serif;
-//   font-size: 20px;
-//
-//   width: 180px;
-//   height: 60px;
-//
-//   border: 2px solid white;
-//   color: white;
-//
-//   &:before {
-//     content: '';
-//     z-index: -1;
-//     position: absolute;
-//     transition: all 0.2s ease;
-//
-//     height: 100%;
-//   	width: 0;
-//   	top: 0;
-//   	left: 0;
-//     background: linear-gradient(to right, #6137ff, #bb37ff);
-//   }
-//
-//   &:hover:before {
-//   	width: 100%;
-//   }
-//
-//   &:hover {
-//     cursor: pointer;
-//   }
-// }
-//
-// .button__text {
-//   text-shadow: 1px 1px 5px black;
-// }

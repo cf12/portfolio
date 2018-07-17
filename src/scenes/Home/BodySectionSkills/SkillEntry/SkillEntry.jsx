@@ -9,7 +9,7 @@ const SkillEntry = (props) => {
     <div className='skill-entry__container flex--column'>
       <OnLoadAnime
         duration={800}
-        delay={(props.index + 1) * 80}
+        delay={(props.index + 1) * 60}
         easing='easeOutElastic'
         scale={[0.1, 1]}
         opacity={[0, 1]} >
