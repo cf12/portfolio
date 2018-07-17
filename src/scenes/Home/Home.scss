@@ -3,6 +3,11 @@ a {
   text-decoration: none; /* no underline */
 }
 
+::selection {
+  color: white;
+  background-color: #8c49cf;
+}
+
 .body {
   width: 100%;
 }
@@ -26,7 +31,7 @@ a {
     font-family: Montserrat, sans-serif;
     font-weight: 500;
     font-size: 72px;
-    letter-spacing: 4px;
+    letter-spacing: 6px;
   }
 
   .body__paragraph {

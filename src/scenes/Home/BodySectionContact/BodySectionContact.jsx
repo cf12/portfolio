@@ -4,7 +4,7 @@ import querystring from 'querystring'
 import OnLoadAnime from 'components/OnLoadAnime.jsx'
 import ReCAPTCHA from 'react-google-recaptcha'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { TextField, Button } from '@material-ui/core'
+import { TextField, Button, CircularProgress } from '@material-ui/core'
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 import { green, blue } from '@material-ui/core/colors'
 
@@ -28,6 +28,12 @@ export default class BodySectionContact extends React.Component {
     this.isFulfilled = this.isFulfilled.bind(this)
     this.submit = this.submit.bind(this)
 
+    // STATUS CODE REFERENCE
+    // 0: Not submitted
+    // 1: Submitting
+    // 2: Successfully submitted
+    // 3: Error occurred
+
     this.state = {
       fields: {
         name: null,
@@ -35,15 +41,33 @@ export default class BodySectionContact extends React.Component {
         description: null
       },
       verified: false,
-      fulfilled: false
+      fulfilled: false,
+      status: 0
     }
   }
 
   submit () {
+    this.setState({
+      status: 1
+    })
+
     axios.get(config.contactEndpoint + '?' + querystring.stringify(this.state.fields))
     .then((res) => {
-      console.log(res.header)
-      console.log('Success!')
+      if (res.status !== 200) {
+        this.setState({
+          status: 3
+        })
+        return
+      }
+
+      this.setState({
+        status: 2
+      })
+    })
+    .catch ((err) => {
+      this.setState({
+        status: 3
+      })
     })
   }
 
@@ -68,6 +92,65 @@ export default class BodySectionContact extends React.Component {
   }
 
   render () {
+    let submitBuffer
+
+    switch (this.state.status) {
+      case 0:
+        submitBuffer = (
+          <Button
+            color='secondary'
+            size='large'
+            variant='contained'
+            onClick={this.submit}
+            disabled={(!this.state.fulfilled || (this.state.status === 1))} >
+
+            Submit
+            <FontAwesomeIcon
+              className='submit-button__icon'
+              icon={['fas', 'paper-plane']} />
+          </Button>
+        )
+        break
+
+      case 1:
+        submitBuffer = (
+          <div className='flex--center'>
+            <Button
+              color='secondary'
+              size='large'
+              variant='contained'
+              onClick={this.submit}
+              disabled >
+
+              Submit
+              <FontAwesomeIcon
+                className='submit-button__icon'
+                icon={['fas', 'paper-plane']} />
+            </Button>
+
+            <CircularProgress
+              style={{ position: 'absolute' }}
+              color='secondary'
+              size={24}
+              thickness={4} />
+          </div>
+        )
+        break
+      case 2:
+        submitBuffer = [
+          <FontAwesomeIcon color='green' size='2x' icon={['fas', 'check-circle']} />,
+          <p className='text--green'>All set! I'll try to get back to you ASAP!</p>
+        ]
+        break
+      case 3:
+        submitBuffer = [
+          <FontAwesomeIcon color='red' size='2x' icon={['fas', 'times-circle']} />,
+          <p className='text--red'>Looks like an error occurred. Please refresh to try again.</p>
+        ]
+        break
+      default:
+    }
+
     return (
       <div className='body__section body__section--contact flex--center'>
         <div className='body__title-wrapper flex--center flex--column'>
@@ -86,35 +169,52 @@ export default class BodySectionContact extends React.Component {
         <div className='contact__wrapper flex--row flex--center'>
 
           <div className='side--left flex--column flex--center'>
-            <p className='text--description'>
-              You can contact me at the following social media, or by using the contact form on the right:
-            </p>
-            <div className='social-wrapper flex--center'>
-              <a href='https://github.com/cf12'>
-                <FontAwesomeIcon
-                  icon={['fab', 'github']}
-                  size='8x'
-                  color='white'
-                />
-              </a>
+            <OnLoadAnime
+              duration={800}
+              delay={200}
+              easing='easeOutElastic'
+              translateX={[200, 0]}
+              opacity={[0, 1]} >
 
-              <a href='https://codepen.io/CF12'>
-                <FontAwesomeIcon
-                  icon={['fab', 'codepen']}
-                  size='8x'
-                  color='white'
-                />
-              </a>
+              <p className='text--description'>
+                You can contact me on my social media platforms, or by using the contact form on the right:
+              </p>
+            </OnLoadAnime>
 
-              <a href='https://twitter.com/OfficialCF12'>
-                <FontAwesomeIcon
-                  icon={['fab', 'twitter']}
-                  size='8x'
-                  color='white'
-                />
-              </a>
-            </div>
-          </div>
+            <OnLoadAnime
+              duration={800}
+              delay={300}
+              easing='easeOutElastic'
+              translateY={[100, 0]}
+              opacity={[0, 1]} >
+
+              <div className='social-wrapper flex--center'>
+                <a href='https://github.com/cf12'>
+                  <FontAwesomeIcon
+                    icon={['fab', 'github']}
+                    size='8x'
+                    color='white'
+                  />
+                </a>
+
+                <a href='https://codepen.io/CF12'>
+                  <FontAwesomeIcon
+                    icon={['fab', 'codepen']}
+                    size='8x'
+                    color='white'
+                  />
+                </a>
+
+                <a href='https://twitter.com/OfficialCF12'>
+                  <FontAwesomeIcon
+                    icon={['fab', 'twitter']}
+                    size='8x'
+                    color='white'
+                  />
+                </a>
+              </div>
+          </OnLoadAnime>
+        </div>
 
           <div className='side--right flex--center'>
             <form className='contact-form flex--column flex--center'>
@@ -154,18 +254,7 @@ export default class BodySectionContact extends React.Component {
                   sitekey={config.reCaptchaToken}
                   onChange={this.onVerify} />
 
-                <Button
-                  color='secondary'
-                  size='large'
-                  variant='contained'
-                  onClick={this.submit}
-                  disabled={!this.state.fulfilled} >
-
-                  Submit
-                  <FontAwesomeIcon
-                    className='submit-button__icon'
-                    icon={['fas', 'paper-plane']} />
-                </Button>
+                { submitBuffer }
               </MuiThemeProvider>
             </form>
           </div>

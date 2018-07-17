@@ -11,7 +11,9 @@ import {
   faChevronCircleLeft,
   faChevronCircleRight,
   faArrowAltCircleLeft,
-  faPaperPlane
+  faPaperPlane,
+  faCheckCircle,
+  faTimesCircle
 } from '@fortawesome/free-solid-svg-icons'
 
 import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -25,5 +27,7 @@ library.add(
   faArrowAltCircleLeft,
   faArrowAltCircleDown,
   faPaperPlane,
+  faCheckCircle,
+  faTimesCircle,
   fab
 )

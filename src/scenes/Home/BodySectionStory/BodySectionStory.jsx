@@ -44,28 +44,28 @@ export default class BodySectionStory extends React.Component {
 
               <div className='body__paragraph'>
                 <p>
-                  Hello! My name is Brian Xiang. I'm an amateur web developer, and a hobbyist graphic designer /
-                  video producer. I've designed many various & unique projects over the past two years,
-                  many of which can be found under the Projects section, and I'm aiming towards a career
+                  Hello! My name is Brian Xiang. I'm an amateur web developer, hobbyist graphic designer and
+                  video producer. I've created many various, unique projects over the past two years,
+                  many of which can be found in the Projects section, and I'm aiming towards a career
                   in professional Web Development and Computer Science.
                 </p>
 
                 <p>
-                  I've come a long way since when I created my first "Hello World". Over the years,
-                  I've enjoyed learning about the depths of Computer Science. It's amazing how
-                  there's a field for everything in Computer Science: Cybersecurity, Game Development,
-                  and Engineering are just a few examples. Over the course of my life, I yearn to
-                  touch on every single one of these fields. It's fascinating how broadly the
-                  Computer Science field spreads to everything.
+                  I've come a long way since my first "Hello World" application. Over these past few years,
+                  I've been learning and traversing the depths of Computer Science. It's amazing to me how
+                  there's a field for everything in Computer Science; Cybersecurity, Game Development,
+                  Networking, AI, Machine Learning, Digital Design, and Engineering are just a few.
+                  Over the tiemspan of my career, I hope to create something in every single one of these
+                  fields. It's amazing how huge the field of Computer Science has become.
                 </p>
 
                 <p>
                   Recently, I've picked up interest in cybersecurity, and have been participating in numerous
-                  cybersecurity CTFs; competitions designed to promote and expose people to the fascinating
-                  field of Cybersecurity. I believe that our world has a great need for more
-                  cyber security awareness, and CTFs a beautiful opportunity to learn about how you can
-                  secure your applications, and protect your users. When I'm creating applications on the web,
-                  I put a lot of effort into securing my applications.
+                  cybersecurity CTFs; competitions designed to promote and expose people to the importance
+                  of Cybersecurity. I believe that our world has a great need for more
+                  cyber security awareness, and CTFs a wonderful opportunity to learn about how you can
+                  secure your applications, and protect your users. Whenever I'm creating applications nowadays,
+                  I tend to focus a lot more on the security impacts thanks to these CTFs.
                 </p>
               </div>
             </OnLoadAnime>
