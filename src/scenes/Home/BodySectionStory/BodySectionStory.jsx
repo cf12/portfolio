@@ -21,7 +21,7 @@ export default class BodySectionStory extends React.Component {
         </div>
 
         <div className='body__wrapper--story flex--row'>
-          <div className='body__avatar'>
+          <div className='body__avatar flex--center'>
             <OnLoadAnime
               duration={800}
               delay={300}

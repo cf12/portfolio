@@ -33,6 +33,12 @@ const data = {
           but I managed to pick up a metric ton of knowledge on how to animate components,
           scroll listeners, routing w/ React Router, and much more.
         </p>
+
+        <p>
+          All of the source code can be viewed on GitHub:
+        </p>
+
+        <a href='https://github.com/CF12/portfolio'>Link to Repo</a>
       </div>
     )
   },
