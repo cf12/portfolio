@@ -24,8 +24,8 @@ const data = {
         </p>
 
         <p>
-          I'm currently hositng the site on Google FireBase,and I setup a Google FireBase Function to receive form
-          imputs from my "Contact Me" section. By doing so, I minimized my hosting costs to virtually nothing.
+          I'm currently hositng the site on Google FireBase, and I setup a Google FireBase Function to receive form
+          input from my "Contact Me" section. By doing so, I've minimized my hosting costs to virtually nothing.
         </p>
 
         <p>
