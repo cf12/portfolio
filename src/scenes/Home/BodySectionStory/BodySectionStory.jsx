@@ -55,7 +55,7 @@ export default class BodySectionStory extends React.Component {
                   I've been learning and traversing the depths of Computer Science. It's amazing to me how
                   there's a field for everything in Computer Science; Cybersecurity, Game Development,
                   Networking, AI, Machine Learning, Digital Design, and Engineering are just a few.
-                  Over the tiemspan of my career, I hope to create something in every single one of these
+                  Over the span of my career, I hope to create something in every single one of these
                   fields. It's amazing how huge the field of Computer Science has become.
                 </p>
 

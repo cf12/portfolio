@@ -25,6 +25,7 @@ export default class BodySectionContact extends React.Component {
     super()
 
     this.onVerify = this.onVerify.bind(this)
+    this.onExpire = this.onExpire.bind(this)
     this.isFulfilled = this.isFulfilled.bind(this)
     this.submit = this.submit.bind(this)
 
@@ -87,7 +88,26 @@ export default class BodySectionContact extends React.Component {
   }
 
   onVerify (token) {
-    this.setState({ verified: !this.state.verified })
+    const params = '?' + querystring.stringify({
+      response: token
+    })
+
+    axios.get(config.reCaptchaEndpoint + params)
+    .then((res) => {
+      this.setState({ verified: true })
+      this.isFulfilled()
+    })
+    .catch((err) => {
+      this.setState({
+        status: 3
+      })
+    })
+  }
+
+  onExpire () {
+    this.setState({
+      verified: false
+    })
     this.isFulfilled()
   }
 
@@ -252,7 +272,8 @@ export default class BodySectionContact extends React.Component {
                 <ReCAPTCHA
                   className='submit-recaptcha'
                   sitekey={config.reCaptchaToken}
-                  onChange={this.onVerify} />
+                  onChange={this.onVerify}
+                  onExpired={this.onExpire} />
 
                 { submitBuffer }
               </MuiThemeProvider>
