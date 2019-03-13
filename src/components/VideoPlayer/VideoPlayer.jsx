@@ -55,7 +55,7 @@ export default class VideoPlayer extends React.PureComponent {
 
         {
           (this.props.overlay) ?
-            <div className='video-player__control-overlay flex--center'>
+            <div className='video-player__control-overlay flex-center'>
               <div className={'video-player__control-button ' + (this.state.playing ? 'paused' : '')} />
             </div> : undefined
         }

@@ -5,7 +5,7 @@ import './Footer.scss'
 export default class Footer extends React.Component {
   render () {
     return (
-      <div className='footer flex--center'>
+      <div className='footer flex-center'>
         <p className='footer__text'>Copyright © 2018</p>
         <img
           className='footer__logo'

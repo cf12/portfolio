@@ -1,6 +1,4 @@
 import React from 'react'
-import OnLoadAnime from 'components/OnLoadAnime.jsx'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Project from './Project/Project.jsx'
 
@@ -76,38 +74,30 @@ export default class ProjectSlideshow extends React.PureComponent {
 
   render () {
     return (
-      <div className='flex--center flex--column'>
-        <div className='flex--center flex--row'>
-          <FontAwesomeIcon
+      <div className='flex-center flex-col'>
+        <div className='flex-center flex-row'>
+          {/* <FontAwesomeIcon
             icon='chevron-circle-left'
             size='4x'
             className='slideshow__button slideshow__button--left'
             onClick={this.prevProject}
-          />
+          /> */}
 
           <div className='slideshow__container'>
-            <OnLoadAnime
-              key={this.state.index}
-              duration={500}
-              easing='easeOutQuint'
-              translateX={this.state.direction.x}
-              translateY={this.state.direction.y}
-              opacity={[0, 1]} >
-              <div>
-                { this.projects[this.state.index] }
-              </div>
-            </OnLoadAnime>
+            <div>
+              { this.projects[this.state.index] }
+            </div>
           </div>
 
-          <FontAwesomeIcon
+          {/* <FontAwesomeIcon
             icon='chevron-circle-right'
             size='4x'
             className='slideshow__button slideshow__button--right'
             onClick={this.nextProject}
-          />
+          /> */}
         </div>
 
-        <div className='slideshow__counter flex--center flex--row'>
+        <div className='slideshow__counter flex-center flex-row'>
           {
             this.projects.map((entry, index) => {
               return (this.state.index === index)

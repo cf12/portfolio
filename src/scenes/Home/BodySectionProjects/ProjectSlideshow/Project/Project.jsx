@@ -1,5 +1,4 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from 'react-router-dom'
 
 import './Project.scss'
@@ -25,7 +24,7 @@ export default class Project extends React.PureComponent {
     return (
       <Link
         to={'/projects/' + this.name}
-        className='project flex--center flex--column'
+        className='project flex-center flex-col'
         onMouseEnter={this.playVideo}
         onMouseLeave={this.rewindVideo}
       >
@@ -44,13 +43,13 @@ export default class Project extends React.PureComponent {
           alt=''
         />
 
-        <div className='project__overlay-wrapper flex--center flex--column' ref='overlayWrapper'>
+        <div className='project__overlay-wrapper flex-center flex-col' ref='overlayWrapper'>
           <p className='project__title'>{this.title}</p>
-          <FontAwesomeIcon
+          {/* <FontAwesomeIcon
             className='project__icon'
             size='3x'
             color='white'
-            icon={['far', 'arrow-alt-circle-down']} />
+            icon={['far', 'arrow-alt-circle-down']} /> */}
         </div>
       </Link>
     )

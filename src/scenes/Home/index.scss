@@ -1,0 +1,15 @@
+@import '../../styles/colors.scss';
+
+a {
+  color: blue;
+  text-decoration: none; /* no underline */
+}
+
+::selection {
+  color: white;
+  background-color: $primary;
+}
+
+.body {
+  width: 100%;
+}

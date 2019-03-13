@@ -1,15 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+import { FaBeer } from 'react-icons/fa'
 
 import './ToHomepageButton.scss'
 
 export default class ToHomepageButton extends React.Component {
   render () {
     return (
-      <Link className='to-homepage-button__container flex--center' to='/'>
-        <FontAwesomeIcon
-          icon='arrow-alt-circle-left'
+      <Link className='to-homepage-button__container flex-center' to='/'>
+        <FaBeer
           color='white'
           size='2x' />
 
