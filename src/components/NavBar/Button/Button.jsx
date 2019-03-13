@@ -17,7 +17,7 @@ export default class Button extends React.Component {
         to={this.linkTo}
         smooth
         duration={300}
-        className='button__frame flex--center' >
+        className='button__frame flex-center' >
 
         <p className='button__text'>{this.name}</p>
       </Link>

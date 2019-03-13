@@ -1,27 +1,30 @@
-.flex--row {
+.flex-row {
   display: flex;
-  width: 100%;
   flex-direction: row;
 }
 
-.flex--column {
+.flex-col {
   display: flex;
-  width: 100%;
   flex-direction: column;
 }
 
-.flex--center {
+.flex-center {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.flex--center--items {
+.flex-ccol {
   display: flex;
+  flex-flow: column;
+  justify-content: center;
   align-items: center;
 }
 
-.flex--center--content {
+.flex-crow {
   display: flex;
+  flex-flow: row;
   justify-content: center;
+  align-items: center;
 }
+

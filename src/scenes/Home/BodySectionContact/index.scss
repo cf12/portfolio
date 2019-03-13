@@ -1,0 +1,29 @@
+@import '../../../styles/colors.scss';
+
+.sec-contact {
+  width: 100%;
+  background-color: $primary;
+
+  &__title {
+    color: $primary;
+    font-family: Montserrat, sans-serif;
+    font-size: 72px;
+    font-weight: bold;
+
+    background-color: white;
+    padding: 0 10px;
+  }
+
+  &__text {
+    color: white;
+    font-family: Rubik, sans-serif;
+    width: 800px;
+
+    font-size: 32px;
+
+    & > h2 {
+      margin: 0;
+      font-weight: 500;
+    }
+  }
+}

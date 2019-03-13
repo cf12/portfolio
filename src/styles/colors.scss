@@ -1,0 +1,12 @@
+$primary: #4B65F0;
+$secondary: #28D999;
+
+$dark1: #232323;
+$dark2: #8D8D8D;
+
+:export {
+  dark1: $dark1;
+  dark2: $dark2;
+  primary: $primary;
+  secondary: $secondary;
+}

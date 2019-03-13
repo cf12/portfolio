@@ -1,18 +1,15 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
+import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { render } from 'react-dom'
-
-import 'modules/FontAwesomeIconLoader.jsx'
 
 import 'normalize.css'
 import './styles/fonts.scss'
 import './styles/flexbox.scss'
 
-import Home from './scenes/Home/Home.jsx'
+import Home from './scenes/Home'
 import NotFound from './scenes/NotFound/NotFound.jsx'
 import ProjectPage from './scenes/Projects/ProjectPage.jsx'
-
-import registerServiceWorker from './registerServiceWorker'
 
 import projectsData from 'assets/projects/projects.js'
 let projects = []
@@ -43,5 +40,5 @@ class App extends React.Component {
   }
 }
 
-render(<App />, document.getElementById('root'))
-registerServiceWorker()
+ReactDOM.render(<App />, document.getElementById('root'))
+serviceWorker.register()

@@ -1,16 +1,15 @@
 .button__frame {
-  height: 60px;
-  margin: 0 38px;
-
+  margin: 0 20px;
   color: white;
-
   user-select: none;
 }
 
 .button__text {
   position: relative;
   font-family: Montserrat, sans-serif;
-  font-size: 24px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.06em;
   text-shadow: 1px 1px 3px black;
 
   transition: all 0.2s ease;
