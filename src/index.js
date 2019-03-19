@@ -4,12 +4,13 @@ import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import 'normalize.css'
+import './index.scss'
 import './styles/fonts.scss'
 import './styles/flexbox.scss'
 
-import Home from './scenes/Home'
-import NotFound from './scenes/NotFound/NotFound.jsx'
-import ProjectPage from './scenes/Projects/ProjectPage.jsx'
+import PageHome from './pages/PageHome'
+import Page404 from './pages/Page404'
+import ProjectPage from './pages/Projects/ProjectPage.jsx'
 
 import projectsData from 'assets/projects/projects.js'
 let projects = []
@@ -29,11 +30,11 @@ class App extends React.Component {
     return (
       <Router>
         <Switch>
-          <Route exact path='/' component={Home} />
+          <Route exact path='/' component={PageHome} />
 
           { projects }
 
-          <Route component={NotFound} />
+          <Route component={Page404} />
         </Switch>
       </Router>
     )
