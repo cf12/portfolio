@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ToHomepageButton from 'components/ToHomepageButton/ToHomepageButton.jsx'
+import BackButton from 'components/BackButton'
 
 import './index.scss'
 
@@ -9,7 +9,7 @@ export default class NotFound extends React.Component {
   render () {
     return (
       <div className='not-found__container flex-center flex-col'>
-        <ToHomepageButton />
+        <BackButton />
 
         <img
           className='not-found__icon'

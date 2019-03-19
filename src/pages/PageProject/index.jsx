@@ -1,9 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-
-import { FaArrowLeft } from 'react-icons/fa'
 
 import HighlightedText from 'components/HighlightedText'
+import BackButton from 'components/BackButton'
 import VideoPlayer from 'components/VideoPlayer/VideoPlayer.jsx'
 import ToTopButton from 'components/ToTopButton/ToTopButton.jsx'
 import Footer from 'components/Footer'
@@ -34,14 +32,7 @@ export default class Project extends React.Component {
   render () {
     return (
       <div className='proj-page flex-center flex-col'>
-        <Link className='proj-page__back-bt' to='/'>
-          <FaArrowLeft
-            className='proj-page__back-bt__icon'
-            size='24px'
-          />
-
-          <h3>BACK</h3>
-        </Link>
+        <BackButton />
 
         <div className='proj-page__hero flex-center flex-col'>
           <HighlightedText

@@ -1,0 +1,25 @@
+@import 'styles/colors.scss';
+
+.back-bt {
+  position: absolute;
+  left: 40px;
+  top: 30px;
+
+  color: white;
+
+  transition: all 200ms ease;
+
+  & > * {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  & > h3 {
+    margin: 0;
+    margin-left: 10px;
+  }
+
+  &:hover {
+    transform: translateX(-10px);
+  }
+}
