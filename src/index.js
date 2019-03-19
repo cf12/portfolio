@@ -10,7 +10,7 @@ import './styles/flexbox.scss'
 
 import PageHome from './pages/PageHome'
 import Page404 from './pages/Page404'
-import ProjectPage from './pages/Projects/ProjectPage.jsx'
+import PageProject from './pages/PageProject'
 
 import projectsData from 'assets/projects/projects.js'
 let projects = []
@@ -20,7 +20,7 @@ for (const key of Object.keys(projectsData)) {
     <Route
       key={key}
       path={`/projects/${key}`}
-      component={() => <ProjectPage name={key} content={projectsData[key]} />}
+      component={() => <PageProject name={key} content={projectsData[key]} />}
     />
   )
 }

@@ -1,0 +1,63 @@
+@import 'styles/colors.scss';
+
+.proj-page {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+
+  &__back-bt {
+    position: absolute;
+    left: 40px;
+    top: 30px;
+
+    color: white;
+
+    transition: all 200ms ease;
+
+    & > * {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    & > h3 {
+      margin: 0;
+      margin-left: 10px;
+    }
+
+    &:hover {
+      transform: translateX(-10px);
+    }
+  }
+
+  &__hero {
+    width: 100%;
+    height: 800px;
+    background: $primary;
+
+    &__title {
+      position: relative;
+      top: 40px;
+      font-weight: bold;
+      font-size: 64px;
+      color: $primary;
+    }
+  }
+
+  &__video {
+    position: relative;
+    bottom: -60px;
+  }
+
+  &__body {
+    margin: 120px 0 60px 0;
+
+    &__paragraphs {
+      width: 750px;
+
+      color: $dark2;
+      font-family: 'Rubik', sans-serif;
+      font-size: 18px;
+      line-height: 30px;
+      text-align: justify;
+    }
+  }
+}
