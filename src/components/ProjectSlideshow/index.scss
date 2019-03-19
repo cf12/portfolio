@@ -1,0 +1,60 @@
+@import 'styles/colors.scss';
+
+.slideshow {
+  &__container {
+    width: 960px;
+    height: 540px;
+    margin: 0 30px;
+    z-index: 2;
+  }
+
+  &__counter {
+    margin: 20px;
+
+    & > div {
+      margin: 5px;
+
+      &:hover {
+        cursor: pointer;
+        user-select: none;
+      }
+    }
+
+    &__button {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+
+      &--unselected {
+        border: 2px solid white;
+      }
+
+      &--selected {
+        background-color: white;
+        border: 2px solid white;
+      }
+    }
+  }
+
+  &__button {
+    width: 100px;
+    height: 100px;
+
+    transition: transform 0.1s ease;
+
+    color: white;
+
+    &:hover {
+      cursor: pointer;
+      user-select: none;
+    }
+
+    &--right:hover {
+      transform: translateX(10px);
+    }
+
+    &--left:hover {
+      transform: translateX(-10px);
+    }
+  }
+}

@@ -1,7 +1,7 @@
 import React from 'react'
 import { animateScroll } from 'react-scroll'
 
-import { FaBeer } from 'react-icons/fa'
+import { FaChevronUp } from 'react-icons/fa'
 
 import './ToTopButton.scss'
 
@@ -12,9 +12,10 @@ export default class ToTopButton extends React.Component {
         className='button__container flex-center'
         onClick={() => { animateScroll.scrollToTop({ duration: '500' }) }}>
 
-        <FaBeer
+        <FaChevronUp
           color='white'
-          size='2x' />
+          size='32px'
+        />
       </div>
     )
   }
