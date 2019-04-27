@@ -13,6 +13,10 @@
 
   font-family: Rubik, sans-serif;
 
+  & > h1 {
+    color: white;
+  }
+
   &__icon {
     margin-bottom: 40px;
   }
@@ -36,5 +40,27 @@
 
     margin: 0;
     margin-top: 30px;
+  }
+
+  &__buttons {
+    position: absolute;
+    right: 40px;
+
+
+
+    & > a > * {
+      color: $dark2;
+      width: 36px;
+      height: 36px;
+      margin-bottom: 10px;
+
+      transition: all 200ms ease;
+
+      &:hover {
+        cursor: pointer;
+        color: white;
+        transform: translateX(-10px)
+      }
+    }
   }
 }

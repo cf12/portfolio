@@ -2,8 +2,8 @@
 
 .sec-contact {
   box-sizing: border-box;
-  padding: 150px 0;
   width: 100%;
+  padding-bottom: 200px;
   background-color: $primary;
 
   &__title {
@@ -22,7 +22,7 @@
     margin-right: auto;
 
     &__text {
-      width: 600px;
+      width: 500px;
       margin-right: 100px;
 
       color: white;
@@ -33,6 +33,12 @@
         margin: 0;
         font-weight: 500;
         font-size: 42px;
+
+        & > mark {
+          background-color: $secondary;
+          color: white;
+          padding: 0 6px;
+        }
       }
     }
   }

@@ -3,7 +3,7 @@ import { Element } from 'react-scroll'
 
 import NavBar from 'components/NavBar'
 import Footer from 'components/Footer'
-import ToTopButton from 'components/ToTopButton/ToTopButton.jsx'
+import ToTopButton from 'components/ToTopButton'
 
 import Hero from './Hero'
 import BodySectionAbout from './BodySectionAbout'
@@ -21,7 +21,7 @@ class Home extends React.Component {
         <Hero />
 
         <div className='body flex-center flex-col'>
-          <Element name='story' />
+          <Element name='about' />
           <BodySectionAbout />
           <Element name='projects' />
           <BodySectionProjects />

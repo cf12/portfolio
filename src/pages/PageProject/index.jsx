@@ -1,9 +1,9 @@
 import React from 'react'
 
-import HighlightedText from 'components/HighlightedText'
+import HighlightedTitle from 'components/HighlightedTitle'
 import BackButton from 'components/BackButton'
 import VideoPlayer from 'components/VideoPlayer/VideoPlayer.jsx'
-import ToTopButton from 'components/ToTopButton/ToTopButton.jsx'
+import ToTopButton from 'components/ToTopButton'
 import Footer from 'components/Footer'
 
 import './index.scss'
@@ -35,12 +35,12 @@ export default class Project extends React.Component {
         <BackButton />
 
         <div className='proj-page__hero flex-center flex-col'>
-          <HighlightedText
+          <HighlightedTitle
             className='proj-page__hero__title'
             bgColor='white'
           >
             {this.content.title.toUpperCase()}
-          </HighlightedText>
+          </HighlightedTitle>
 
           <VideoPlayer
             className='proj-page__video'

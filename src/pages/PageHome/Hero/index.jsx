@@ -1,4 +1,9 @@
 import React from 'react'
+import {
+  IoLogoCodepen,
+  IoLogoGithub,
+  IoLogoTwitter,
+} from 'react-icons/io'
 
 import './index.scss'
 
@@ -19,6 +24,20 @@ class Hero extends React.Component {
         <h3 className='hero__subtitle'>
           I make stuff on the internet.
         </h3>
+
+        <div className='hero__buttons flex-col'>
+          <a href='https://github.com/cf12/'>
+            <IoLogoGithub />
+          </a>
+
+          <a href='https://codepen.io/CF12/'>
+            <IoLogoCodepen />
+          </a>
+
+          <a href='https://twitter.com/CF12__/'>
+            <IoLogoTwitter />
+          </a>
+        </div>
       </div>
     )
   }
