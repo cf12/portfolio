@@ -10,7 +10,9 @@ import BodySectionAbout from './BodySectionAbout'
 import BodySectionProjects from './BodySectionProjects'
 import BodySectionContact from './BodySectionContact'
 
-export default class Home extends React.Component {
+import withLoadingScreen from 'components/withLoadingScreen'
+
+class Home extends React.Component {
   render () {
     return (
       <div>
@@ -32,3 +34,5 @@ export default class Home extends React.Component {
     )
   }
 }
+
+export default withLoadingScreen(Home)

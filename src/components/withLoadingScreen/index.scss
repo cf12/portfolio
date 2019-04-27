@@ -1,0 +1,44 @@
+@import 'styles/colors.scss';
+
+@keyframes pulse {
+  to {
+    box-shadow: 0 0 5px 5px white;
+    width: 128px;
+    height: 128px;
+    opacity: 0;
+  }
+}
+
+.lds-ripple {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: $primary;
+
+  overflow: hidden;
+
+  transition: all 1s ease;
+
+  &--active {
+    transform: translate(-150%) skewX(40deg);
+  }
+}
+
+.lds-ripple div {
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 3px 1px white;
+
+  animation: pulse 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation-iteration-count: infinite;
+}
