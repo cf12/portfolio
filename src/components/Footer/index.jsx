@@ -20,9 +20,17 @@ export default class Footer extends React.Component {
         <div className='footer__spacer'>
           <p className='footer__text '>Made with &lt;3 and caffeine</p>
           <div className='footer__icons'>
+            <a href='https://github.com/cf12/'>
               <IoLogoGithub />
+            </a>
+
+            <a href='https://codepen.io/CF12/'>
               <IoLogoCodepen />
+            </a>
+
+            <a href='https://twitter.com/CF12__/'>
               <IoLogoTwitter />
+            </a>
           </div>
         </div>
 

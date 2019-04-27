@@ -29,11 +29,19 @@
   position: absolute;
   left: 20px;
   bottom: 20px;
+  font-weight: 500;
 
   color: $dark2;
   font-size: 14px;
+
+  a {
+    color: $secondary;
+
+    transition: all 200ms ease;
+
+    &:hover {
+      color: rgb(0, 255, 149);
+    }
+  }
 }
 
-a {
-  color: $secondary;
-}

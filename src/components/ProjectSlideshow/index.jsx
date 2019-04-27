@@ -57,19 +57,19 @@ export default class ProjectSlideshow extends React.PureComponent {
     return (
       <div className='slideshow flex-ccol'>
         <div className='flex-center'>
-          <FaChevronLeft
+          {/* <FaChevronLeft
             className='slideshow__button slideshow__button--left'
             onClick={this.prevProject}
-          />
+          /> */}
 
-          <div className='slideshow__container'>
+          {/* <div className='slideshow__container'>
             { this.projects[this.state.index] }
-          </div>
+          </div> */}
 
-          <FaChevronRight
+          {/* <FaChevronRight
             className='slideshow__button slideshow__button--right'
             onClick={this.nextProject}
-          />
+          /> */}
         </div>
 
         <div className='slideshow__counter flex-center flex-row'>

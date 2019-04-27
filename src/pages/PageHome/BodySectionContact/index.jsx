@@ -1,36 +1,25 @@
 import React from 'react'
 
 import './index.scss'
-import { secondary } from '../../../styles/colors.scss'
-
-import HighlightedText from '../../../components/HighlightedText'
 
 import { IoMdMail } from 'react-icons/io'
+
+import HighlightedTitle from '../../../components/HighlightedTitle'
 
 class BodySectionContact extends React.PureComponent {
   render () {
     return (
     <div className='sec-contact flex-ccol'>
-      <HighlightedText className='sec-contact__title'>
+      <HighlightedTitle className='sec-contact__title'>
         CONTACT ME
-      </HighlightedText>
+      </HighlightedTitle>
 
         <div>
           <div className='sec-contact__left flex-center'>
             <div className='sec-contact__left__text'>
               <h2>
-                Got any questions or business inquiries?
-                Wanna chat about life?
-                Shoot me an email at
+                Shoot me an email at <mark>brian@cf12.org</mark>
               </h2>
-              <HighlightedText
-                bgColor={secondary}
-                textColor='white'
-                textSize='42px'
-                textWeight='500'
-              >
-                brian@cf12.org
-              </HighlightedText>
             </div>
           </div>
 

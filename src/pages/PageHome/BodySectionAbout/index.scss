@@ -38,11 +38,12 @@
         margin: 0;
         font-size: 72px;
         font-weight: bold;
+        width: fit-content;
 
         &--highlight {
           color: white;
           background-color: $primary;
-          border-left: 10px solid $primary;
+          padding: 8px 10px;
         }
       }
 
@@ -56,25 +57,41 @@
         & > p {
           margin: 3px;
         }
+
+        & > * > mark {
+          font-weight: 500;
+          background-color: transparent;
+          color: $secondary;
+        }
       }
     }
 
     &__img {
-      width: 800px;
-      height: 400px;
+      min-width: 600px;
+      min-height: 400px;
 
-      background-image: url('../../../assets/images/profile-pic.png');
+      background-image: url('../../../assets/images/picture.png');
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
+
+      box-shadow: -10px -10px 40px 0 rgba(0, 0, 0, 0.2);
+
+
 
       &::before {
         content: '';
         position: absolute;
         z-index: -1;
 
-        width: 800px;
+        margin-left: 12px;
+        margin-top: 12px;
+
+        width: 600px;
         height: 400px;
         background-color: $primary;
+
+        box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
+
       }
     }
 

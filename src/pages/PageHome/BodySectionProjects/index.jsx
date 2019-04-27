@@ -2,7 +2,7 @@ import React from 'react'
 
 import './index.scss'
 
-import HighlightedText from 'components/HighlightedText'
+import HighlightedTitle from 'components/HighlightedTitle'
 import ProjectSlideshow from 'components/ProjectSlideshow'
 
 import { ReactComponent as Bubbles } from 'assets/background/bubbles.svg'
@@ -17,9 +17,9 @@ export default class BodySectionProjects extends React.PureComponent {
           <Bubbles className='sec-projects__bg--right' />
         </div>
 
-        <HighlightedText className='sec-projects__title'>
+        <HighlightedTitle className='sec-projects__title'>
           MY WORK
-        </HighlightedText>
+        </HighlightedTitle>
 
         <ProjectSlideshow />
       </div>
