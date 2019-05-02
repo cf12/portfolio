@@ -11,7 +11,7 @@ import {
 export default class Footer extends React.Component {
   render () {
     return (
-      <div className='footer flex-crow'>
+      <footer className='footer flex-crow'>
         <img
           className='footer__logo'
           src={require('../../assets/images/profile-pic.png')}
@@ -35,7 +35,7 @@ export default class Footer extends React.Component {
         </div>
 
         <p className='footer__text'>Copyright © 2019 - All Rights Reserved </p>
-      </div>
+      </footer>
     )
   }
 }

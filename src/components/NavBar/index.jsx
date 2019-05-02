@@ -28,13 +28,13 @@ class Button extends React.Component {
 class NavBar extends React.Component {
   render () {
     return (
-      <div className='navbar flex-row'>
+      <header className='navbar flex-row'>
         <img className='navbar__icon' src={require('assets/images/profile-pic.png')} alt='Profile' />
 
         <Button name='ABOUT' linkTo='about' />
         <Button name='PROJECTS' linkTo='projects' />
         <Button name='CONTACT' linkTo='contact' />
-      </div>
+      </header>
     )
   }
 }
