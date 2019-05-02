@@ -2,11 +2,6 @@ import React from 'react'
 
 import './index.scss'
 
-import {
-  FaChevronLeft,
-  FaChevronRight
-} from 'react-icons/fa'
-
 import Project from './Project/'
 
 import projects from 'assets/projects/projects.js'

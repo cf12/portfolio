@@ -4,102 +4,63 @@
   position: relative;
   box-sizing: border-box;
 
-  width: 100%;
-  padding-top: 100px;
+  width: 1000px;
+  padding: 100px 0;
 
-  background-image: url('../../../assets/background/waves.svg');
-  background-repeat: repeat-x;
-  background-position: bottom;
-  background-size: 100%;
+  font-family: 'Montserrat', sans-serif;
 
-  &__shapes-bg {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 90%;
-    background-image: url('../../../assets/background/shapes.svg');
-    background-position: top;
-    background-size: 400px;
+  &__left {
+    margin-right: 100px;
+
+    &__sec-label {
+      margin: 0;
+
+      color: $dark1;
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+    }
+
+    &__title {
+      margin: 0;
+      margin-bottom: 40px;
+
+      color: white;
+      font-size: 64px;
+      font-weight: bold;
+    }
+
+    &__body {
+      color: $dark2;
+      font-family: 'Rubik', sans-serif;
+      font-size: 18px;
+      line-height: 160%;
+    }
   }
 
-  &__wrapper {
-    position: relative;
-    max-width: 1200px;
-    margin-bottom: 300px;
+  &__img {
+    min-width: 400px;
+    min-height: 266px;
 
-    &__text {
-      justify-content: center;
-      width: 900px;
-      margin-right: 100px;
+    background-image: url('../../../assets/images/picture.png');
+    background-repeat: no-repeat;
+    background-size: contain;
 
-      font-family: Rubik, sans-serif;
+    box-shadow: -10px -10px 40px 0 rgba(0, 0, 0, 0.2);
 
-      &__title {
-        margin: 0;
-        font-size: 72px;
-        font-weight: bold;
-        width: fit-content;
-
-        &--highlight {
-          color: white;
-          background-color: $primary;
-          padding: 8px 10px;
-        }
-      }
-
-      &__subtitle {
-        color: $dark2;
-        font-size: 20px;
-        font-weight: normal;
-
-        margin-top: 20px;
-
-        & > p {
-          margin: 3px;
-        }
-
-        & > * > mark {
-          font-weight: 500;
-          background-color: transparent;
-          color: $secondary;
-        }
-      }
-    }
-
-    &__img {
-      min-width: 600px;
-      min-height: 400px;
-
-      background-image: url('../../../assets/images/picture.png');
-      background-repeat: no-repeat;
-      background-size: contain;
-
-      box-shadow: -10px -10px 40px 0 rgba(0, 0, 0, 0.2);
-
-
-
-      &::before {
-        content: '';
-        position: absolute;
-        z-index: -1;
-
-        margin-left: 12px;
-        margin-top: 12px;
-
-        width: 600px;
-        height: 400px;
-        background-color: $primary;
-
-        box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
-
-      }
-    }
-
-    &__shapes {
-      z-index: -2;
+    &::before {
+      content: '';
       position: absolute;
-      width: 600px;
-      height: 600px;
+      z-index: -1;
+
+      margin-left: 12px;
+      margin-top: 12px;
+
+      width: 400px;
+      height: 266px;
+      background-color: $primary;
+
+      box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
     }
   }
 }

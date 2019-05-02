@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './VideoPlayer.scss'
+import './index.scss'
 
 export default class VideoPlayer extends React.PureComponent {
   constructor (props) {

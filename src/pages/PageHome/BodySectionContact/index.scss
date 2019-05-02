@@ -1,44 +1,61 @@
 @import '../../../styles/colors.scss';
 
 .sec-contact {
-  box-sizing: border-box;
-  width: 100%;
+  width: 1000px;
   padding-bottom: 200px;
-  background-color: $primary;
 
-  &__title {
-    color: $primary;
-    font-family: Montserrat, sans-serif;
-    font-size: 72px;
-    font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
 
-    margin-bottom: 60px !important;
+  &__sec-label {
+    margin: 0;
 
-    background-color: white;
+    color: $dark1;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
   }
 
-  &__left {
-    float: left;
-    margin-right: auto;
+  &__title {
+    margin: 0;
+    margin-bottom: 40px;
 
-    &__text {
-      width: 500px;
-      margin-right: 100px;
+    color: white;
+    font-size: 64px;
+    font-weight: bold;
+  }
 
-      color: white;
-      font-family: Rubik, sans-serif;
-      font-size: 32px;
+  &__text {
+    width: 500px;
 
-      & > h2 {
+    color: $dark2;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    line-height: 160%;
+
+    & > p {
+      margin: 0;
+      margin-bottom: 20px;
+    }
+
+    &__entry {
+      display: flex;
+      flex-direction: row;
+
+      margin: 12px 0;
+
+      & > svg {
+        width: 24px;
+        height: 24px;
+      }
+
+      & > h3 {
         margin: 0;
-        font-weight: 500;
-        font-size: 42px;
+        margin-left: 14px;
 
-        & > mark {
-          background-color: $secondary;
-          color: white;
-          padding: 0 6px;
-        }
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
       }
     }
   }

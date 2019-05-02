@@ -2,26 +2,17 @@ import React from 'react'
 
 import './index.scss'
 
-import HighlightedTitle from 'components/HighlightedTitle'
-import ProjectSlideshow from 'components/ProjectSlideshow'
-
-import { ReactComponent as Bubbles } from 'assets/background/bubbles.svg'
-
+import Project from 'components/Project'
 
 export default class BodySectionProjects extends React.PureComponent {
   render () {
     return (
-      <div className='sec-projects flex-ccol'>
-        <div className='sec-projects__bg'>
-          <Bubbles className='sec-projects__bg--left' />
-          <Bubbles className='sec-projects__bg--right' />
-        </div>
+      <div className='sec-projects'>
 
-        <HighlightedTitle className='sec-projects__title'>
-          MY WORK
-        </HighlightedTitle>
+        <h5 className='sec-projects__sec-label'>#02</h5>
+        <h1 className='sec-projects__title'>MY WORK</h1>
 
-        <ProjectSlideshow />
+        <Project />
       </div>
     )
   }

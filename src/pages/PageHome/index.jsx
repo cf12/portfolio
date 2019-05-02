@@ -12,25 +12,27 @@ import BodySectionContact from './BodySectionContact'
 
 import withLoadingScreen from 'components/withLoadingScreen'
 
+import './index.scss'
 class Home extends React.Component {
   render () {
     return (
-      <div>
+      <>
         <NavBar />
         <ToTopButton />
-        <Hero />
 
-        <div className='body flex-center flex-col'>
+        <main className='body flex-center flex-col'>
+          <Hero />
+
           <Element name='about' />
           <BodySectionAbout />
           <Element name='projects' />
           <BodySectionProjects />
           <Element name='contact' />
           <BodySectionContact />
-        </div>
+        </main>
 
         <Footer />
-      </div>
+      </>
     )
   }
 }

@@ -5,7 +5,7 @@
   height: 100vh;
   color: white;
   font-family: 'Montserrat', sans-serif;
-  background: $dark1;
+  background: $bg;
 }
 
 .not-found__icon {
@@ -16,13 +16,14 @@
   margin: 12px;
   font-size: 64px;
   font-weight: 600;
-  text-shadow: 1px 1px 8px black;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
 }
 
 .not-found__message {
   color: $dark2;
   margin: 12px;
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .not-found__bl {
