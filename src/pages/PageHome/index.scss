@@ -3,3 +3,22 @@
 body {
   background-color: $bg;
 }
+
+.title-label {
+  margin: 0;
+  margin-bottom: 4px;
+
+  color: $dark1;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  color: white;
+  font-size: 64px;
+  font-weight: bold;
+}

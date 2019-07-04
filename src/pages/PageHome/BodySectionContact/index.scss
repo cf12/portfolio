@@ -6,24 +6,6 @@
 
   font-family: 'Montserrat', sans-serif;
 
-  &__sec-label {
-    margin: 0;
-
-    color: $dark1;
-    font-size: 24px;
-    font-weight: 600;
-    letter-spacing: 0.15em;
-  }
-
-  &__title {
-    margin: 0;
-    margin-bottom: 40px;
-
-    color: white;
-    font-size: 64px;
-    font-weight: bold;
-  }
-
   &__text {
     width: 500px;
 
@@ -34,7 +16,7 @@
 
     & > p {
       margin: 0;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
     }
 
     &__entry {
@@ -48,7 +30,7 @@
         height: 24px;
       }
 
-      & > h3 {
+      & > a, h3 {
         margin: 0;
         margin-left: 14px;
 
@@ -56,6 +38,13 @@
         font-size: 18px;
         font-weight: 500;
         line-height: 22px;
+
+        transition: all 100ms ease;
+
+        &:hover {
+          color: $primary;
+          cursor: pointer;
+        }
       }
     }
   }

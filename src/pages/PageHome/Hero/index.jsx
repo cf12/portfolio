@@ -1,9 +1,13 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 import {
   IoLogoCodepen,
   IoLogoGithub,
   IoLogoTwitter,
 } from 'react-icons/io'
+import {
+  FaChevronDown
+} from 'react-icons/fa'
 
 import './index.scss'
 
@@ -36,6 +40,13 @@ class Hero extends React.Component {
             <IoLogoTwitter />
           </a>
         </div>
+
+        <Link
+          to='about'
+          duration={300}
+          smooth>
+          <FaChevronDown className='hero__downchev' />
+        </Link>
       </div>
     )
   }

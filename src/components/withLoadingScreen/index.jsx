@@ -10,8 +10,6 @@ function withLoadingScreen (Component) {
     }
 
     componentDidMount () {
-      document.body.style.overflow = 'hidden'
-
       setTimeout(() => {
         this.setState({
           fading: true,
@@ -21,10 +19,8 @@ function withLoadingScreen (Component) {
           this.setState({
             loading: false,
           })
-
-          document.body.style.overflow = 'visible'
         }, 600)
-      }, 2000)
+      }, 1500)
     }
 
     render () {

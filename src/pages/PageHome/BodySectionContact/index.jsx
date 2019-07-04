@@ -13,15 +13,15 @@ class BodySectionContact extends React.PureComponent {
   render () {
     return (
       <div className='sec-contact'>
-        <h5 className='sec-contact__sec-label'>#03</h5>
-        <h1 className='sec-contact__title'>CONTACT ME</h1>
+        <h5 className='title-label'>#03</h5>
+        <h1 className='title'>CONTACT ME</h1>
 
         <div className='sec-contact__text'>
           <p>If you have any questions, business inquiries, or just wanna chat with me, you can find me on any of the following:</p>
 
           <span className='sec-contact__text__entry'>
             <FaEnvelopeOpen />
-            <h3>brian@cf12.org</h3>
+            <a href='mailto:brian@cf12.org'>brian@cf12.org</a>
           </span>
 
           <span className='sec-contact__text__entry'>
@@ -31,7 +31,7 @@ class BodySectionContact extends React.PureComponent {
 
           <span className='sec-contact__text__entry'>
             <FaGithub />
-            <h3>github.com/cf12</h3>
+            <a href='https://github.com/cf12'>github.com/cf12</a>
           </span>
         </div>
       </div>

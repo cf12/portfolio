@@ -41,7 +41,7 @@
     transition: all 200ms ease;
 
     &:hover {
-      color: rgb(0, 255, 149);
+      color: saturate($secondary, 100%);
     }
   }
 }

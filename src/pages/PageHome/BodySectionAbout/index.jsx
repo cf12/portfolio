@@ -5,22 +5,27 @@ import './index.scss'
 export default class BodySectionAbout extends React.Component {
   render () {
     return (
-      <div className='sec-about flex-crow'>
-        {/* <div className='sec-about__shapes-bg' /> */}
-        <div className='sec-about__left'>
-          <h5 className='sec-about__left__sec-label'>
-            #01
-          </h5>
-          <h1 className='sec-about__left__title'>
-            ABOUT ME
-          </h1>
+      <div className='sec-about flex-col'>
+        <h5 className='title-label'>#01</h5>
+        <h1 className='title'>ABOUT ME</h1>
 
-          <p className='sec-about__left__body'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+
+        <div className='sec-about__body flex-row'>
+          <div className='sec-about__body__text'>
+            <p>
+              Hi! My name is Brian Xiang - I'm an amateur web developer and cybersecurity enthusiast,
+              who's fluent in frontend & backend development, as well as modern web technologies.
+            </p>
+            <br />
+            <p>
+              I have experience with the web stack (HTML, CSS, JS), Python,
+              Java, Golang, C, C++, ReactJS, NodeJS, as well as
+              linux systems and server management.
+            </p>
+          </div>
+
+          <div className='sec-about__body__img' />
         </div>
-
-        <div className='sec-about__img' />
       </div>
     )
   }
