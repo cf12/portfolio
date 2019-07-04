@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactMarkdown from 'react-markdown'
 
 import BackButton from 'components/BackButton'
 import VideoPlayer from 'components/VideoPlayer'
@@ -7,12 +8,30 @@ import Footer from 'components/Footer'
 
 import './index.scss'
 
+import projects from 'assets/projects/projects.json'
+
 export default class Project extends React.Component {
   constructor (props) {
     super()
 
     this.name = props.name
-    this.content = props.content
+
+    const project = projects[this.name]
+    this.title = project.title
+
+    this.state = {
+      content: null
+    }
+  }
+
+  componentWillMount () {
+    fetch(require(`assets/projects/${this.name}/body.md`))
+      .then(res => res.text())
+      .then(text => {
+        this.setState({
+          content: text
+        })
+      })
   }
 
   componentDidMount () {
@@ -30,15 +49,12 @@ export default class Project extends React.Component {
 
   render () {
     return (
-      <div className='proj-page flex-center flex-col'>
+      <div className='proj-page flex-ccol'>
         <BackButton />
 
-        <div className='proj-page__hero flex-center flex-col'>
-          <h1
-            className='proj-page__hero__title'
-            bgColor='white'
-          >
-            {this.content.title.toUpperCase()}
+        <div className='proj-page__hero flex-ccol'>
+          <h1 className='proj-page__hero__title'>
+            {this.title}
           </h1>
 
           <VideoPlayer
@@ -46,13 +62,12 @@ export default class Project extends React.Component {
             width='1152px'
             height='648px'
             src={require(`assets/projects/${this.name}/video.webm`)}
-            overlay />
+            overlay
+          />
         </div>
 
-        <div className='proj-page__body flex-center flex-row'>
-          <div className='proj-page__body__paragraphs flex-col'>
-            { this.content.content }
-          </div>
+        <div className='proj-page__content'>
+          <ReactMarkdown source={this.state.content} />
         </div>
 
         <ToTopButton />

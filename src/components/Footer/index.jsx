@@ -15,10 +15,13 @@ export default class Footer extends React.Component {
         <img
           className='footer__logo'
           src={require('../../assets/images/profile-pic.png')}
-          alt='Logo' />
+          alt='Logo'
+        />
 
         <div className='footer__spacer'>
-          <p className='footer__text '>Made with &lt;3 and caffeine</p>
+          <p className='footer__text '>
+            Made with &lt;3 & some coffee (but not too much)
+          </p>
           <div className='footer__icons'>
             <a href='https://github.com/cf12/'>
               <IoLogoGithub />

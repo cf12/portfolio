@@ -14,7 +14,7 @@ export default class ToTopButton extends React.Component {
 
         <FaChevronUp
           color='white'
-          size='32px'
+          size='24px'
         />
       </div>
     )

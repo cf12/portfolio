@@ -12,7 +12,7 @@ import PageHome from './pages/PageHome'
 import Page404 from './pages/Page404'
 import PageProject from './pages/PageProject'
 
-import projectsData from 'assets/projects/projects.js'
+import projectsData from 'assets/projects/projects.json'
 let projects = []
 
 for (const key of Object.keys(projectsData)) {
@@ -20,7 +20,7 @@ for (const key of Object.keys(projectsData)) {
     <Route
       key={key}
       path={`/projects/${key}`}
-      component={() => <PageProject name={key} content={projectsData[key]} />}
+      component={() => <PageProject name={key} />}
     />
   )
 }
