@@ -6,6 +6,7 @@ import {
   IoLogoCodepen,
   IoLogoGithub,
   IoLogoTwitter,
+  IoLogoLinkedin
 } from 'react-icons/io'
 
 export default class Footer extends React.Component {
@@ -20,7 +21,7 @@ export default class Footer extends React.Component {
 
         <div className='footer__spacer'>
           <p className='footer__text '>
-            Made with &lt;3 & some coffee (but not too much)
+            Made with &lt;3 and coffee
           </p>
           <div className='footer__icons'>
             <a href='https://github.com/cf12/'>
@@ -33,6 +34,10 @@ export default class Footer extends React.Component {
 
             <a href='https://twitter.com/CF12__/'>
               <IoLogoTwitter />
+            </a>
+
+            <a href="https://www.linkedin.com/in/brian-x-23334b189/">
+              <IoLogoLinkedin />
             </a>
           </div>
         </div>

@@ -4,7 +4,9 @@ import {
   IoLogoCodepen,
   IoLogoGithub,
   IoLogoTwitter,
+  IoLogoLinkedin,
 } from 'react-icons/io'
+
 import {
   FaChevronDown
 } from 'react-icons/fa'
@@ -38,6 +40,10 @@ class Hero extends React.Component {
 
           <a href='https://twitter.com/CF12__/'>
             <IoLogoTwitter />
+          </a>
+
+          <a href="https://www.linkedin.com/in/brian-x-23334b189/">
+            <IoLogoLinkedin />
           </a>
         </div>
 
