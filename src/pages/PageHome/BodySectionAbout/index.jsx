@@ -13,14 +13,15 @@ export default class BodySectionAbout extends React.Component {
         <div className='sec-about__body flex-row'>
           <div className='sec-about__body__text'>
             <p>
-              Hi! My name is Brian Xiang - I'm an amateur web developer and cybersecurity enthusiast,
-              who's fluent in frontend & backend development, as well as modern web technologies.
+              Hi! My name is Brian Xiang - I'm an amateur web developer
+              and cybersecurity enthusiast, who's experienced in modern
+              frontend / backend web development.
             </p>
             <br />
             <p>
-              I have experience with the web stack (HTML, CSS, JS), Python,
-              Java, Golang, C, C++, ReactJS, NodeJS, as well as
-              linux systems and server management.
+              Throughout the years, I've learned and developed with many technologies,
+              including HTML, CSS, JS, Python, Java, Golang, C, C++, ReactJS, NodeJS, as well as
+              managed linux systems and servers.
             </p>
           </div>
 
