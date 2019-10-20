@@ -8,6 +8,7 @@ import ToTopButton from 'components/ToTopButton'
 import Hero from './Hero'
 import BodySectionAbout from './BodySectionAbout'
 import BodySectionProjects from './BodySectionProjects'
+import BodySectionResume from './BodySectionResume'
 import BodySectionContact from './BodySectionContact'
 
 import './index.scss'
@@ -25,6 +26,7 @@ class Home extends React.Component {
           <BodySectionAbout />
           <Element name='projects' />
           <BodySectionProjects />
+          <BodySectionResume />
           <Element name='contact' />
           <BodySectionContact />
         </main>

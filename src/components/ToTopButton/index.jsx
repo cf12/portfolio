@@ -13,7 +13,6 @@ export default class ToTopButton extends React.Component {
         onClick={() => { animateScroll.scrollToTop({ duration: '500' }) }}>
 
         <FaChevronUp
-          color='white'
           size='24px'
         />
       </div>

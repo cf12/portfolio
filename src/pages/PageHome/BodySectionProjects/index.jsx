@@ -16,7 +16,7 @@ export default class BodySectionProjects extends React.PureComponent {
         <div className='sec-projects__projects'>
           {
             Object.keys(projects).map((key) => {
-              return <Project name={key} />
+              return <Project name={key} key={key} />
             })
           }
         </div>

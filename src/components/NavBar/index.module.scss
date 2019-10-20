@@ -1,0 +1,77 @@
+@import 'styles/colors.scss';
+
+.container {
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+
+  margin-left: 6%;
+  height: 140px;
+
+  align-items: center;
+}
+
+.icon {
+  margin-right: 20px;
+  user-select: none;
+  width: 64px;
+  height: 64px;
+
+  transition: all 200ms ease;
+
+  &:hover {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+  }
+}
+
+.button {
+  z-index: -1;
+  position: relative;
+  color: $dark2;
+  user-select: none;
+
+  background-color: rgba(white, 0.05);
+  margin: 0 8px;
+
+  &:hover {
+    cursor: pointer;
+
+    & > p {
+      color: white;
+    }
+
+    &::after {
+      width: 100%;
+    }
+  }
+
+  &::after {
+    content: '';
+
+    z-index: 0;
+    position: absolute;
+    left: 0;
+
+    background-color: $primary;
+    width: 0;
+    height: 100%;
+
+    transition: all 300ms ease;
+  }
+
+  & > p {
+    z-index: 1;
+    margin: 13px 26px;
+
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.06em;
+    text-shadow: 1px 1px 8px rgba(black, 0.6);
+
+    transition: all 0.2s ease;
+  }
+}

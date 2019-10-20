@@ -13,7 +13,7 @@ class BodySectionContact extends React.PureComponent {
   render () {
     return (
       <div className='sec-contact'>
-        <h5 className='title-label'>#03</h5>
+        <h5 className='title-label'>#04</h5>
         <h1 className='title'>CONTACT ME</h1>
 
         <div className='sec-contact__text'>

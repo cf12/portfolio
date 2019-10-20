@@ -13,8 +13,9 @@ const BackgroundShapes = () => {
   return (
     <div className={styles.container}>
       {
-        shapes.map(({ dx, dy, size, delay }) =>
+        shapes.map(({ dx, dy, size, delay }, key) =>
           <div
+            key={key}
             className={styles.square}
             style={{
               width: size + 'vw',
