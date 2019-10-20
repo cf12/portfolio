@@ -3,19 +3,15 @@ import { Link } from 'react-router-dom'
 
 import { FaArrowLeft } from 'react-icons/fa'
 
-import './index.scss'
+import styles from './index.module.scss'
 
-export default class BackButton extends React.Component {
-  render () {
-    return (
-      <Link className='back-bt' to='/'>
-        <FaArrowLeft
-          className='back-bt__icon'
-          size='24px'
-        />
+const BackButton = (props) => (
+  <div className={styles.container + ' ' + props.className}>
+    <Link to='/' className={styles.button}>
+      <FaArrowLeft size='24px' />
+      <h3>BACK</h3>
+    </Link>
+  </div>
+)
 
-        <h3>BACK</h3>
-      </Link>
-    )
-  }
-}
+export default BackButton

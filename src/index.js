@@ -1,10 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import 'normalize.css'
-import './index.scss'
+import './styles/global.scss'
 import './styles/fonts.scss'
 import './styles/flexbox.scss'
 
@@ -42,4 +41,3 @@ class App extends React.Component {
 }
 
 ReactDOM.render(<App />, document.getElementById('root'))
-serviceWorker.register()

@@ -1,3 +1,4 @@
+@import 'styles/global.scss';
 @import 'styles/colors.scss';
 
 .sec-about {
@@ -31,14 +32,14 @@
     }
 
     &__img {
+      @include shadow();
+
       min-width: 400px;
       min-height: 266px;
 
       background-image: url('../../../assets/images/picture.png');
       background-repeat: no-repeat;
       background-size: contain;
-
-      box-shadow: -10px -10px 40px 0 rgba(0, 0, 0, 0.2);
 
       &::before {
         content: '';

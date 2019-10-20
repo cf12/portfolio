@@ -1,48 +1,59 @@
 @import '../../styles/colors.scss';
 
-.not-found__container {
-  width: 100%;
-  height: 100vh;
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  background: $bg;
-}
+.not-found {
+  &__button {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
-.not-found__icon {
-  width: 600px;
-}
+  &__container {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    background: $bg;
+  }
 
-.not-found__title {
-  margin: 12px;
-  font-size: 64px;
-  font-weight: 600;
-  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
-}
+  &__icon {
+    width: 600px;
+  }
 
-.not-found__message {
-  color: $dark2;
-  margin: 12px;
-  font-size: 16px;
-  font-weight: 500;
-}
+  &__title {
+    margin: 12px;
+    font-size: 64px;
+    font-weight: 600;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+  }
 
-.not-found__bl {
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
-  font-weight: 500;
+  &__message {
+    color: $dark2;
+    margin: 12px;
+    font-size: 16px;
+    font-weight: 500;
+  }
 
-  color: $dark2;
-  font-size: 14px;
+  &__bl {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    font-weight: 500;
 
-  a {
-    color: $secondary;
+    color: $dark2;
+    font-size: 14px;
 
-    transition: all 200ms ease;
+    a {
+      color: $secondary;
 
-    &:hover {
-      color: saturate($secondary, 100%);
+      transition: all 200ms ease;
+
+      &:hover {
+        color: saturate($secondary, 100%);
+      }
     }
   }
 }
+
+
+
 

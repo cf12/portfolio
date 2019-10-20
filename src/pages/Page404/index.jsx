@@ -8,8 +8,8 @@ export default class NotFound extends React.Component {
 
   render () {
     return (
-      <div className='not-found__container flex-center flex-col'>
-        <BackButton />
+      <div className='not-found__container flex-ccol'>
+        <BackButton className='not-found__button' />
 
         <img
           className='not-found__icon'

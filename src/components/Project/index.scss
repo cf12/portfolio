@@ -1,11 +1,16 @@
-@import '../../styles/colors.scss';
+@import 'styles/global.scss';
+@import 'styles/colors.scss';
 
 .project {
   &__container {
+    @include shadow();
+
     position: relative;
     overflow: hidden;
     width: 500px;
     height: 300px;
+
+    transition: all 200ms ease;
 
     & > img {
       position: absolute;
@@ -24,7 +29,6 @@
       & > img {
         filter: blur(6px);
         transform: scale(1.05);
-
       }
     }
 

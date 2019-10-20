@@ -1,0 +1,47 @@
+@import 'styles/colors.scss';
+
+@keyframes spin {
+  from {
+    transform: translateY(0) rotate(-60deg);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(-40vh) rotate(240deg);
+    opacity: 0;
+  }
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+
+.square {
+  background-color: rgba($primary, 0.70);
+  border-radius: 5%;
+  box-shadow: 0 0 8vw rgba($primary, 0.80);
+
+  position: absolute;
+  opacity: 0;
+
+  animation: spin 8s linear;
+  animation-iteration-count: infinite;
+
+  transition: all 200ms ease;
+
+  &:hover {
+    transform: scale(1.1);
+    background-color: rgba($primary, 0.90);
+    box-shadow: 0 0 12vw $primary;
+  }
+}

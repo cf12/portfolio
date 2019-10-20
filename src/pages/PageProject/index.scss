@@ -10,19 +10,16 @@
     background: $bg;
 
     &__title {
-      position: relative;
-      top: 40px;
-
       color: white;
       font-weight: bold;
-      font-size: 64px;
+      font-size: 56px;
       text-transform: uppercase;
+      margin-bottom: 80px;
     }
   }
 
   &__video {
-    position: relative;
-    bottom: -60px;
+
   }
 
   &__content {

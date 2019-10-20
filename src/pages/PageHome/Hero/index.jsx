@@ -11,12 +11,16 @@ import {
   FaChevronDown
 } from 'react-icons/fa'
 
+import BackgroundShapes from 'components/BackgroundShapes'
+
 import './index.scss'
 
 class Hero extends React.Component {
   render () {
     return (
       <div className='hero'>
+        <BackgroundShapes />
+
         <div className='hero__text'>
           <h1 className='hero__text__title'>
             Hey! I'm <mark>Brian</mark>.
