@@ -14,6 +14,11 @@
   }
 }
 
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(50%) }
+  to { opacity: 1; transform: translateY(0) }
+}
+
 
 .hero {
   display: flex;
@@ -73,6 +78,8 @@
       text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 
       margin: 0;
+
+      animation: fadeIn 500ms ease;
     }
 
     &__subtitle {
@@ -83,6 +90,11 @@
 
       margin: 0;
       margin-top: 30px;
+
+      opacity: 0;
+
+      animation: fadeIn 500ms ease 200ms;
+      animation-fill-mode: forwards;
 
       & > p {
         margin: 8px 0;
