@@ -13,7 +13,7 @@ const Project = (props) => {
       <div className={styles.parent}>
         <div className={styles.container}>
           <img
-            src={require(`assets/projects/${props.name}/thumbnail.png`)}
+            src={require(`assets/projects/${props.name}/thumbnail.jpg`)}
             alt=''
           />
 

@@ -10,7 +10,7 @@ export default class BodySectionAbout extends React.Component {
         <h1 className='title'>ABOUT ME</h1>
 
 
-        <div className='sec-about__body flex-row'>
+        <div className='sec-about__body'>
           <div className='sec-about__body__text'>
             <p>
               Hi! My name is Brian Xiang - I'm an amateur web developer

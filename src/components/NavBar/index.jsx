@@ -1,6 +1,10 @@
 import React from 'react'
 import { Link } from 'react-scroll'
 
+import {
+  FaBars
+} from 'react-icons/fa'
+
 import styles from './index.module.scss'
 
 class Button extends React.Component {
@@ -26,19 +30,61 @@ class Button extends React.Component {
 }
 
 class NavBar extends React.Component {
+  constructor (props) {
+    super(props)
+
+    this.sidebar = React.createRef()
+  }
+
+  state = {
+    sidebar: false
+  }
+
+  toggleSidebar = () => {
+    const sidebar = this.sidebar.current
+
+    this.setState({
+      sidebar: !this.state.sidebar
+    })
+  }
+
   render () {
     return (
-      <header className={styles.container + ' flex-row'}>
-        <img
-          className={styles.icon}
-          src={require('assets/images/profile-pic.png')}
-          alt='Profile'
-        />
+      <>
+        <div
+          className={styles.sidebar}
+          ref={this.sidebar}
+          style={{
+            height: this.state.sidebar ? '100%' : '0%',
+            opacity: this.state.sidebar ? 1 : 0
+          }}
+        >
+          <FaBars
+            className={styles.sidebarButton}
+            onClick={this.toggleSidebar}
+          />
+        </div>
 
-        <Button name='ABOUT' linkTo='about' />
-        <Button name='PROJECTS' linkTo='projects' />
-        <Button name='CONTACT' linkTo='contact' />
-      </header>
+        <header className={styles.container + ' flex-row'}>
+
+          <img
+            className={styles.icon}
+            src={require('assets/images/profile-pic.png')}
+            alt='Profile'
+          />
+
+          <FaBars
+            className={styles.navbarButton}
+            onClick={this.toggleSidebar}
+          />
+
+          <span className={styles.buttons + ' flex-row'}>
+            <Button name='ABOUT' linkTo='about' />
+            <Button name='PROJECTS' linkTo='projects' />
+            <Button name='CONTACT' linkTo='contact' />
+          </span>
+        </header>
+      </>
     )
   }
 }

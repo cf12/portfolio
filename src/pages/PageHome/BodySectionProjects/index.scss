@@ -1,21 +1,24 @@
 @import 'styles/colors.scss';
 
 .sec-projects {
-  width: 1000px;
-  margin-bottom: 100px;
+  min-width: 600px;
+  margin: 100px;
 
   font-family: 'Montserrat', sans-serif;
 
   &__projects {
-    width: 1000px;
     display: grid;
 
     grid-template-columns: min-content;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
 
-    @media (min-width: 800px) {
+    @media (min-width: 1200px) {
       grid-template-columns: min-content min-content;
     }
+  }
+
+  @media (min-width: 1200px) {
+    width: 1000px;
   }
 }

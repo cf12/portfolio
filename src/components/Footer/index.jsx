@@ -19,10 +19,11 @@ export default class Footer extends React.Component {
           alt='Logo'
         />
 
-        <div className='footer__spacer'>
-          <p className='footer__text '>
+        <div>
+          <p className='footer__text'>
             Made with &lt;3 and coffee
           </p>
+
           <div className='footer__icons'>
             <a href='https://github.com/cf12/'>
               <IoLogoGithub />
@@ -41,6 +42,8 @@ export default class Footer extends React.Component {
             </a>
           </div>
         </div>
+
+        <div className='footer__spacer' />
 
         <p className='footer__text'>Copyright © 2019 - All Rights Reserved </p>
       </footer>

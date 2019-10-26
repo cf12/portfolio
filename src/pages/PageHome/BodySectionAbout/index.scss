@@ -5,26 +5,31 @@
   position: relative;
   box-sizing: border-box;
 
-  width: 1000px;
-  padding: 100px 0;
+  min-width: 600px;
+  margin: 100px;
 
   font-family: 'Montserrat', sans-serif;
 
-  & > h1 {
-    width: 100%;
-  }
-
   &__body {
-    width: 950px;
+    @media screen and (max-width: 1200px) {
+      flex-direction: column;
+
+      &__img {
+        margin-top: 40px;
+      }
+    }
+
+    display: flex;
+    flex-direction: row;
 
     &__text {
-      min-width: 500px;
-      margin-right: 80px;
-
       color: $dark2;
       font-family: 'Rubik', sans-serif;
       font-size: 18px;
       line-height: 160%;
+
+      max-width: 500px;
+      margin-right: 80px;
 
       & > p {
         margin: 0;
@@ -34,10 +39,12 @@
     &__img {
       @include shadow();
 
-      min-width: 400px;
-      min-height: 266px;
+      position: relative;
 
-      background-image: url('../../../assets/images/picture.png');
+      width: 400px;
+      height: 266px;
+
+      background-image: url('../../../assets/images/picture.jpg');
       background-repeat: no-repeat;
       background-size: contain;
 
@@ -46,15 +53,19 @@
         position: absolute;
         z-index: -1;
 
-        margin-left: 12px;
-        margin-top: 12px;
+        left: 12px;
+        top: 12px;
 
         width: 400px;
         height: 266px;
-        background-color: $primary;
 
+        background-color: $primary;
         box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
       }
     }
+  }
+
+  @media (min-width: 1200px) {
+    width: 1000px;
   }
 }

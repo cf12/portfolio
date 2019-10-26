@@ -1,17 +1,9 @@
 @import 'styles/colors.scss';
 
 @keyframes animate {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
 }
 
 @keyframes fadeIn {
@@ -19,6 +11,14 @@
   to { opacity: 1; transform: translateY(0) }
 }
 
+@media screen and (max-width: 750px) {
+  .hero {
+    &__title {
+      font-size: 10vw;
+      color: black;
+    }
+  }
+}
 
 .hero {
   display: flex;
@@ -68,7 +68,6 @@
 
   &__text {
     position: absolute;
-
     left: 12%;
 
     &__title {
@@ -79,7 +78,7 @@
 
       margin: 0;
 
-      animation: fadeIn 500ms ease;
+      animation: fadeIn 600ms ease;
     }
 
     &__subtitle {
@@ -93,7 +92,7 @@
 
       opacity: 0;
 
-      animation: fadeIn 500ms ease 200ms;
+      animation: fadeIn 600ms ease 300ms;
       animation-fill-mode: forwards;
 
       & > p {
