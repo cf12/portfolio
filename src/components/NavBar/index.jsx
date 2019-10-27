@@ -2,7 +2,8 @@ import React from 'react'
 import { Link } from 'react-scroll'
 
 import {
-  FaBars
+  FaBars,
+  FaEnvelope
 } from 'react-icons/fa'
 
 import styles from './index.module.scss'
@@ -41,8 +42,6 @@ class NavBar extends React.Component {
   }
 
   toggleSidebar = () => {
-    const sidebar = this.sidebar.current
-
     this.setState({
       sidebar: !this.state.sidebar
     })
@@ -66,7 +65,6 @@ class NavBar extends React.Component {
         </div>
 
         <header className={styles.container + ' flex-row'}>
-
           <img
             className={styles.icon}
             src={require('assets/images/profile-pic.png')}
@@ -83,6 +81,13 @@ class NavBar extends React.Component {
             <Button name='PROJECTS' linkTo='projects' />
             <Button name='CONTACT' linkTo='contact' />
           </span>
+
+          <div className={styles.spacer} />
+
+          <div className={styles.right}>
+            <FaEnvelope />
+            <p>brian@cf12.org</p>
+          </div>
         </header>
       </>
     )

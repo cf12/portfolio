@@ -66,7 +66,7 @@
     color: $primary;
   }
 
-  &__text {
+  &__body {
     position: absolute;
     left: 12%;
 
@@ -87,8 +87,7 @@
       font-weight: normal;
       text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
 
-      margin: 0;
-      margin-top: 30px;
+      margin: 30px 0;
 
       opacity: 0;
 
@@ -97,6 +96,60 @@
 
       & > p {
         margin: 8px 0;
+      }
+    }
+
+    &__button {
+      color: $dark2;
+
+      display: inline-flex;
+      align-items: center;
+
+      opacity: 0;
+
+      animation: fadeIn 600ms ease 600ms;
+      animation-fill-mode: forwards;
+
+      & > * {
+        transition: all 200ms ease;
+      }
+
+      & > :first-child {
+        width: auto;
+        height: 18px;
+        margin-right: 8px;
+        margin-bottom: 3px;
+      }
+
+      & > p {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      & > :last-child {
+        width: auto;
+        height: 18px;
+        margin-left: 8px;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        & > :first-child {
+          color: white;
+          transform: scale(1.15);
+        }
+
+        & > p {
+          color: $primary;
+          transform: translateX(4px);
+        }
+
+        & > :last-child {
+          color: $primary;
+          transform: translateX(8px);
+        }
       }
     }
   }

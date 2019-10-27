@@ -8,7 +8,9 @@ import {
 } from 'react-icons/io'
 
 import {
-  FaChevronDown
+  FaChevronDown,
+  FaFileAlt,
+  FaArrowRight
 } from 'react-icons/fa'
 
 import BackgroundShapes from 'components/BackgroundShapes'
@@ -21,16 +23,27 @@ class Hero extends React.Component {
       <div className='hero'>
         <BackgroundShapes />
 
-        <div className='hero__text'>
-          <h1 className='hero__text__title'>
+        <div className='hero__body'>
+          <h1 className='hero__body__title'>
             Hey! I'm <mark>Brian</mark>.
           </h1>
 
-          <div className='hero__text__subtitle'>
+          <div className='hero__body__subtitle'>
             <p>I'm a novice <mark>programmer</mark>,</p>
             <p>aspiring <mark>web developer</mark>,</p>
             <p>and <mark>cyber security</mark> enthusiast.</p>
           </div>
+
+          <a
+            className='hero__body__button'
+            href='https://cf12.github.io/resume/public/resume.pdf'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FaFileAlt />
+            <p>My Resume</p>
+            <FaArrowRight />
+          </a>
         </div>
 
         <div className='hero__buttons flex-col'>
