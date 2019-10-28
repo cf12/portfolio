@@ -2,6 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://cf12.org/",
   "dependencies": {
     "node-sass": "^4.11.0",
     "normalize.css": "^8.0.1",
