@@ -111,25 +111,25 @@
     opacity 300ms ease;
 }
 
-.spacer {
-  margin-right: auto;
-}
+// .spacer {
+//   margin-right: auto;
+// }
 
-.right {
-  display: flex;
-  align-items: center;
+// .right {
+//   display: flex;
+//   align-items: center;
 
-  color: white;
-  font-family: 'Rubik', sans-serif;
-  font-weight: 500;
-  font-size: 18px;
+//   color: white;
+//   font-family: 'Rubik', sans-serif;
+//   font-weight: 500;
+//   font-size: 16px;
 
-  & > svg {
-    margin-right: 8px;
-    width: auto;
-    height: 20px;
-  }
-}
+//   & > svg {
+//     margin-left: 8px;
+//     width: auto;
+//     height: 20px;
+//   }
+// }
 
 @media only screen and (max-width: 750px) {
   .buttons {

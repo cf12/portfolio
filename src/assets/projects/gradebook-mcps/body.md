@@ -1,4 +1,5 @@
-#### Note
-This project was created for the Hack Club Holiday Challenge (2018) - More info can be found here: [Link](https://hackclub.com/)
+#### Notes
+This project is live at <https://gradebook.cf12.org/>
 
 # Project Summary
+Work in progress!

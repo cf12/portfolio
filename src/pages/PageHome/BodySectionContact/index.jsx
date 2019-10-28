@@ -2,12 +2,7 @@ import React from 'react'
 
 import './index.scss'
 
-import {
-  FaEnvelopeOpen,
-  FaDiscord,
-  FaGithub
-} from 'react-icons/fa'
-
+import Button from 'components/Button'
 
 class BodySectionContact extends React.PureComponent {
   render () {
@@ -19,20 +14,25 @@ class BodySectionContact extends React.PureComponent {
         <div className='sec-contact__text'>
           <p>If you have any questions, business inquiries, or just wanna chat with me, you can find me on any of the following:</p>
 
-          <span className='sec-contact__text__entry'>
-            <FaEnvelopeOpen />
-            <a href='mailto:brian@cf12.org'>brian@cf12.org</a>
-          </span>
+          <div className='sec-contact__text__buttons'>
+            <Button
+            href='mailto:brian@cf12.org'
+            text='brian@cf12.org'
+              icon='FaEnvelope'
+            />
 
-          <span className='sec-contact__text__entry'>
-            <FaDiscord />
-            <h3>CF12#1240</h3>
-          </span>
+            <Button
+              href='https://github.com/cf12'
+              text='github.com/cf12'
+              icon='FaGithub'
+            />
 
-          <span className='sec-contact__text__entry'>
-            <FaGithub />
-            <a href='https://github.com/cf12'>github.com/cf12</a>
-          </span>
+            <Button
+              href=''
+              text='CF12#1240'
+              icon='FaDiscord'
+            />
+          </div>
         </div>
       </div>
     )

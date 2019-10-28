@@ -9,11 +9,10 @@ import {
 
 import {
   FaChevronDown,
-  FaFileAlt,
-  FaArrowRight
 } from 'react-icons/fa'
 
 import BackgroundShapes from 'components/BackgroundShapes'
+import Button from 'components/Button'
 
 import './index.scss'
 
@@ -34,16 +33,22 @@ class Hero extends React.Component {
             <p>and <mark>cyber security</mark> enthusiast.</p>
           </div>
 
-          <a
-            className='hero__body__button'
-            href='https://cf12.github.io/resume/public/resume.pdf'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <FaFileAlt />
-            <p>My Resume</p>
-            <FaArrowRight />
-          </a>
+
+          <div className='hero__body__buttons'>
+            <Button
+              href='https://cf12.github.io/resume/public/resume.pdf'
+              target='_blank'
+              rel='noopener noreferrer'
+              text='My Resume'
+              icon='FaFileAlt'
+            />
+
+            <Button
+              href='mailto:brian@cf12.org'
+              text='Send me an Email'
+              icon='FaEnvelope'
+            />
+          </div>
         </div>
 
         <div className='hero__buttons flex-col'>

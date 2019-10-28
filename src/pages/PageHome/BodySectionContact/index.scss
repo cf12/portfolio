@@ -10,42 +10,22 @@
   &__text {
     width: 500px;
 
-    color: $dark2;
     font-family: 'Rubik', sans-serif;
-    font-size: 18px;
-    line-height: 160%;
+    color: $dark2;
 
     & > p {
       margin: 0;
-      margin-bottom: 16px;
+      margin-bottom: 24px;
+
+      font-size: 18px;
+      line-height: 160%;
     }
 
-    &__entry {
-      display: flex;
-      flex-direction: row;
+    &__buttons {
+      display: inline-block;
 
-      margin: 12px 0;
-
-      & > svg {
-        width: 24px;
-        height: 24px;
-      }
-
-      & > a, h3 {
-        margin: 0;
-        margin-left: 14px;
-
-        color: white;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 22px;
-
-        transition: all 100ms ease;
-
-        &:hover {
-          color: $primary;
-          cursor: pointer;
-        }
+      & > * {
+        margin-bottom: 12px;
       }
     }
   }

@@ -99,64 +99,22 @@
       }
     }
 
-    &__button {
-      color: $dark2;
-
-      display: inline-flex;
-      align-items: center;
-
-      opacity: 0;
-
-      animation: fadeIn 600ms ease 600ms;
-      animation-fill-mode: forwards;
+    &__buttons {
+      display: inline-block;
 
       & > * {
-        transition: all 200ms ease;
-      }
+        opacity: 0;
+        margin-bottom: 10px;
 
-      & > :first-child {
-        width: auto;
-        height: 18px;
-        margin-right: 8px;
-        margin-bottom: 3px;
-      }
-
-      & > p {
-        margin: 0;
-        font-size: 16px;
-        font-weight: 500;
-      }
-
-      & > :last-child {
-        width: auto;
-        height: 18px;
-        margin-left: 8px;
-      }
-
-      &:hover {
-        cursor: pointer;
-
-        & > :first-child {
-          color: white;
-          transform: scale(1.15);
-        }
-
-        & > p {
-          color: $primary;
-          transform: translateX(4px);
-        }
-
-        & > :last-child {
-          color: $primary;
-          transform: translateX(8px);
-        }
+        animation: fadeIn 600ms ease 600ms;
+        animation-fill-mode: forwards;
       }
     }
   }
 
   &__buttons {
     position: absolute;
-    right: 40px;
+    right: 2%;
 
     & > a > * {
       color: $dark2;

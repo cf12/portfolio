@@ -8,7 +8,6 @@ import ToTopButton from 'components/ToTopButton'
 import Hero from './Hero'
 import BodySectionAbout from './BodySectionAbout'
 import BodySectionProjects from './BodySectionProjects'
-import BodySectionResume from './BodySectionResume'
 import BodySectionContact from './BodySectionContact'
 
 import './index.scss'

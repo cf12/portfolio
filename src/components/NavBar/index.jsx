@@ -3,7 +3,6 @@ import { Link } from 'react-scroll'
 
 import {
   FaBars,
-  FaEnvelope
 } from 'react-icons/fa'
 
 import styles from './index.module.scss'
@@ -81,13 +80,6 @@ class NavBar extends React.Component {
             <Button name='PROJECTS' linkTo='projects' />
             <Button name='CONTACT' linkTo='contact' />
           </span>
-
-          <div className={styles.spacer} />
-
-          <div className={styles.right}>
-            <FaEnvelope />
-            <p>brian@cf12.org</p>
-          </div>
         </header>
       </>
     )
