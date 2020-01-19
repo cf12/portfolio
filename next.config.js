@@ -1,6 +1,6 @@
 const withPlugins = require('next-compose-plugins')
 const sass = require('@zeit/next-sass')
-const optimizedImages = require('next-optimized-images')
+const images = require('next-images')
 const videos = require('next-videos')
 const path = require('path')
 
@@ -19,9 +19,6 @@ const nextConfig = {
 
 module.exports = withPlugins([
   [
-    optimizedImages, {}
-  ],
-  [
     sass, {
       cssModules: true,
       cssLoaderOptions: {
@@ -32,5 +29,8 @@ module.exports = withPlugins([
   ],
   [
     videos, {}
+  ],
+  [
+    images, {}
   ]
 ], nextConfig)
