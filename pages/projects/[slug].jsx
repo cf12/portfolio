@@ -1,4 +1,5 @@
 import React, { useRef } from 'react'
+import Head from 'next/head'
 import Router from 'next/router'
 import ReactMarkdown from 'react-markdown'
 
@@ -13,32 +14,44 @@ import styles from './[slug].scss'
 
 import projects from 'assets/projects/projects.json'
 
+
+// TODO: Make a more sensible project description for SEO based on frontmatter
 const PageProject = ({ slug, title, data }) => {
   return (
-    <div className={styles.body}>
-      <BackButton />
-
-      <div className={styles.hero}>
-        <h1 className={styles.title}>
-          {title}
-        </h1>
-
-        <VideoPlayer
-          className={styles.video}
-          width='1152px'
-          height='648px'
-          src={require(`assets/projects/${slug}/video.webm`)}
-          overlay
+    <>
+      <Head>
+        <title>CF12's Portfolio | {title}</title>
+        <meta
+          name="description"
+          content={data.default.substring(0, 150)}
         />
-      </div>
+      </Head>
 
-      <div className={styles.content}>
-        <ReactMarkdown source={data.default} />
-      </div>
+      <div className={styles.body}>
+        <BackButton />
 
-      <ToTopButton />
-      <Footer />
-    </div>
+        <div className={styles.hero}>
+          <h1 className={styles.title}>
+            {title}
+          </h1>
+
+          <VideoPlayer
+            className={styles.video}
+            width='1152px'
+            height='648px'
+            src={require(`assets/projects/${slug}/video.webm`)}
+            overlay
+          />
+        </div>
+
+        <div className={styles.content}>
+          <ReactMarkdown source={data.default} />
+        </div>
+
+        <ToTopButton />
+        <Footer />
+      </div>
+    </>
   )
 }
 

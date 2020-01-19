@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import { Link, Element } from 'react-scroll'
 
 import {
@@ -27,6 +28,17 @@ class Home extends React.Component {
   render () {
     return (
       <>
+        <Head>
+          <title>CF12's Portfolio | Home</title>
+          <meta
+            name="description"
+            content="Welcome to my portfolio! Here, you can find some of
+                     the cool stuff I've built, as well as learn
+                     more about me and my hobbies"
+          />
+
+        </Head>
+
         <Nav />
         <ToTopButton />
 
