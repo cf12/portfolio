@@ -1,0 +1,10 @@
+@import 'theme';
+
+::selection {
+  color: white;
+  background-color: $primary;
+}
+
+:global(a) {
+  text-decoration: none;
+}

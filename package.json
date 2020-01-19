@@ -2,36 +2,27 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://cf12.org/",
-  "dependencies": {
-    "node-sass": "^4.11.0",
-    "normalize.css": "^8.0.1",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "react-icons": "^3.5.0",
-    "react-markdown": "^4.2.2",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.2.0",
-    "react-scroll": "^1.7.11"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "deploy": "now --prod"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
-  "devDependencies": {
-    "now": "^16.4.4",
-    "yarn": "^1.19.1"
+  "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-optipng": "^7.1.0",
+    "imagemin-svgo": "^7.0.0",
+    "next": "9.2.0",
+    "next-compose-plugins": "^2.2.0",
+    "next-optimized-images": "^2.5.4",
+    "next-videos": "^1.1.3",
+    "node-sass": "^4.13.1",
+    "raw-loader": "^4.0.0",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "react-icons": "^3.8.0",
+    "react-markdown": "^4.3.1",
+    "react-scroll": "^1.7.16",
+    "url-loader": "^3.0.0"
   }
 }

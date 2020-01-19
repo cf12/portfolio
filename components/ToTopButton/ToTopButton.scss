@@ -1,0 +1,31 @@
+@import 'theme/theme';
+
+.container {
+  @include flexCenter;
+
+  width: 54px;
+  height: 54px;
+
+  position: fixed;
+  z-index: 1;
+  right: 40px;
+  bottom: 40px;
+
+  background: rgba($primary, 0.5);
+  color: rgba(white, 0.5);
+
+  border-radius: 50%;
+  box-shadow: 0.5px 0.5px 8px 1px rgba(0, 0, 0, 0.3);
+
+  user-select: none;
+
+  transition: all 0.2s ease;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+
+    background: $primary;
+    color: white;
+  }
+}

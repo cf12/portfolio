@@ -1,0 +1,58 @@
+@import 'theme/theme';
+
+.body {
+  @include flexCenterCol;
+
+  background-color: $bg;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+
+  .hero {
+    @include flexCenterCol;
+
+    width: 100%;
+    height: 800px;
+    background: $bg;
+
+    .title {
+      color: white;
+      font-weight: bold;
+      font-size: 56px;
+      text-transform: uppercase;
+      margin-bottom: 80px;
+    }
+  }
+
+  .video {
+
+  }
+
+  .content {
+    width: 750px;
+    margin: 120px 0 60px 0;
+
+    color: $dark2;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: left;
+
+    & h1, h2, h3, h4, h5, h6 {
+      color: white;
+
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    & a {
+      color: darken($primary, 20%);
+      transition: all 200ms ease;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}

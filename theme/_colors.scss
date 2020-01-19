@@ -1,0 +1,17 @@
+
+$primary: #39E2A5;
+$secondary: #39E2A5;
+
+$bg: #232323;
+$bg2: #181818;
+$dark1: #575757;
+$dark2: #797979;
+
+:export {
+  bg: $bg;
+  bg2: $bg2;
+  dark1: $dark1;
+  dark2: $dark2;
+  primary: $primary;
+  secondary: $secondary;
+}

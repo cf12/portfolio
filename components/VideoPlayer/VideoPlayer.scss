@@ -1,0 +1,52 @@
+@import 'theme/theme';
+
+.container {
+  position: relative;
+  width: 1152px;
+  height: 648px;
+  box-shadow: 1px 1px 20px 2px rgba(0, 0, 0, 0.3);
+
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover > .overlay {
+    opacity: 1;
+  }
+
+  .overlay {
+    @include flexCenter;
+
+    z-index: 5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: all 0.2s ease;
+
+    .button {
+      box-sizing: border-box;
+      width: 70px;
+      height: 70px;
+
+      border-style: solid;
+      border-color: transparent transparent transparent white;
+      border-width: 40px 0 40px 70px;
+
+      transition: all 200ms ease;
+    }
+
+    .paused {
+      border-style: double;
+      border-width: 0 0 0 60px;
+    }
+  }
+
+  .video {
+    width: inherit;
+    height: inherit;
+  }
+}
