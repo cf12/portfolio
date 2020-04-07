@@ -12,21 +12,6 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
-
-        <>
-          <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=UA-156522564-1"
-          />
-          <script dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'UA-156522564-1');
-            `
-          }} />
-        </>
       </Html>
     )
   }

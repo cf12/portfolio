@@ -1,9 +1,6 @@
 import React, { useRef } from 'react'
-import Head from 'next/head'
-import Router from 'next/router'
 import ReactMarkdown from 'react-markdown'
-
-
+import { NextSeo } from 'next-seo'
 
 import BackButton from 'components/BackButton'
 import VideoPlayer from 'components/VideoPlayer'
@@ -19,13 +16,10 @@ import projects from 'assets/projects/projects.json'
 const PageProject = ({ slug, title, data }) => {
   return (
     <>
-      <Head>
-        <title>CF12's Portfolio | {title}</title>
-        <meta
-          name="description"
-          content={data.default.substring(0, 150)}
-        />
-      </Head>
+      <NextSeo
+        title={`CF12's Portfolio | ${title}`}
+        description={data.default.substring(0, 150)}
+      />
 
       <div className={styles.body}>
         <BackButton />
