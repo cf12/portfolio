@@ -116,8 +116,8 @@
 
   .sidebarCloseButton {
     position: absolute;
-    left: 16px;
-    top: 16px;
+    left: 24px;
+    top: 24px;
 
     color: white;
     width: 32px;
@@ -125,15 +125,17 @@
   }
 
   .sidebarButtons {
-    width: 100%;
+    margin-top: 80px;
+
     .button {
       background: none;
-      margin: 0;
+      margin: 24px 0;
 
       color: rgba(white, 0.8);
 
       & > p {
         margin: 0;
+        font-size: 24px;
       }
     }
   }

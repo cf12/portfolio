@@ -8,19 +8,22 @@ import {
 
 import styles from './Nav.scss'
 
-const Button = ({ name, to }) => (
+const Button = ({ name, to, onClick }) => (
   <Link
     to={to}
     smooth
     duration={300}
-    className={styles.button}>
-
+    className={styles.button}
+    onClick={onClick}
+  >
     <p>{name}</p>
   </Link>
 )
 
 const NavBar = () => {
   const [ sidebar, setSidebar ] = useState(null)
+
+  const toggle = () => setSidebar(!sidebar)
 
   return (
     <>
@@ -34,14 +37,14 @@ const NavBar = () => {
       >
         <FaTimes
           className={styles.sidebarCloseButton}
-          onClick={() => setSidebar(!sidebar)}
+          onClick={toggle}
         />
 
-        <span className={styles.sidebarButtons}>
-          <Button name='ABOUT' linkTo='about' />
-          <Button name='PROJECTS' linkTo='projects' />
-          <Button name='CONTACT' linkTo='contact' />
-        </span>
+        <div className={styles.sidebarButtons}>
+          <Button name='ABOUT' to='about' onClick={toggle} />
+          <Button name='PROJECTS' to='projects' onClick={toggle} />
+          <Button name='CONTACT' to='contact' onClick={toggle} />
+        </div>
       </div>
 
       <header className={styles.container}>
@@ -53,13 +56,13 @@ const NavBar = () => {
 
         <FaBars
           className={styles.navbarButton}
-          onClick={() => setSidebar(!sidebar)}
+          onClick={toggle}
         />
 
         <span className={styles.buttons}>
-          <Button name='ABOUT' linkTo='about' />
-          <Button name='PROJECTS' linkTo='projects' />
-          <Button name='CONTACT' linkTo='contact' />
+          <Button name='ABOUT' to='about' />
+          <Button name='PROJECTS' to='projects' />
+          <Button name='CONTACT' to='contact' />
         </span>
       </header>
     </>
