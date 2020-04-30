@@ -1,3 +1,7 @@
+---
+title: "Interesting Pong"
+slug: interesting-pong
+---
 #### Notes
 This project is live at <https://pong.cf12.org/>
 

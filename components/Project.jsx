@@ -4,17 +4,13 @@ import Link from 'components/Link'
 
 import styles from './Project.scss'
 
-import projects from 'assets/projects/projects.json'
-
-const Project = (props) => {
-  const { title } = projects[props.name]
-
+const Project = ({ title, slug }) => {
   return (
-    <Link href={`/projects/${props.name}`}>
+    <Link href={`/projects/${slug}`}>
       <div className={styles.parent}>
         <div className={styles.container}>
           <img
-            src={require(`assets/projects/${props.name}/thumbnail.jpg`)}
+            src={require(`assets/projects/${slug}/thumbnail.jpg`)}
             alt=''
           />
 

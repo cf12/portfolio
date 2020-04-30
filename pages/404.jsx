@@ -1,22 +1,19 @@
 import React from 'react'
-import Head from 'next/head'
+import { NextSeo } from 'next-seo'
 
 import BackButton from 'components/BackButton'
 
-import styles from './_error.scss'
+import styles from './404.scss'
 
 export default class NotFound extends React.Component {
 
   render () {
     return (
       <>
-        <Head>
-          <title>CF12's Portfolio | 404 Not Found</title>
-          <meta
-            name="description"
-            content="404 - This page could not be found."
-          />
-        </Head>
+        <NextSeo
+          title="CF12.org - 404 Not Found"
+          description="404 - Not Found"
+        />
 
         <div className={styles.container}>
           <BackButton className={styles.button} />

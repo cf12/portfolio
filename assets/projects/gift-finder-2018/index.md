@@ -1,3 +1,7 @@
+---
+title: "Gift Finder 2018"
+slug: gift-finder-2018
+---
 #### Note
 This project was created for the Hack Club Holiday Challenge (2018) - More info can be found [here.](https://hackclub.com/challenge)
 
@@ -11,7 +15,6 @@ learning JavaScript canvas and implementing individual snow particles before I s
 The snow looked pretty weird at first (all of them were moving in the same direction) but after a few more revisions, I
 implemented random velocities, opacities, and directions for the flakes.
 
-After the snow was designed, everything else fell in place. I picked a suitable blue gradient for the backdrop, imported fonts, and styled it all w/ scss. I browsed the internet for a nice snowy background,
-and added a present along w/ the "Subscribe to PewDiePie" elf.
+After the snow was designed, everything else fell in place. I picked a suitable blue gradient for the backdrop, imported fonts, and styled it all w/ scss. I browsed the internet for a nice snowy background, and added a present along w/ the "Subscribe to PewDiePie" elf.
 
 Afterwards, I browsed around amazon for some cool gifts and items. I stored the product IDs in a file (src/assets/products.json) and implemented code that would randomly pick a gift from the list. The hardest part of this project was probably picking the best font weights and colors for the text.

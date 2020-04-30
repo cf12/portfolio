@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import ReactMarkdown from 'react-markdown'
 import { NextSeo } from 'next-seo'
+import * as matter from 'gray-matter';
 
 import BackButton from 'components/BackButton'
 import VideoPlayer from 'components/VideoPlayer'
@@ -9,16 +10,13 @@ import Footer from 'components/Footer'
 
 import styles from './[slug].scss'
 
-import projects from 'assets/projects/projects.json'
-
-
 // TODO: Make a more sensible project description for SEO based on frontmatter
 const PageProject = ({ slug, title, data }) => {
   return (
     <>
       <NextSeo
-        title={`CF12's Portfolio | ${title}`}
-        description={data.default.substring(0, 150)}
+        title={`CF12.org - ${title}`}
+        description={data.substring(0, 150)}
       />
 
       <div className={styles.body}>
@@ -39,7 +37,7 @@ const PageProject = ({ slug, title, data }) => {
         </div>
 
         <div className={styles.content}>
-          <ReactMarkdown source={data.default} />
+          <ReactMarkdown source={data} />
         </div>
 
         <ToTopButton />
@@ -49,18 +47,48 @@ const PageProject = ({ slug, title, data }) => {
   )
 }
 
-PageProject.getInitialProps = async (context) => {
-  const { slug } = context.query
+// PageProject.getInitialProps = async (context) => {
+//   const { slug } = context.query
 
-  if (!(slug in projects)) {
-    context.res.writeHead(302, { Location: '/404' })
-    context.res.end()
+//   if (!(slug in projects)) {
+//     context.res.writeHead(302, { Location: '/404' })
+//     context.res.end()
+//   }
+
+//   return {
+//     slug: slug,
+//     title: projects[slug].title,
+//     data: await import(`assets/projects/${slug}/body.md`)
+//   }
+// }
+
+PageProject.getInitialProps = async (nextContext) => {
+  const { slug } = nextContext.query
+
+  const context = require.context('assets/projects', true, /\.md$/)
+
+  const keys = context.keys()
+  const values = keys.map(context)
+
+  const projects = keys.map((key, index) => {
+    const value = values[index]
+
+    const document = matter(value.default)
+
+    return document.data.slug
+  })
+
+  if (!projects.includes(slug)) {
+    nextContext.res.writeHead(302, { Location: '/404' })
+    nextContext.res.end()
   }
 
+  const md = matter((await import(`assets/projects/${slug}/index.md`)).default)
+
   return {
-    slug: slug,
-    title: projects[slug].title,
-    data: await import(`assets/projects/${slug}/body.md`)
+    slug: md.data.slug,
+    title: md.data.title,
+    data: md.content
   }
 }
 
