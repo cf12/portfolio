@@ -99,7 +99,6 @@ const Home = ({ projects }) => {
           <h5 className={styles.titleLabel}>#01</h5>
           <h1 className={styles.title}>ABOUT ME</h1>
 
-
           <div className={styles.container}>
             <div className={styles.text}>
               <p>
@@ -115,11 +114,14 @@ const Home = ({ projects }) => {
               </p>
             </div>
 
-            <div className={styles.img} />
+            <div className={styles.img}>
+              <img src={require('assets/images/picture.jpg')} />
+              <div />
+            </div>
           </div>
         </div>
 
-        <Element name='projects' />
+        {/* <Element name='projects' />
         <div className={styles.projects}>
           <h5 className={styles.titleLabel}>#02</h5>
           <h1 className={styles.title}>MY WORK</h1>
@@ -161,7 +163,7 @@ const Home = ({ projects }) => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
       </main>
 
       <Footer />
