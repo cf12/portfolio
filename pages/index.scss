@@ -248,7 +248,7 @@ body {
   }
 
   .projects {
-    min-width: 600px;
+    max-width: 1000px;
     margin: 100px;
 
     font-family: 'Montserrat', sans-serif;
@@ -263,10 +263,6 @@ body {
       @media (min-width: 1200px) {
         grid-template-columns: min-content min-content;
       }
-    }
-
-    @media (min-width: 1200px) {
-      width: 1000px;
     }
   }
 

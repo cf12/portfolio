@@ -121,7 +121,7 @@ const Home = ({ projects }) => {
           </div>
         </div>
 
-        {/* <Element name='projects' />
+        <Element name='projects' />
         <div className={styles.projects}>
           <h5 className={styles.titleLabel}>#02</h5>
           <h1 className={styles.title}>MY WORK</h1>
@@ -134,6 +134,8 @@ const Home = ({ projects }) => {
             }
           </div>
         </div>
+
+        {/*
 
         <Element name='contact' />
         <div className={styles.contact}>
