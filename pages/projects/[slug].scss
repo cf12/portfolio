@@ -1,5 +1,19 @@
 @import 'theme/theme';
 
+@media screen and (max-width: 1200px) {
+  p {
+    font-size: 16px !important;
+  }
+
+  h1 {
+    font-size: 24px !important;
+  }
+
+  h4 {
+    font-size: 16px !important;
+  }
+}
+
 .body {
   @include flexCenterCol;
 
@@ -11,7 +25,7 @@
     @include flexCenterCol;
 
     width: 100%;
-    height: 800px;
+    // height: 800px;
     background: $bg;
 
     .title {
@@ -28,8 +42,8 @@
   }
 
   .content {
-    width: 750px;
-    margin: 120px 0 60px 0;
+    max-width: 750px;
+    margin: 8vh 10%;
 
     color: $dark2;
     font-family: 'Rubik', sans-serif;

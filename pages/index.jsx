@@ -21,8 +21,6 @@ import BackgroundShapes from 'components/BackgroundShapes'
 import Button from 'components/Button'
 import Project from 'components/Project'
 
-// import projects from 'assets/projects/projects.json'
-
 import styles from './index.scss'
 
 const Home = ({ projects }) => {
@@ -135,8 +133,6 @@ const Home = ({ projects }) => {
           </div>
         </div>
 
-        {/*
-
         <Element name='contact' />
         <div className={styles.contact}>
           <h5 className={styles.titleLabel}>#03</h5>
@@ -165,7 +161,7 @@ const Home = ({ projects }) => {
               />
             </div>
           </div>
-        </div> */}
+        </div>
       </main>
 
       <Footer />

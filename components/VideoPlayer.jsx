@@ -10,11 +10,6 @@ export default class VideoPlayer extends React.PureComponent {
     this.playVideo = this.playVideo.bind(this)
     this.rewindVideo = this.rewindVideo.bind(this)
 
-    this.sizeStyle = {
-      width: props.width,
-      height: props.height
-    }
-
     if (props.hover) {
       this.containerProps = {
         onMouseEnter: this.playVideo,
@@ -49,7 +44,6 @@ export default class VideoPlayer extends React.PureComponent {
   render () {
     return (
       <div
-        style={this.sizeStyle}
         className={styles.container + ' ' + this.props.className}
         {...this.containerProps} >
 
