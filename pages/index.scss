@@ -1,11 +1,5 @@
 @import 'theme/theme';
 
-@media screen and (max-width: 1200px) {
-  p {
-    font-size: 16px !important;
-  }
-}
-
 body {
   background-color: $bg;
 }
@@ -31,6 +25,12 @@ body {
 
 .body {
   @include flexCenterCol();
+
+  @media screen and (max-width: 1200px) {
+    p {
+      font-size: 16px !important;
+    }
+  }
 
   .hero {
     @keyframes animate {

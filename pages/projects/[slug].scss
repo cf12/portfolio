@@ -1,21 +1,22 @@
 @import 'theme/theme';
 
-@media screen and (max-width: 1200px) {
-  p {
-    font-size: 16px !important;
-  }
-
-  h1 {
-    font-size: 24px !important;
-  }
-
-  h4 {
-    font-size: 16px !important;
-  }
-}
 
 .body {
   @include flexCenterCol;
+
+  @media screen and (max-width: 1200px) {
+    p {
+      font-size: 16px;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    h4 {
+      font-size: 16px;
+    }
+  }
 
   background-color: $bg;
   color: white;
