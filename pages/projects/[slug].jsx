@@ -32,7 +32,6 @@ const PageProject = ({ slug, title, data }) => {
             width='1152px'
             height='648px'
             src={require(`assets/projects/${slug}/video.webm`)}
-            overlay
           />
         </div>
 

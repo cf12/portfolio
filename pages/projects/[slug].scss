@@ -4,20 +4,6 @@
 .body {
   @include flexCenterCol;
 
-  @media screen and (max-width: 1200px) {
-    p {
-      font-size: 16px;
-    }
-
-    h1 {
-      font-size: 24px;
-    }
-
-    h4 {
-      font-size: 16px;
-    }
-  }
-
   background-color: $bg;
   color: white;
   font-family: "Montserrat", sans-serif;
@@ -44,7 +30,8 @@
 
   .content {
     max-width: 750px;
-    margin: 8vh 10%;
+    width: 80%;
+    margin: 8vh 0;
 
     color: $dark2;
     font-family: 'Rubik', sans-serif;
@@ -52,21 +39,52 @@
     line-height: 30px;
     text-align: left;
 
-    & h1, h2, h3, h4, h5, h6 {
+    h1, h2, h3, h4, h5, h6 {
       color: white;
 
       font-family: 'Montserrat', sans-serif;
       font-weight: 700;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
+      line-height: 150%;
+
+      margin-top: 4rem;
     }
 
-    & a {
+    p {
+      line-height: 175%;
+    }
+
+    a {
       color: darken($primary, 20%);
       transition: all 200ms ease;
 
       &:hover {
         color: $primary;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .body {
+    p {
+      font-size: 16px;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    h4 {
+      font-size: 16px;
+    }
+
+    .hero {
+      .title {
+        font-size: 32px;
+        text-align: center;
+        width: 80%;
       }
     }
   }
