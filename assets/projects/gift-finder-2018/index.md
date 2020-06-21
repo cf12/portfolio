@@ -3,9 +3,9 @@ title: "Gift Finder 2018"
 slug: gift-finder-2018
 ---
 #### Note
-This project was created for the Hack Club Holiday Challenge (2018) - More info can be found [here.](https://hackclub.com/challenge)
+This project was created for the Hack Club Holiday Challenge (2018) - More info can be found here: <https://hackclub.com/challenge>
 
-The original writeup can also be found on the [project's github repository.](https://github.com/CF12/hack-club-competition-2018)
+The original writeup can also be found on the project's github repository: <https://github.com/CF12/hack-club-competition-2018>
 
 # Project Summary
 I was browsing amazon for holiday gifts one fine evening, when I started wondering if there was an easier way to find a perfect gift without going through 200 pages of products. The idea of a gift finder service came to my mind!
