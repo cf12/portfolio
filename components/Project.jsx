@@ -1,16 +1,23 @@
 import React from 'react'
+import imageUrlBuilder from "@sanity/image-url"
+import sanity from 'libs/sanity'
 
 import Link from 'components/Link'
 
 import styles from './Project.scss'
 
-const Project = ({ title, slug }) => {
+const Project = ({ title, slug, thumbnail }) => {
+  thumbnail = imageUrlBuilder(sanity)
+    .image(thumbnail)
+    .maxWidth(500)
+    .maxHeight(300)
+
   return (
-    <Link href={`/projects/${slug}`}>
+    <Link href={`/projects/${slug.current}`}>
       <div className={styles.parent}>
         <div className={styles.container}>
           <img
-            src={require(`assets/projects/${slug}/thumbnail.jpg`)}
+            src={thumbnail}
             alt=''
           />
 

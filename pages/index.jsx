@@ -1,7 +1,8 @@
 import React from 'react'
 import { NextSeo } from 'next-seo'
 import { Link, Element } from 'react-scroll'
-import * as matter from 'gray-matter';
+
+import sanity from 'libs/sanity'
 
 import {
   IoLogoCodepen,
@@ -126,8 +127,13 @@ const Home = ({ projects }) => {
 
           <div className={styles.projectItems}>
             {
-              projects.map(({ title, slug }) => {
-                return <Project title={title} slug={slug} key={slug} />
+              projects.map(({ title, slug, thumbnail }) => {
+                return <Project
+                  title={title}
+                  slug={slug}
+                  key={slug.current}
+                  thumbnail={thumbnail}
+                />
               })
             }
           </div>
@@ -169,20 +175,17 @@ const Home = ({ projects }) => {
   )
 }
 
-Home.getInitialProps = async () => {
-  const context = require.context('assets/projects', true, /\.md$/)
-  const keys = context.keys()
-  const values = keys.map(context)
-
-  const data = keys.map((key, index) => {
-    const value = values[index]
-    const document = matter(value.default)
-
-    return document.data
-  })
+Home.getInitialProps = async (ctx) => {
+  const projects = (await sanity.fetch(`
+    *[_type == "project"] {
+      title,
+      slug,
+      thumbnail
+    }
+  `))
 
   return {
-    projects: data
+    projects: projects
   }
 }
 
