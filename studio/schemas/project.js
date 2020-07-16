@@ -20,10 +20,7 @@ export default {
     {
       name: 'thumbnail',
       title: 'Thumbnail',
-      type: 'image',
-      options: {
-        hotspot: true
-      }
+      type: 'image'
     },
     {
       name: 'video',
