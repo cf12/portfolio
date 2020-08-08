@@ -2,7 +2,7 @@
 
 @keyframes spin {
   from {
-    transform: translateY(0) rotate(-60deg);
+    transform: translateY(0) rotate(-60deg) scale(0.8);
     opacity: 0;
   }
 
@@ -15,7 +15,7 @@
   }
 
   to {
-    transform: translateY(-60vh) rotate(240deg);
+    transform: translateY(-60vh) rotate(240deg) scale(1.2);
     opacity: 0;
   }
 }
@@ -42,5 +42,7 @@
   &:hover {
     background-color: rgba($primary, 0.90);
     box-shadow: 0 0 12vw $primary;
+
+    transform: scale(1.1);
   }
 }
