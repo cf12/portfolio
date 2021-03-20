@@ -27,7 +27,6 @@ const BackgroundShapes = () => {
           />
         )
       }
-
     </div>
   )
 }
