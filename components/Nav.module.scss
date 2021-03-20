@@ -45,6 +45,8 @@
 
   margin: 0 8px;
 
+  transition: all 150ms ease;
+
   & > p {
     z-index: 1;
     margin: 13px 26px;
@@ -54,11 +56,12 @@
     font-weight: bold;
     letter-spacing: 0.06em;
 
-    transition: all 0.2s ease;
+    transition: all 200ms ease;
   }
 
   &:hover {
     cursor: pointer;
+    transform: scale(1.1);
 
     & > p {
       text-shadow: 1px 1px 8px rgba(black, 0.6);
@@ -67,6 +70,7 @@
 
     &::after {
       width: 100%;
+      opacity: 1;
     }
   }
 
@@ -77,11 +81,13 @@
     position: absolute;
     left: 0;
 
+    opacity: 0;
+
     background-color: $primary;
     width: 0;
     height: 100%;
 
-    transition: all 300ms ease;
+    transition: all 200ms ease;
   }
 }
 
