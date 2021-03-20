@@ -4,8 +4,6 @@ import NextNprogress from 'nextjs-progressbar'
 import colors from 'theme/_colors.module.scss'
 import 'theme/global.scss'
 
-console.log(colors)
-
 function MyApp ({ Component, pageProps }) {
   return (
     <>
