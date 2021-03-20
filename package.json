@@ -8,23 +8,22 @@
     "start": "next start"
   },
   "dependencies": {
-    "@sanity/client": "^1.149.16",
-    "@sanity/image-url": "^0.140.19",
-    "@zeit/next-sass": "^1.0.1",
+    "@sanity/client": "^2.2.6",
+    "@sanity/image-url": "^0.140.22",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-optipng": "^8.0.0",
-    "next": "9.4.4",
-    "next-compose-plugins": "^2.2.0",
-    "next-optimized-images": "^2.6.1",
-    "next-seo": "^4.5.0",
-    "nextjs-progressbar": "^0.0.5",
-    "node-sass": "^4.14.1",
-    "raw-loader": "^4.0.1",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-icons": "^3.10.0",
-    "react-markdown": "^4.3.1",
-    "react-scroll": "^1.7.16",
-    "url-loader": "^4.1.0"
+    "next": "10.0.9",
+    "next-compose-plugins": "^2.2.1",
+    "next-optimized-images": "^2.6.2",
+    "next-seo": "^4.22.0",
+    "nextjs-progressbar": "^0.0.8",
+    "raw-loader": "^4.0.2",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-icons": "^4.2.0",
+    "react-markdown": "^5.0.3",
+    "react-scroll": "^1.8.2",
+    "sass": "^1.32.8",
+    "url-loader": "^4.1.1"
   }
 }

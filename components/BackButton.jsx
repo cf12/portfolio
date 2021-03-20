@@ -3,7 +3,7 @@ import { FaArrowLeft } from 'react-icons/fa'
 
 import Link from 'components/Link'
 
-import styles from './BackButton.scss'
+import styles from './BackButton.module.scss'
 
 const BackButton = (props) => (
   <div className={styles.container + ' ' + props.className}>

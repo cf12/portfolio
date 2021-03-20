@@ -22,7 +22,7 @@ import BackgroundShapes from 'components/BackgroundShapes'
 import Button from 'components/Button'
 import Project from 'components/Project'
 
-import styles from './index.scss'
+import styles from './index.module.scss'
 
 const Home = ({ projects }) => {
   return (

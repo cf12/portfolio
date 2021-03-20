@@ -6,7 +6,7 @@ import {
   FaBeer
 } from 'react-icons/fa'
 
-import styles from './Button.scss'
+import styles from './Button.module.scss'
 
 const Button = ({ text, icon, href, target, rel }) => {
   const Icon = icons[icon] || FaBeer

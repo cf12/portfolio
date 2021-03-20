@@ -3,7 +3,7 @@ import { animateScroll } from 'react-scroll'
 
 import { FaChevronUp } from 'react-icons/fa'
 
-import styles from './ToTopButton.scss'
+import styles from './ToTopButton.module.scss'
 
 export default class ToTopButton extends React.Component {
   render () {

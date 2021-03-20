@@ -4,7 +4,7 @@ import sanity from 'libs/sanity'
 
 import Link from 'components/Link'
 
-import styles from './Project.scss'
+import styles from './Project.module.scss'
 
 const Project = ({ title, slug, thumbnail }) => {
   thumbnail = imageUrlBuilder(sanity)

@@ -3,7 +3,7 @@ import { NextSeo } from 'next-seo'
 
 import BackButton from 'components/BackButton'
 
-import styles from './404.scss'
+import styles from './404.module.scss'
 
 export default class NotFound extends React.Component {
 

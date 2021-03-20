@@ -1,6 +1,6 @@
 import React from 'react'
 
-import styles from './BackgroundShapes.scss'
+import styles from './BackgroundShapes.module.scss'
 
 const shapes = [
   { dx: 12, dy: 10, size: 4, delay: 0 },

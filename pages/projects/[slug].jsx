@@ -8,7 +8,7 @@ import VideoPlayer from 'components/VideoPlayer'
 import ToTopButton from 'components/ToTopButton'
 import Footer from 'components/Footer'
 
-import styles from './[slug].scss'
+import styles from './[slug].module.scss'
 
 // TODO: Add SEO description in sanity studio
 const PageProject = ({ slug, title, body, videoUrl }) => {

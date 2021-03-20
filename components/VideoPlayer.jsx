@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react'
 
-import styles from './VideoPlayer.scss'
+import styles from './VideoPlayer.module.scss'
 
 const VideoPlayer = ({ src, className, ...props }) => {
   const [ playing, setPlaying ] = useState(false)

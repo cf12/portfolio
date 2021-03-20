@@ -7,8 +7,7 @@ import {
   IoLogoLinkedin
 } from 'react-icons/io'
 
-import styles from './Footer.scss'
-import 'theme/global.scss'
+import styles from './Footer.module.scss'
 
 export default class Footer extends React.Component {
   render () {
