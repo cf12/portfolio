@@ -48,22 +48,35 @@ const PageProject = ({ slug, title, body, videoUrl }) => {
   )
 }
 
-PageProject.getInitialProps = async ctx => {
-  const project = (await sanity.fetch(`
-    *[_type == "project" && slug.current == "${ctx.query.slug}"][0] {
+export async function getStaticProps ({ params: { slug }}) {
+  const project = await sanity.fetch(`
+    *[_type == "project" && slug.current == "${slug}"][0] {
       slug,
       title,
       body,
       "videoUrl": video.asset -> url
     }
-  `))
+  `)
 
-  if (!project) {
-    ctx.res.writeHead(302, { Location: '/404' })
-    ctx.res.end()
-  }
-
-  return project
+  return { props: project }
 }
+
+export async function getStaticPaths () {
+  const paths = (await sanity.fetch(`
+    *[_type == "project"] {
+      slug
+    }
+  `)).map(e => {
+    return {
+      params: { slug: e.slug.current }
+    }
+  })
+
+  return {
+    paths,
+    fallback: false
+  }
+}
+
 
 export default PageProject
