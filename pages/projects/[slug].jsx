@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import ReactMarkdown from 'react-markdown'
 import { NextSeo } from 'next-seo'
-import sanity from 'libs/sanity'
+import { getProject, getProjectSlugs } from 'libs/projects'
 
 import BackButton from 'components/BackButton'
 import VideoPlayer from 'components/VideoPlayer'
@@ -10,15 +10,13 @@ import Footer from 'components/Footer'
 
 import styles from './[slug].module.scss'
 
-// TODO: Add SEO description in sanity studio
-const PageProject = ({ slug, title, body, videoUrl }) => {
-  slug = slug.current
-
+// TODO: Add SEO description in frontmatter
+const PageProject = ({ content, data: { title }, video }) => {
   return (
     <>
       <NextSeo
         title={`CF12.org - ${title}`}
-        description={body.substring(0, 150)}
+        description={content.substring(0, 150)}
       />
 
       <div className={styles.body}>
@@ -33,13 +31,11 @@ const PageProject = ({ slug, title, body, videoUrl }) => {
             className={styles.video}
             width='1152px'
             height='648px'
-            src={videoUrl}
+            src={video}
           />
         </div>
 
-        <div className={styles.content}>
-          <ReactMarkdown source={body} />
-        </div>
+        <ReactMarkdown source={content} className={styles.content} />
 
         <ToTopButton />
         <Footer />
@@ -49,26 +45,17 @@ const PageProject = ({ slug, title, body, videoUrl }) => {
 }
 
 export async function getStaticProps ({ params: { slug }}) {
-  const project = await sanity.fetch(`
-    *[_type == "project" && slug.current == "${slug}"][0] {
-      slug,
-      title,
-      body,
-      "videoUrl": video.asset -> url
-    }
-  `)
+  const project = getProject(slug)
 
   return { props: project }
 }
 
 export async function getStaticPaths () {
-  const paths = (await sanity.fetch(`
-    *[_type == "project"] {
-      slug
-    }
-  `)).map(e => {
+  const paths = getProjectSlugs().map((slug) => {
     return {
-      params: { slug: e.slug.current }
+      params: {
+        slug,
+      },
     }
   })
 

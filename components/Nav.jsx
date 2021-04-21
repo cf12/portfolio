@@ -50,7 +50,7 @@ const NavBar = () => {
       <header className={styles.container}>
         <img
           className={styles.icon}
-          src={require('assets/images/profile-pic.png')}
+          src='/images/profile-pic.png'
           alt='Profile'
         />
 

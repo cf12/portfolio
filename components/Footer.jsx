@@ -15,7 +15,7 @@ export default class Footer extends React.Component {
       <footer className={styles.footer}>
         <img
           className={styles.logo}
-          src={require('../assets/images/profile-pic.png')}
+          src='/images/profile-pic.png'
           alt='Logo'
         />
 

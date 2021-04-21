@@ -1,8 +1,7 @@
 import React from 'react'
 import { NextSeo } from 'next-seo'
 import { Link, Element } from 'react-scroll'
-
-import sanity from 'libs/sanity'
+import { getProjects } from 'libs/projects'
 
 import {
   IoLogoCodepen,
@@ -114,7 +113,7 @@ const Home = ({ projects }) => {
             </div>
 
             <div className={styles.img}>
-              <img src={require('assets/images/picture.jpg')} />
+              <img src='/images/picture.jpg' />
               <div />
             </div>
           </div>
@@ -127,11 +126,11 @@ const Home = ({ projects }) => {
 
           <div className={styles.projectItems}>
             {
-              projects.map(({ title, slug, thumbnail }) => {
+              projects.map(({ data: { title }, slug, thumbnail }) => {
                 return <Project
                   title={title}
                   slug={slug}
-                  key={slug.current}
+                  key={slug}
                   thumbnail={thumbnail}
                 />
               })
@@ -175,18 +174,16 @@ const Home = ({ projects }) => {
   )
 }
 
-Home.getInitialProps = async (ctx) => {
-  const projects = (await sanity.fetch(`
-    *[_type == "project"] {
-      title,
-      slug,
-      thumbnail
-    }
-  `))
+export async function getStaticProps () {
+  const projects = getProjects().map(project => {
+    // Save bandwidth ;)
+    delete project.content
+    return project
+  })
 
-  return {
-    projects: projects
-  }
+
+  return { props: { projects } }
 }
+
 
 export default Home

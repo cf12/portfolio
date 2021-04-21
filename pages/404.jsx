@@ -20,7 +20,7 @@ export default class NotFound extends React.Component {
 
           <img
             className={styles.icon}
-            src={require(`assets/images/404.png`)}
+            src='/images/404.png'
             alt=''
           />
 
