@@ -45,7 +45,7 @@ export default class Footer extends React.Component {
 
         <div className={styles.spacer} />
 
-        <p className={styles.text}>Copyright © 2019 - All Rights Reserved </p>
+        <p className={styles.text}>Copyright © 2021 - All Rights Reserved </p>
       </footer>
     )
   }
