@@ -35,7 +35,9 @@ const PageProject = ({ content, data: { title }, video }) => {
           />
         </div>
 
-        <ReactMarkdown source={content} className={styles.content} />
+        <ReactMarkdown className={styles.content}>
+          {content}
+        </ReactMarkdown>
 
         <ToTopButton />
         <Footer />
