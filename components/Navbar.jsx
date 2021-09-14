@@ -6,7 +6,7 @@ import {
   FaTimes
 } from 'react-icons/fa'
 
-import styles from './Nav.module.scss'
+import styles from './Navbar.module.scss'
 
 const Button = ({ name, to, onClick }) => (
   <Link

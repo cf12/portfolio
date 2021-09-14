@@ -11,7 +11,7 @@ function MyApp ({ Component, pageProps }) {
         color={colors.primary}
         startPosition={0}
         stopDelayMs={0}
-        height="1"
+        height={1}
       />
       <Component {...pageProps} />
     </>

@@ -1,0 +1,7 @@
+@import 'theme';
+
+.body {
+  @include flexCenterCol;
+
+  width: 100%;
+}

@@ -4,90 +4,67 @@
   @include flexRow;
 
   box-sizing: border-box;
-  position: absolute;
-  z-index: 1;
-  top: 0;
 
-  padding: 0 6%;
-  width: 100%;
+  max-width: 800px;
+  width: 90%;
   height: 140px;
 
   align-items: center;
+
+  .icon {
+    user-select: none;
+    width: 64px;
+    height: 64px;
+
+    margin-right: auto;
+
+    transition: all 200ms ease;
+
+    &:hover {
+      width: 80px;
+      height: 80px;
+      cursor: pointer;
+    }
+  }
 
   .buttons {
     @include flexRow;
   }
 }
 
-.icon {
-  margin-right: 20px;
-  user-select: none;
-  width: 64px;
-  height: 64px;
-
-  transition: all 200ms ease;
-
-  &:hover {
-    width: 80px;
-    height: 80px;
-    cursor: pointer;
-  }
-}
 
 .button {
   @include flexCenter;
 
   color: $dark2;
-  background-color: rgba(white, 0.05);
 
   position: relative;
   user-select: none;
 
-  margin: 0 8px;
-
-  transition: all 150ms ease;
+  margin: 0 12px;
 
   & > p {
     z-index: 1;
-    margin: 13px 26px;
+
+    padding-bottom: 1px;
+    border-bottom: 2px dotted $dark2;
 
     font-family: Montserrat, sans-serif;
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 0.06em;
 
-    transition: all 200ms ease;
+    transition: all 100ms ease;
   }
 
   &:hover {
     cursor: pointer;
-    transform: scale(1.1);
 
     & > p {
       text-shadow: 1px 1px 8px rgba(black, 0.6);
       color: white;
+      border-bottom: 2px solid white;
     }
-
-    &::after {
-      width: 100%;
-      opacity: 1;
-    }
-  }
-
-  &::after {
-    content: '';
-
-    z-index: 0;
-    position: absolute;
-    left: 0;
-
-    opacity: 0;
-
-    background-color: $primary;
-    width: 0;
-    height: 100%;
-
-    transition: all 200ms ease;
   }
 }
 
