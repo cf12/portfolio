@@ -1,0 +1,153 @@
+@import "theme";
+
+.container {
+  color: white;
+
+  margin-bottom: 64px;
+
+  .subtitle {
+    font-family: "Montserrat", sans-serif;
+    color: $dark1;
+    letter-spacing: 0.0625em;
+  }
+
+  .projects {
+    @include flexCol;
+    gap: 48px;
+
+    margin-bottom: 36px;
+
+    .project {
+      @include flexRow;
+
+      &:active {
+        color: white;
+      }
+
+      &:hover {
+        .thumbnail {
+          border: 2px solid $primary;
+
+          div {
+            opacity: 1;
+          }
+        }
+
+        .right {
+          h2 {
+            color: $primary;
+            border-bottom: 3px solid $primary;
+          }
+        }
+      }
+
+      .thumbnail {
+        flex-shrink: 0;
+        position: relative;
+        width: 300px;
+        height: 200px;
+        margin-right: 24px;
+
+        border: 2px solid $dark1;
+
+        & > * {
+          position: absolute;
+          width: inherit;
+          height: inherit;
+        }
+
+        img {
+          object-fit: cover;
+        }
+
+        div {
+          background-color: rgba($primary, 25%);
+          opacity: 0;
+
+          transition: all 100ms ease;
+        }
+      }
+
+      .right {
+        font-family: "Rubik", sans-serif;
+
+        .tags {
+          @include flexRow;
+          flex-wrap: wrap;
+
+          gap: 10px;
+
+          margin-top: 10px;
+          margin-bottom: 18px;
+
+          span {
+            color: rgba(white, 75%);
+            background-color: rgba(white, 10%);
+            border-radius: 999px;
+
+            font-size: 0.85rem;
+            font-weight: 500;
+
+            padding: 6px 18px;
+
+            transition: 100ms ease all;
+          }
+        }
+
+        h2 {
+          display: inline-block;
+
+          font-family: "Montserrat", sans-serif;
+          text-transform: uppercase;
+
+          border-bottom: 3px solid transparent;
+
+          margin: 0;
+
+          transition: all 100ms ease;
+        }
+
+        p {
+          color: $dark2;
+          line-height: 150%;
+
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    .projects {
+      .project {
+        @include flexCol;
+
+        .right {
+          h2 {
+            margin-top: 12px;
+          }
+        }
+
+        .thumbnail {
+          width: 100%;
+          height: 350px;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .container {
+    .projects {
+      .project {
+        .thumbnail {
+          height: 250px;
+        }
+      }
+    }
+  }
+}

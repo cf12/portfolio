@@ -1,0 +1,9 @@
+{
+  "title": "Interesting Pong",
+  "description": "A classic game of pong, except human faces replace the boring old white ball, and their voices scream at you when you score a point.",
+  "link": "https://pong.cf12.org",
+  "tags": [
+    "html / css / js",
+    "canvas"
+  ]
+}

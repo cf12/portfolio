@@ -1,0 +1,55 @@
+@import 'theme';
+
+.container {
+  @include flexCenterRow;
+  justify-content: flex-start;
+
+  color: $dark2;
+
+  margin: 12px 0;
+
+  & > * {
+    transition: all 150ms ease;
+  }
+
+  & > :first-child {
+    @include flexCenter;
+
+    width: auto;
+    height: 18px;
+    margin-right: 8px;
+  }
+
+  & > p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+
+    margin: 0;
+    border-bottom: 2px solid transparent;
+  }
+
+  & > :last-child {
+    width: auto;
+    height: 18px;
+    margin-left: 8px;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    & > :first-child {
+      color: white;
+    }
+
+    & > p {
+      color: $primary;
+      transform: translateX(2px);
+      border-bottom: 2px solid $primary;
+    }
+
+    & > :last-child {
+      color: $primary;
+      transform: translateX(4px);
+    }
+  }
+}

@@ -1,0 +1,166 @@
+@import 'theme';
+
+.container {
+  @include flexRow;
+  align-items: center;
+
+  box-sizing: border-box;
+
+  max-width: 800px;
+  width: 90%;
+  height: 140px;
+
+  margin: 0 auto;
+
+  & > *:first-child {
+    margin-right: auto;
+  }
+
+  .icon {
+    user-select: none;
+    width: 64px;
+    height: 64px;
+
+    border: 3px solid rgba(white, 10%);
+    border-radius: 50%;
+
+    transition: all 200ms ease;
+
+    &:hover {
+      cursor: pointer;
+      border-color: $primary;
+    }
+  }
+
+  .buttons {
+    @include flexRow;
+
+    gap: 24px;
+  }
+}
+
+
+.button {
+  @include flexCenter;
+
+  color: $dark2;
+
+  position: relative;
+  user-select: none;
+
+  & > p {
+    z-index: 1;
+
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.0625em;
+
+    transition: all 100ms ease;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    & > p {
+      border-bottom: 2px solid $dark1;
+    }
+  }
+
+  &.active {
+    & > p {
+      color: white;
+      border-bottom: 2px solid white;
+    }
+  }
+}
+
+.navbarButton {
+  color: white;
+  width: 32px;
+  height: 32px;
+
+  display: none;
+
+  transition: all 200ms ease;
+
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}
+
+.sidebar {
+  width: 100%;
+  height: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+
+  background-color: $primary;
+
+  transition:
+    height 300ms ease 100ms,
+    opacity 300ms ease;
+
+  .sidebarCloseButton {
+    position: absolute;
+    left: 24px;
+    top: 24px;
+
+    color: white;
+    width: 32px;
+    height: 32px;
+  }
+
+  .sidebarButtons {
+    margin-top: 80px;
+
+    .button {
+      background: none;
+      margin: 24px 0;
+
+      color: rgba(white, 0.8);
+
+      & > p {
+        margin: 0;
+        font-size: 24px !important;
+      }
+    }
+  }
+}
+
+
+// .spacer {
+//   margin-right: auto;
+// }
+
+// .right {
+//   display: flex;
+//   align-items: center;
+
+//   color: white;
+//   font-family: 'Rubik', sans-serif;
+//   font-weight: 500;
+//   font-size: 16px;
+
+//   & > svg {
+//     margin-left: 8px;
+//     width: auto;
+//     height: 20px;
+//   }
+// }
+
+@media only screen and (max-width: 800px) {
+  .buttons {
+    display: none !important;
+  }
+
+  .navbarButton {
+    display: initial !important;
+  }
+}

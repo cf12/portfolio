@@ -1,0 +1,5 @@
+# beep boop 🤖 🤖 🤖
+# hello fellow humans
+
+User-agent: *
+Allow: /

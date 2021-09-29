@@ -1,0 +1,10 @@
+{
+  "title": "Atarashii (New) Tab",
+  "description": "A chrome extension that displays your favorite anime wallpapers from the r/Animewallpaper subreddit on your new tab page.",
+  "link": "https://github.com/cf12/atarashii-tab",
+  "tags": [
+    "react.js",
+    "webpack",
+    "chrome"
+  ]
+}

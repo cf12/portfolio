@@ -1,0 +1,10 @@
+{
+  "title": "Gradebook MCPS",
+  "description": "An alternative to MCPS' student gradebook portal, MyMCPS Portal, that utilized the same backend and API as Powerschools.",
+  "link": "https://github.com/cf12/gradebook-mcps",
+  "tags": [
+    "react.js",
+    "node.js",
+    "reverse engineering"
+  ]
+}

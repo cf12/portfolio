@@ -1,0 +1,63 @@
+@import "theme";
+
+.footer {
+  @include flexRow;
+  align-items: center;
+
+  width: 90%;
+  height: 140px;
+  max-width: 800px;
+
+  margin: 0 auto;
+
+  .text {
+    color: $dark1;
+    font-size: 15px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+  }
+
+  .icons {
+    @include flexRow;
+    gap: 12px;
+
+    margin-top: 8px;
+
+    & > a > * {
+      color: $dark1;
+      width: 30px;
+      height: auto;
+
+      transition: all 150ms ease;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  .left {
+    margin-right: auto;
+
+    p {
+      margin-top: 10px;
+    }
+  }
+
+  .signature {
+    fill: $dark1;
+  }
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    margin-top: 64px;
+
+    .signature {
+      margin-top: 12px;
+      display: none;
+    }
+  }
+}

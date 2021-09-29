@@ -1,0 +1,27 @@
+@import "theme";
+
+::selection {
+  color: white;
+  background-color: rgba($primary, 80%);
+}
+
+body {
+  background-color: $bg;
+}
+
+html, body, div#__next{
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  // screen height - nav - footer
+  min-height: calc(100vh - 140px - 140px);
+}
