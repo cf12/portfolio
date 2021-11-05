@@ -26,7 +26,7 @@ const Home = () => {
         </p>
 
         <p className={styles.text}>
-          When I'm not coding, I'm usually watching <a href="https://anilist.co/user/cf12/">anime</a>, jamming to <a href="https://open.spotify.com/playlist/7frviDPCNXW25BOwGZJcy7?si=e168da17e9a24852">J-Pop</a>, or simply <a>drifting through life</a> — sometimes all at once ¯\_(ツ)_/¯
+          When I'm not coding, I'm usually watching <a href="https://anilist.co/user/cf12/">anime</a>, jamming to <a href="https://open.spotify.com/playlist/7frviDPCNXW25BOwGZJcy7?si=e168da17e9a24852">J-Pop</a>, or competing in <a href="https://ctftime.org/team/45894">CTFs</a> — sometimes all at once ¯\_(ツ)_/¯
         </p>
 
         <p className={styles.text}>
