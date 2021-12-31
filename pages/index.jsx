@@ -35,7 +35,7 @@ const Home = () => {
 
         <div className={styles.buttons}>
           <Button
-            href="https://cf12.github.io/resume/public/resume_min.pdf"
+            href="https://cf12.github.io/resume/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             text="View Resume"
