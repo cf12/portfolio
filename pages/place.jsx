@@ -3,7 +3,7 @@ import { NextSeo } from "next-seo"
 
 import Layout from "components/Layout"
 
-import styles from "./fun.module.scss"
+import styles from "./place.module.scss"
 
 const Fun = () => {
   return (
@@ -13,7 +13,12 @@ const Fun = () => {
       <div className={styles.container}>
         <h4 className={styles.subtitle}>{'// PLACE'}</h4>
 
-        <p className={styles.text}>👀</p>
+        <div className={styles.blocks}>
+          <div />
+          <div />
+          <div />
+          <div />
+        </div>
       </div>
     </Layout>
   )

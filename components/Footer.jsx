@@ -1,11 +1,6 @@
 import React from "react"
 
-import {
-  IoLogoGithub,
-  IoLogoTwitter,
-  IoLogoLinkedin,
-  IoMailOpen,
-} from "react-icons/io5"
+import { IoLogoGithub, IoLogoLinkedin, IoLogoTwitter, IoMailOpen } from "react-icons/io5"
 
 import styles from "./Footer.module.scss"
 
@@ -19,7 +14,7 @@ export default class Footer extends React.Component {
               <IoLogoGithub />
             </a>
 
-            <a href="https://twitter.com/CF12__/">
+            <a href="">
               <IoLogoTwitter />
             </a>
 

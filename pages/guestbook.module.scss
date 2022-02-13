@@ -1,0 +1,17 @@
+@import "theme";
+
+.container {
+  font-family: "Rubik", sans-serif;
+
+  .subtitle {
+    font-family: 'Montserrat', sans-serif;
+    color: $dark1;
+    letter-spacing: 0.0625em;
+  }
+
+  p {
+    color: rgba(white, 0.50);
+    font-size: 1.25rem;
+    font-weight: normal;
+  }
+}

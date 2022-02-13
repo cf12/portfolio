@@ -59,8 +59,8 @@ const NavBar = () => {
 
         <span className={styles.buttons}>
           <Button name="ABOUT" to="/" />
+          <Button name="PLACE" to="/place" />
           <Button name="PROJECTS" to="/projects" />
-          {/* <Button name="FUN" to="/fun" /> */}
         </span>
       </header>
     </>

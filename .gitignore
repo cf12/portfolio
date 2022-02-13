@@ -27,3 +27,5 @@ yarn-error.log*
 .history
 
 studio/dist
+# Local Netlify folder
+.netlify

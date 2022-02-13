@@ -9,10 +9,9 @@ import {
 import styles from './Button.module.scss'
 
 const Button = ({ text, icon, href, target, rel }) => {
-  const Icon = icons[icon] || FaBeer
   const children =
     <>
-      <Icon />
+      {icon || <FaBeer />}
       <p>{text}</p>
       <FaArrowRight />
     </>

@@ -7,6 +7,7 @@ import Button from "components/Button"
 import Layout from "components/Layout"
 
 import styles from "./index.module.scss"
+import { IoDocument, IoMailOpen } from "react-icons/io5"
 
 const Home = () => {
   return (
@@ -39,13 +40,13 @@ const Home = () => {
             target="_blank"
             rel="noopener noreferrer"
             text="View Resume"
-            icon="IoDocument"
+            icon={<IoDocument />}
           />
 
           <Button
             href="mailto:brian@cf12.org"
             text="brian@cf12.org"
-            icon="IoMail"
+            icon={<IoMailOpen />}
           />
         </div>
       </div>
