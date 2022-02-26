@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "name": "worker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "cf12 <11359669+cf12@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  }
+}
