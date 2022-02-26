@@ -1,9 +1,15 @@
 import { Handler } from "@netlify/functions"
 import fetch from "node-fetch"
 
+type GuestbookData = {
+  first_name: string
+  last_name: string
+  message: string
+}
+
 export const handler: Handler = async (event, context) => {
   try {
-    const data = await (
+    const data: any = await (
       await fetch(
         `https://api.netlify.com/api/v1/sites/${process.env.SITE_ID}/forms/${process.env.NETLIFY_FORM_ID}/submissions`,
         {
@@ -17,7 +23,7 @@ export const handler: Handler = async (event, context) => {
     return {
       statusCode: 200,
       body: JSON.stringify(
-        data.map(({ data: { first_name, last_name, message } }) => {
+        data.map(({data: {first_name, last_name, message}}: {data: GuestbookData}) => {
           return { first_name, last_name, message }
         })
       ),
