@@ -1,10 +1,13 @@
 import { Handler } from "@netlify/functions"
 import fetch from "node-fetch"
 
-type GuestbookData = {
-  first_name: string
-  last_name: string
-  message: string
+export type GuestbookData = {
+  created_at: string
+  data: {
+    first_name: string
+    last_name: string
+    message: string
+  }
 }
 
 export const handler: Handler = async (event, context) => {
@@ -23,9 +26,9 @@ export const handler: Handler = async (event, context) => {
     return {
       statusCode: 200,
       body: JSON.stringify(
-        data.map(({data: {first_name, last_name, message}}: {data: GuestbookData}) => {
-          return { first_name, last_name, message }
-        })
+        data.map(({created_at, data: {first_name, last_name, message}}: GuestbookData) => {
+          return { created_at, first_name, last_name, message }
+        }).sort((a: GuestbookData, b: GuestbookData) => b.created_at.localeCompare(a.created_at))
       ),
     }
   } catch (err: any) {

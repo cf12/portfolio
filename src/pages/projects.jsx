@@ -4,6 +4,7 @@ import React from "react"
 import { NextSeo } from "next-seo"
 
 import { getProjects } from "libs/projects"
+import { IoLogoGithub } from 'react-icons/io'
 
 import Layout from "components/Layout"
 import Button from "components/Button"
@@ -51,7 +52,7 @@ const Projects = ({ projects }) => {
         <Button
           href="https://github.com/cf12/"
           text="More Projects"
-          icon="IoLogoGithub"
+          icon={<IoLogoGithub />}
         />
       </div>
     </Layout>

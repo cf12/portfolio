@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 
-import React, { useState } from "react"
+import React, { MouseEventHandler, useState } from "react"
 import Link from "next/link"
 import { useRouter } from "next/router"
 
@@ -8,7 +8,7 @@ import { FaBars, FaTimes } from "react-icons/fa"
 
 import styles from "./Navbar.module.scss"
 
-const Button = ({ name, to, onClick }) => {
+const Button = ({ name, to, onClick }: {name: string, to: string, onClick?: MouseEventHandler}) => {
   const { pathname } = useRouter()
 
   return (
@@ -21,7 +21,7 @@ const Button = ({ name, to, onClick }) => {
  }
 
 const NavBar = () => {
-  const [sidebar, setSidebar] = useState(null)
+  const [sidebar, setSidebar] = useState(false)
 
   const toggle = () => setSidebar(!sidebar)
 
@@ -40,7 +40,7 @@ const NavBar = () => {
         <div className={styles.sidebarButtons}>
           <Button name="ABOUT" to="/" onClick={toggle} />
           <Button name="PROJECTS" to="/projects" onClick={toggle} />
-          {/* <Button name="FUN" to="/fun" onClick={toggle} /> */}
+          <Button name="GUESTBOOK" to="/guestbook" />
         </div>
       </div>
 
@@ -59,7 +59,7 @@ const NavBar = () => {
 
         <span className={styles.buttons}>
           <Button name="ABOUT" to="/" />
-          <Button name="PLACE" to="/place" />
+          <Button name="GUESTBOOK" to="/guestbook" />
           <Button name="PROJECTS" to="/projects" />
         </span>
       </header>

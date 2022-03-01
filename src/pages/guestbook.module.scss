@@ -4,14 +4,182 @@
   font-family: "Rubik", sans-serif;
 
   .subtitle {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: $dark1;
     letter-spacing: 0.0625em;
   }
 
-  p {
-    color: rgba(white, 0.50);
+  & > p {
+    color: rgba(white, 50%);
     font-size: 1.25rem;
     font-weight: normal;
+    line-height: 160%;
+  }
+
+  .form {
+    color: white;
+
+    box-sizing: border-box;
+    padding: 32px;
+    margin: 32px 0;
+
+    background-color: rgba(black, 25%);
+    box-shadow: inset 0 0 16px rgba(black, 25%);
+    // border: 2px solid rgba(white, 25%);
+
+    h2 {
+      font-family: 'Rubik', sans-serif;
+      font-weight: 500;
+      margin-top: 0;
+      margin-bottom: 24px;
+    }
+
+    .fields {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      & > span {
+        display: flex;
+        flex-direction: row;
+
+        gap: 32px;
+
+        & > * {
+          width: 100%;
+        }
+      }
+
+      label {
+        display: flex;
+        flex-direction: column;
+
+        gap: 10px;
+      }
+
+      input,
+      textarea {
+        box-sizing: border-box;
+        background-color: rgba(white, 10%);
+        padding: 12px;
+        border: 1px solid rgba(white, 25%);
+
+        outline: none;
+
+        color: rgba(white, 60%);
+
+        transition: color 100ms ease, border 100ms ease, box-shadow 100ms ease;
+
+        &:focus {
+          color: white;
+          border: 1px solid white;
+          box-shadow: 0 0 10px rgba(white, 35%);
+        }
+      }
+
+      textarea {
+        resize: vertical;
+      }
+    }
+
+    & > button {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 24px;
+
+      background: none;
+      outline: none;
+      border: none;
+
+      background-color: rgba(white, 10%);
+      border: 2px solid rgba(white, 25%);
+      padding: 12px 18px;
+
+      color: rgba(white, 75%);
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+
+      transition: background-color 100ms ease, border 100ms ease,
+        color 100ms ease;
+
+      &:hover,
+      &:focus {
+        color: white;
+        border: 2px solid $primary;
+        background-color: rgba($primary, 50%);
+      }
+    }
+  }
+
+  .entries {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+
+    margin-bottom: 64px;
+
+    .entry {
+      & > span {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        margin-bottom: 6px;
+
+        & > p {
+          font-size: 1.25rem;
+        }
+
+        & > p:first-child {
+          color: white;
+          margin-right: auto;
+        }
+
+        & > p:last-child {
+          color: rgba(white, 25%);
+          font-size: 1rem;
+        }
+      }
+
+      p {
+        margin: 0;
+      }
+
+      & > p {
+        color: rgba(white, 50%);
+        font-size: 0.9rem;
+        font-weight: 400;
+        line-height: 160%;
+      }
+    }
+  }
+
+  .entriesEmpty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 64px;
+
+    svg {
+      color: $dark2;
+      width: 64px;
+      height: 64px;
+    }
+
+    p {
+      color: $dark2;
+      font-size: 1.25rem;
+    }
+  }
+
+  .divider {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(white, 10%);
+
+    margin: 48px 0;
   }
 }
