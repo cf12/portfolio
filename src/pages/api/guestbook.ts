@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next"
 import { createClient } from "@supabase/supabase-js"
-import Filter from 'bad-words'
+import Filter from "bad-words"
 
 export type GuestbookData = {
   created_at: string
@@ -12,17 +12,19 @@ type Error = {
   error: string
 }
 
-if (!process.env.SUPABASE_URL || !process.env.SUPABASE_KEY) {
+if (
+  !process.env.NEXT_PUBLIC_SUPABASE_URL ||
+  !process.env.SUPABASE_SERVICE_ROLE_KEY
+) {
   console.error("Environment vars missing")
   process.exit(-1)
 }
 
-const supabase = createClient(
-  process.env.SUPABASE_URL,
-  process.env.SUPABASE_KEY
-)
-
 const filter = new Filter()
+const supabase = createClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL,
+  process.env.SUPABASE_SERVICE_ROLE_KEY
+)
 
 export default async function handler(
   req: NextApiRequest,
@@ -38,7 +40,7 @@ export default async function handler(
       !message ||
       message.length < 25 ||
       message.length > 280 ||
-      filter.isProfane(message.toLowerCase().replace(/\b/g, ''))
+      filter.isProfane(message.toLowerCase().replace(/\b/g, ""))
     ) {
       res.status(500).redirect("/guestbook?success=false")
       return
