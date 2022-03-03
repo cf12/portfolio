@@ -3,7 +3,7 @@
 import React from "react"
 import { NextSeo } from "next-seo"
 
-import { getProjects } from "libs/projects"
+import { getProjects, Project } from "libs/projects"
 import { IoLogoGithub } from 'react-icons/io'
 
 import Layout from "components/Layout"
@@ -11,7 +11,7 @@ import Button from "components/Button"
 
 import styles from "./projects.module.scss"
 
-const Projects = ({ projects }) => {
+const Projects = ({ projects }: { projects: Project[] }) => {
   return (
     <Layout>
       <NextSeo
