@@ -9,6 +9,7 @@ import Button from "components/Button"
 import styles from "./guestbook.module.scss"
 import { FaArrowRight } from "react-icons/fa"
 import { IoAlertCircle } from "react-icons/io5"
+import { GuestbookData } from "./api/guestbook"
 
 const names = [
   ["Mai", "Sakurajima"],
@@ -61,7 +62,7 @@ const fetcher = async (url: string) => {
 }
 
 const Fun = () => {
-  let { data, error } = useSWR("/.netlify/functions/guestbook", fetcher)
+  const { data, error } = useSWR("/api/guestbook", fetcher)
 
   const name = useMemo(
     () => names[Math.floor(Math.random() * names.length)],
@@ -84,11 +85,8 @@ const Fun = () => {
           name="guestbook"
           className={styles.form}
           method="POST"
-          data-netlify="true"
-          netlify-honeypot="sheesh"
-          action="guestbook?success=true"
+          action="/api/guestbook"
         >
-          <input type="hidden" name="guestbook" />
           <label style={{ display: "none" }}>
             Don&apos;t fill this out if you&apos;re human:{" "}
             <input name="sheesh" />
@@ -137,42 +135,27 @@ const Fun = () => {
 
         <div className={styles.divider} />
         {data ? (
-          data.map(
-            (
-              {
-                created_at,
-                first_name,
-                last_name,
-                message,
-              }: {
-                created_at: string
-                first_name: string
-                last_name: string
-                message: string
-              },
-              i: number
-            ) => {
-              return (
-                <div className={styles.entries}>
+          <div className={styles.entries}>
+            {data.map(
+              ({ created_at, name, message }: GuestbookData, i: number) => {
+                return (
                   <div className={styles.entry} key={i}>
                     <span>
-                      <p>
-                        {first_name} {last_name}
-                      </p>
+                      <p>{name}</p>
                       <p>{new Date(created_at).toLocaleString()}</p>
                     </span>
 
                     <p>{message}</p>
                   </div>
-                </div>
-              )
-            }
-          )
+                )
+              }
+            )}
+          </div>
         ) : (
           <div className={styles.entriesEmpty}>
             {error ? (
               <>
-                <IoAlertCircle />
+                <IoAlertCircle className={styles.icon} />
                 <p>An error occurred while loading the guestbook!</p>
               </>
             ) : (

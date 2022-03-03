@@ -79,6 +79,7 @@
 
       textarea {
         resize: vertical;
+        line-height: 150%;
       }
     }
 
@@ -115,7 +116,7 @@
   .entries {
     display: flex;
     flex-direction: column;
-    gap: 42px;
+    gap: 48px;
 
     margin-bottom: 64px;
 
@@ -163,7 +164,7 @@
 
     margin-bottom: 64px;
 
-    svg {
+    .icon {
       color: $dark2;
       width: 64px;
       height: 64px;
