@@ -16,6 +16,24 @@
     line-height: 160%;
   }
 
+  .formSuccess {
+    background-color: $primary;
+    box-sizing: border-box;
+    padding: 32px;
+    margin: 32px 0;
+
+    box-shadow: inset 0 0 5px black;
+
+    & > h3 {
+      font-family: "Montserrat", sans-serif;
+      margin-top: 0;
+    }
+
+    & > p {
+      margin-bottom: 0;
+    }
+  }
+
   .form {
     color: white;
 
@@ -28,7 +46,7 @@
     // border: 2px solid rgba(white, 25%);
 
     h2 {
-      font-family: 'Rubik', sans-serif;
+      font-family: "Rubik", sans-serif;
       font-weight: 500;
       margin-top: 0;
       margin-bottom: 24px;
@@ -182,5 +200,18 @@
     background-color: rgba(white, 10%);
 
     margin: 48px 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    .form {
+      .fields {
+        & > span {
+          flex-direction: column;
+          gap: 24px;
+        }
+      }
+    }
   }
 }

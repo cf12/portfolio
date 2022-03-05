@@ -10,6 +10,7 @@ import styles from "./guestbook.module.scss"
 import { FaArrowRight } from "react-icons/fa"
 import { IoAlertCircle } from "react-icons/io5"
 import { GuestbookData } from "./api/guestbook"
+import { useRouter } from "next/router"
 
 const names = [
   ["Mai", "Sakurajima"],
@@ -63,6 +64,7 @@ const fetcher = async (url: string) => {
 
 const Fun = () => {
   const { data, error } = useSWR("/api/guestbook", fetcher)
+  const { query: { success } } = useRouter()
 
   const name = useMemo(
     () => names[Math.floor(Math.random() * names.length)],
@@ -81,57 +83,64 @@ const Fun = () => {
           below! Or just say hi — whatever floats your boat.
         </p>
 
-        <form
-          name="guestbook"
-          className={styles.form}
-          method="POST"
-          action="/api/guestbook"
-        >
-          <label style={{ display: "none" }}>
-            Don&apos;t fill this out if you&apos;re human:{" "}
-            <input name="sheesh" />
-          </label>
-
-          <div className={styles.fields}>
-            <span>
-              <label>
-                First Name:{" "}
-                <input
-                  type="text"
-                  name="first_name"
-                  placeholder={name[0]}
-                  required
-                />
-              </label>
-
-              <label>
-                Last Name:{" "}
-                <input
-                  type="text"
-                  name="last_name"
-                  placeholder={name[1]}
-                  required
-                />
-              </label>
-            </span>
-            <label>
-              Message:{" "}
-              <textarea
-                name="message"
-                minLength={25}
-                rows={6}
-                maxLength={280}
-                placeholder="¯\_(ツ)_/¯"
-                required
-              />
-            </label>
+        {success === "true" ? (
+          <div className={styles.formSuccess}>
+            <h3>🥳 Thanks for contributing!</h3>
+            <p>Check out your submission below!</p>
           </div>
+        ) : (
+          <form
+            name="guestbook"
+            className={styles.form}
+            method="POST"
+            action="/api/guestbook"
+          >
+            <label style={{ display: "none" }}>
+              Don&apos;t fill this out if you&apos;re human:{" "}
+              <input name="sheesh" />
+            </label>
 
-          <button type="submit">
-            POST MESSAGE
-            <FaArrowRight />
-          </button>
-        </form>
+            <div className={styles.fields}>
+              <span>
+                <label>
+                  First Name:{" "}
+                  <input
+                    type="text"
+                    name="first_name"
+                    placeholder={name[0]}
+                    required
+                  />
+                </label>
+
+                <label>
+                  Last Name:{" "}
+                  <input
+                    type="text"
+                    name="last_name"
+                    placeholder={name[1]}
+                    required
+                  />
+                </label>
+              </span>
+              <label>
+                Message:{" "}
+                <textarea
+                  name="message"
+                  minLength={25}
+                  rows={6}
+                  maxLength={280}
+                  placeholder="¯\_(ツ)_/¯"
+                  required
+                />
+              </label>
+            </div>
+
+            <button type="submit">
+              POST MESSAGE
+              <FaArrowRight />
+            </button>
+          </form>
+        )}
 
         <div className={styles.divider} />
         {data ? (

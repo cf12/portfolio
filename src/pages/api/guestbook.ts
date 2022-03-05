@@ -42,7 +42,7 @@ export default async function handler(
       message.length > 280 ||
       filter.isProfane(message.toLowerCase().replace(/\b/g, ""))
     ) {
-      res.status(500).redirect("/guestbook?success=false")
+      res.status(500).redirect("/guestbook")
       return
     }
 
@@ -52,7 +52,7 @@ export default async function handler(
 
     if (error) {
       console.error(error)
-      res.status(500).redirect("/guestbook?success=false")
+      res.status(500).redirect("/guestbook")
     } else {
       res.status(200).redirect("/guestbook?success=true")
     }
