@@ -45,7 +45,31 @@
   }
 
   .signature {
-    fill: $dark1;
+    :global(#signaturePathBg) {
+      fill: $dark1;
+    }
+
+    :global(#signaturePath) {
+      fill: white;
+    }
+
+    :global(#signatureMask) > path {
+      stroke: white;
+      stroke-width: 5px;
+      stroke-dasharray: 400;
+      stroke-dashoffset: 400;
+
+      transition: all 500ms ease;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      :global(#signatureMask) > path {
+        stroke-dashoffset: 0;
+        user-select: none;
+      }
+    }
   }
 
   @media screen and (max-width: 800px) {
