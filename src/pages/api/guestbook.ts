@@ -57,7 +57,10 @@ export default async function handler(
       res.status(200).redirect("/guestbook?success=true")
     }
   } else if (req.method === "GET") {
-    const { data: guestbook, error } = await supabase.from("guestbook").select()
+    const { data: guestbook, error } = await supabase
+      .from("guestbook")
+      .select()
+      .order("created_at", { ascending: false })
 
     if (error) {
       console.error(error)
