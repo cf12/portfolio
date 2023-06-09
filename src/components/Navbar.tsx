@@ -8,17 +8,15 @@ import { FaBars, FaTimes } from "react-icons/fa"
 
 import styles from "./Navbar.module.scss"
 
-const Button = ({ name, to, onClick }: {name: string, to: string, onClick?: MouseEventHandler}) => {
+const Button = ({ name, to, onClick }: { name: string, to: string, onClick?: MouseEventHandler }) => {
   const { pathname } = useRouter()
 
   return (
-    <Link href={to}>
-      <a className={styles.button + ' ' + (pathname === to ? styles.active : '')} onClick={onClick}>
-        <p>{name}</p>
-      </a>
-    </Link>
+    <Link href={to} className={styles.button + ' ' + (pathname === to ? styles.active : '')} onClick={onClick}>
+      <p>{name}</p>
+    </Link >
   )
- }
+}
 
 const NavBar = () => {
   const [sidebar, setSidebar] = useState(false)
@@ -46,13 +44,11 @@ const NavBar = () => {
 
       <header className={styles.container}>
         <Link href="/">
-          <a>
-            <img
-              className={styles.icon}
-              src="/images/profile.png"
-              alt="Profile"
-            />
-          </a>
+          <img
+            className={styles.icon}
+            src="/images/profile.png"
+            alt="Profile"
+          />
         </Link>
 
         <FaBars className={styles.navbarButton} onClick={toggle} />
