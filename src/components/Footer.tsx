@@ -33,7 +33,7 @@ export default class Footer extends React.Component {
             </a>
           </div>
 
-          <p className={styles.text}>Copyright © 2021 — All Rights Reserved </p>
+          <p className={styles.text}>Copyright © 2021 - {(new Date()).getFullYear()} • All Rights Reserved </p>
         </div>
 
         <Link href="/">
