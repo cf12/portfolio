@@ -1,9 +1,0 @@
-{
-  "title": "proxy.cf12.org",
-  "description": "A (semi) working web proxy service, powered by Heroku.",
-  "link": "http://proxy.cf12.org",
-  "tags": [
-    "node.js",
-    "express"
-  ]
-}
