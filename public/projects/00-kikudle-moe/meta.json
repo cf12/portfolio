@@ -1,0 +1,10 @@
+{
+  "title": "Kikudle",
+  "description": "A wordle-like internet game where players guess the daily anime based on bits and pieces of the opening theme song.",
+  "link": "https://kikudle.cf12.org",
+  "tags": [
+    "react.js",
+    "next.js",
+    "supabase"
+  ]
+}
