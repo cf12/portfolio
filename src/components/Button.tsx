@@ -5,6 +5,7 @@ import { FaArrowRight, FaBeer } from "react-icons/fa"
 
 import styles from "./Button.module.scss"
 import { IconType } from "react-icons"
+import Link from "next/link"
 
 const Button = ({
   text,
@@ -29,9 +30,9 @@ const Button = ({
 
   if (href) {
     return (
-      <a className={styles.container} href={href} target={target} rel={rel}>
+      <Link className={styles.container} href={href} target={target} rel={rel}>
         {children}
-      </a>
+      </Link>
     )
   } else {
     return <div className={styles.container}>{children}</div>

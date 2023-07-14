@@ -7,7 +7,7 @@ import Button from "components/Button"
 import Layout from "components/Layout"
 
 import styles from "./index.module.scss"
-import { IoDocument, IoMailOpen } from "react-icons/io5"
+import { IoDocument, IoDocumentText, IoDocumentTextOutline, IoFolder, IoFolderOpen, IoMailOpen } from "react-icons/io5"
 
 const Home = () => {
   return (
@@ -19,33 +19,37 @@ const Home = () => {
 
       <div className={styles.container}>
         <h1 className={styles.title}>
-          Hey! I'm <mark>Brian</mark>.
+          hey! i'm <mark>brian</mark>.
         </h1>
 
         <p className={styles.text}>
-          I'm a <mark>software engineer</mark> and <mark>cybersecurity enthusiast</mark> currently studying <mark>computer science</mark> at the <a href="https://www.umd.edu/">University of Maryland</a>.
+          i'm a <mark>software engineer</mark> and <mark>cybersecurity enthusiast</mark> currently studying <mark>computer science</mark> at the <a href="https://www.umd.edu/">university of maryland</a>.
         </p>
 
         <p className={styles.text}>
-          When I'm not coding, I'm usually watching <a href="https://anilist.co/user/cf12/">anime</a>, jamming to <a href="https://open.spotify.com/playlist/7frviDPCNXW25BOwGZJcy7?si=e168da17e9a24852">J-Pop</a>, or competing in <a href="https://ctftime.org/team/45894">CTFs</a> — sometimes all at once ¯\_(ツ)_/¯
+          when i'm not coding, i'm usually watching <a href="https://anilist.co/user/cf12/">anime</a>, jamming to <a href="https://open.spotify.com/playlist/7frviDPCNXW25BOwGZJcy7?si=e168da17e9a24852">j-pop</a>, or competing in <a href="https://ctftime.org/team/45894">ctfs</a> — sometimes all at once ¯\_(ツ)_/¯
         </p>
 
         <p className={styles.text}>
-          Questions / business inquiries / curious about what I had for breakfast? Feel free to shoot me <a href="mailto:brian@cf12.org">an email</a>.
+          questions / business inquiries / curious about what i had for breakfast? feel free to shoot me <a href="mailto:brian@cf12.org">an email</a>.
         </p>
 
         <div className={styles.buttons}>
           <Button
+            href="/projects"
+            text="my projects"
+            icon={<IoFolderOpen />}
+          />
+
+          <Button
             href="https://cf12.github.io/resume/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            text="View Resume"
-            icon={<IoDocument />}
+            text="my resume"
+            icon={<IoDocumentText />}
           />
 
           <Button
             href="mailto:brian@cf12.org"
-            text="brian@cf12.org"
+            text="my email"
             icon={<IoMailOpen />}
           />
         </div>
