@@ -1,0 +1,113 @@
+:root {
+    --text-1: #fff;
+    --text-2: #ccc;
+    --text-3: #888;
+    --primary: #ff9239;
+    --primary-2: #ff9239cc;
+    --secondary: #557aff;
+    --secondary-2: #557affcc;
+    --bg: #222;
+}
+
+::selection {
+    background-color: var(--secondary-2);
+}
+
+
+mark {
+    background: none;
+    color: var(--text-1);
+    /* text-decoration: underline;
+    text-underline-offset: 2px; */
+    font-weight: 600;
+}
+
+a {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 3px;
+}
+
+a:link {
+    color: var(--primary);
+}
+
+a:visited {
+    color: var(--secondary);
+}
+
+a:hover {
+    color: var(--primary-2);
+    /* text-decoration-style: solid; */
+}
+
+a:visited:hover {
+    color: var(--secondary-2);
+    /* text-decoration-style: solid; */
+}
+
+
+body {
+    background-color: var(--bg);
+    color: var(--text-1);
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 1.25rem;
+}
+
+.content {
+    color: var(--text-2);
+
+}
+
+body>* {
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 800px;
+    width: 90%;
+    line-height: 150%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+
+}
+
+nav svg {
+    color: white;
+    fill: white;
+}
+
+nav>h1 {
+    /* text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 20px; */
+    font-size: 3rem;
+}
+
+nav>*:first-child {
+    margin-right: auto;
+}
+
+hr {
+    border-radius: 2px;
+}
+
+hr.top {
+    border-color: var(--text-3);
+    /* border: none;
+    border-radius: 0;
+    border-top: 4px double white;
+    padding: 4px; */
+}
+
+hr.bot {
+    border-color: var(--text-3);
+}
+
+footer {
+    color: var(--text-3);
+}

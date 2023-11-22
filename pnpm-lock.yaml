@@ -1,0 +1,16 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  typicons.font:
+    specifier: ^2.1.2
+    version: 2.1.2
+
+packages:
+
+  /typicons.font@2.1.2:
+    resolution: {integrity: sha512-M3HvpFFs24PuCoV16QFKCcPXOMOCiAqcEIchgLBAdewHh2C5krP4clZ0HR4d8glWLOctz8Ak7IlZotNwmYfd5g==}
+    dev: false
