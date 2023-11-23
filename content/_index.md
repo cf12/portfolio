@@ -3,7 +3,7 @@ title = "Brian Xiang - Portfolio"
 template = "index.html"
 +++
 
-hiya, my name is <mark>brian xiang</mark> (aka <mark>cf12</mark>).
+hello, my name is <mark>brian xiang</mark> (aka <mark>cf12</mark>).
 
 i'm an incoming software engineer at
 <mark>capital one</mark> & computer science major at the

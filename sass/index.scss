@@ -50,7 +50,7 @@ body {
 
 #signature {
   transform-origin: center right;
-  transition: transform 400ms ease;
+  transition: transform 300ms ease;
 
   #signaturePathBg {
     fill: var(--text-3);
@@ -66,7 +66,7 @@ body {
     stroke-dasharray: 400;
     stroke-dashoffset: 400;
 
-    transition: stroke-dashoffset 400ms ease;
+    transition: stroke-dashoffset 300ms ease;
   }
 
   &:hover {
