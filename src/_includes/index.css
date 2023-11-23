@@ -110,4 +110,6 @@ hr.bot {
 
 footer {
     color: var(--text-3);
+    font-family: monospace;
+    font-size: 1rem;
 }
