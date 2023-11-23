@@ -85,36 +85,45 @@ nav {
   display: flex;
   align-items: center;
 
-  gap: 8px;
   color: white;
 
-  & > a {
-    color: white;
+  .nav-left {
+    margin: 48px auto 18px 0;
 
-    &:visited {
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+      margin-bottom: 8px;
+    }
+  }
+
+  .nav-right,
+  .nav-left > h1 {
+    a {
       color: white;
+      text-decoration: none;
+
+      &:visited {
+        color: white;
+      }
+
+      & > svg {
+        width: 32px;
+        height: 32px;
+      }
     }
-
-    & > svg {
-      width: 32px;
-      height: 32px;
-    }
-  }
-
-  & > h1 {
-    // text-decoration: underline;
-    // text-decoration-style: dashed;
-    // text-underline-offset: 20px;
-    font-size: 3rem;
-  }
-
-  & > *:first-child {
-    margin-right: auto;
   }
 }
 
 main {
-  color: var(--text-2);
+  color: white;
+
+  p,
+  i,
+  ul,
+  ol {
+    color: var(--text-2);
+  }
 }
 
 hr {

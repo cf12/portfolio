@@ -1,5 +1,5 @@
 +++
-title = "Brian Xiang - Portfolio"
+title = "Brian Xiang"
 template = "index.html"
 +++
 
@@ -9,9 +9,9 @@ i'm an incoming software engineer at
 <mark>capital one</mark> & computer science major at the
 <mark>university of maryland</mark>.
 
-i build websites and other random things. i also dabble in
-cybersecurity, computer systems, and emulation. my interests are (in no
-particular order) music, manga, and video games.
+i build <mark>websites</mark> and other random things. i also dabble in
+<mark>cybersecurity</mark>, <mark>computer systems</mark>, and <mark>emulation</mark>. my interests are (in no
+particular order) <mark>music</mark>, <mark>manga</mark>, and <mark>video games</mark>.
 
 my resume can be found [here](https://cf12.github.io/resume/resume.pdf). you can shoot me an email at [brian@cf12.org](mailto:brian@cf12.org).
 
