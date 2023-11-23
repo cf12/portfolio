@@ -1,5 +1,7 @@
 ---
-let year = new Date().getFullYear();
+import signature from "../assets/signature.svg?raw";
+
+const year = new Date().getFullYear();
 ---
 
 <footer>
@@ -7,10 +9,12 @@ let year = new Date().getFullYear();
     Copyright &copy; {year} &bullet; All Rights Reserved
     <br />
 
-     This page weighs <mark class="size"></mark> | Made w/ <a
+     This page weighs <mark class="size">[...]</mark> | Made w/ <a
       href="https://astro.build/">Astro</a
     >
   </p>
+
+  <Fragment set:html={signature} />
 </footer>
 
 <script>
@@ -22,8 +26,15 @@ let year = new Date().getFullYear();
 
 <style type="scss">
   footer {
+    display: flex;
+    align-items: center;
+
     color: var(--text-3);
     font-family: Courier, monospace;
+
+    & > *:first-child {
+      margin-right: auto;
+    }
 
     & > p {
       font-size: 16px;
@@ -43,5 +54,40 @@ let year = new Date().getFullYear();
     background: none;
     text-decoration: none;
     color: var(--purple);
+  }
+</style>
+
+<style is:global type="scss">
+  #signature {
+    transform-origin: center right;
+    transition: transform 400ms ease;
+
+    #signaturePathBg {
+      fill: var(--text-3);
+    }
+
+    #signaturePath {
+      fill: white;
+    }
+
+    #signatureMask > path {
+      stroke: white;
+      stroke-width: 5px;
+      stroke-dasharray: 400;
+      stroke-dashoffset: 400;
+
+      transition: stroke-dashoffset 400ms ease;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      transform: scale(1.1);
+
+      #signatureMask > path {
+        stroke-dashoffset: 0;
+        user-select: none;
+      }
+    }
   }
 </style>
