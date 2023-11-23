@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="index.css">
+    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+</head>
+
+<body>
+    {% include "partials/navbar.html" %}
+
+    <hr>
+
+    <main>
+        {% block content %} {% endblock %}
+    </main>
+
+    <hr>
+
+    {% include "partials/footer.html" %}
+</body>
+
+</html>

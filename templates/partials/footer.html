@@ -1,0 +1,17 @@
+<footer>
+  <p>
+    Copyright &copy; 2023 &bullet; All Rights Reserved
+    <br />
+
+     This page weighs <mark class="size">[...]</mark> | Made w/ <a
+      href="https://astro.build/">Astro</a
+    >
+  </p>
+
+  {{ load_data(path="assets/signature.svg") | safe }}
+</footer>
+
+<script>
+  const size = new XMLSerializer().serializeToString(document).length / 1024;
+  document.querySelector(".size").textContent = `${size.toFixed(2)}KB`;
+</script>

@@ -1,0 +1,146 @@
+:root {
+  --text-1: #fff;
+  --text-2: #ccc;
+  --text-3: #888;
+  --primary: #ff9239;
+  --primary-2: #cf7b37;
+  --secondary: #2daeff;
+  --secondary-2: #3660c3;
+  --purple: #9556ec;
+  --bg: #15131a;
+}
+
+mark {
+  background: none;
+  color: var(--secondary);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 3px;
+}
+
+a {
+  text-decoration: underline;
+  // text-decoration-style: dotted;
+  text-underline-offset: 3px;
+  color: var(--primary);
+
+  &:visited {
+    color: var(--primary-2);
+  }
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-1);
+
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 160%;
+
+  & > * {
+    margin: 0 auto;
+    max-width: 800px;
+    width: 90%;
+  }
+}
+
+#signature {
+  transform-origin: center right;
+  transition: transform 400ms ease;
+
+  #signaturePathBg {
+    fill: var(--text-3);
+  }
+
+  #signaturePath {
+    fill: white;
+  }
+
+  #signatureMask > path {
+    stroke: white;
+    stroke-width: 5px;
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+
+    transition: stroke-dashoffset 400ms ease;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    transform: scale(1.1);
+
+    #signatureMask > path {
+      stroke-dashoffset: 0;
+      user-select: none;
+    }
+  }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+  color: white;
+
+  & > a {
+    color: white;
+
+    &:visited {
+      color: white;
+    }
+
+    & > svg {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  & > h1 {
+    // text-decoration: underline;
+    // text-decoration-style: dashed;
+    // text-underline-offset: 20px;
+    font-size: 3rem;
+  }
+
+  & > *:first-child {
+    margin-right: auto;
+  }
+}
+
+main {
+  color: var(--text-2);
+}
+
+hr {
+  border-radius: 2px;
+  border-color: var(--text-3);
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
+code {
+  font-size: 1rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+
+  color: var(--text-3);
+  font-family: Courier, monospace;
+
+  & > *:first-child {
+    margin-right: auto;
+  }
+
+  & > p {
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
