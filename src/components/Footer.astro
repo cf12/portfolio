@@ -1,23 +1,47 @@
 ---
+let year = new Date().getFullYear();
 ---
 
 <footer>
-  <!-- <p>Copyright &copy; {{year}} &bullet; All Rights Reserved</p>
+  <p>
+    Copyright &copy; {year} &bullet; All Rights Reserved
+    <br />
 
-        <p>
-            This site weighs {{build.size}}, and is built 
-        </p>
-
-        <p>
-            {{ build.hash }}
-            {{ build.size }}
-        </p> -->
+     This page weighs <mark class="size"></mark> | Made w/ <a
+      href="https://astro.build/">Astro</a
+    >
+  </p>
 </footer>
 
-<style>
+<script>
+  const size = new XMLSerializer().serializeToString(document).length / 1024;
+
+  const sizeEl = document.querySelector(".size");
+  if (sizeEl) sizeEl.textContent = `${size.toFixed(2)}KB`;
+</script>
+
+<style type="scss">
   footer {
     color: var(--text-3);
-    font-family: monospace;
-    font-size: 1rem;
+    font-family: Courier, monospace;
+
+    & > p {
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+
+  a {
+    color: var(--purple);
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+
+  mark {
+    background: none;
+    text-decoration: none;
+    color: var(--purple);
   }
 </style>
