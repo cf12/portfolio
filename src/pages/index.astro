@@ -1,0 +1,78 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Brian Xiang - Portfolio">
+  <main>
+    <Nav />
+
+    <hr />
+
+    <div class="content">
+      <p>hiya, my name is <mark>brian xiang</mark> (aka <mark>cf12</mark>).</p>
+
+      <p>
+        i'm an incoming software engineer at
+        <mark>capital one</mark> & computer science major at the
+        <mark>university of maryland</mark>.
+      </p>
+
+      <p>
+        i build websites and other random things. i also dabble in
+        cybersecurity, computer systems, and emulation. my interests are (in no
+        particular order) music, manga, and video games.
+      </p>
+
+      <p>
+        my resume can be found
+        <a href="https://cf12.github.io/resume/resume.pdf">here</a>. you can
+        shoot me an email here:
+        <a href="mailto:brian@cf12.org">brian@cf12.org</a>
+      </p>
+
+      <p>recent projects:</p>
+      <ul>
+        <li>
+          <a href="https://github.com/cf12/atarashii-tab">atarashii-tab</a>:
+          displays wallpapers from r/animewallpaper on your new tab page
+        </li>
+        <li>
+          <a href="https://github.com/cf12/kikudle-moe">kikudle-moe</a>: a daily
+          wordle game for anime openings
+        </li>
+      </ul>
+
+      <p>quick links:</p>
+      <ul>
+        <li><a href="https://github.com/cf12">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/cf12/">LinkedIn</a></li>
+        <li>
+          <a
+            href="https://keys.openpgp.org/vks/v1/by-fingerprint/A21D40A7EDE2BECE546989CA1E35A4D23235C87D"
+          >
+            <span>
+              PGP Key - <code>A21D40A7EDE2BECE546989CA1E35A4D23235C87D</code>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <hr />
+
+    <Footer />
+  </main>
+</Layout>
+
+<style>
+  main {
+    color: var(--text-2);
+  }
+
+  hr {
+    border-radius: 2px;
+    border-color: var(--text-3);
+  }
+</style>

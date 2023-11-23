@@ -1,0 +1,36 @@
+---
+import { Icon } from "astro-icon";
+---
+
+<nav>
+  <h1>Brian Xiang</h1>
+
+  <Icon name="entypo-social:linkedin-with-circle" />
+  <Icon name="entypo-social:github-with-circle" />
+  <Icon name="entypo:email" />
+</nav>
+
+<style lang="scss">
+  nav {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+    color: white;
+
+    & svg {
+      width: 32px;
+    }
+
+    & > h1 {
+      /* text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 20px; */
+      font-size: 3rem;
+    }
+
+    & > *:first-child {
+      margin-right: auto;
+    }
+  }
+</style>
