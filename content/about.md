@@ -1,5 +1,5 @@
 +++
-title = "Brian Xiang - About Me"
+title = "Brian Xiang - About"
 template = "base.html"
 +++
 
