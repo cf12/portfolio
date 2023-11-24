@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="index.css">
-    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+    <title>
+        {% block title %}
+        {{ config.title }}
+        {% endblock title %}
+    </title>
     {% block styles %}
     {% endblock %}
 </head>
@@ -15,7 +19,9 @@
     <hr>
 
     <main>
-        {% block content %} {% endblock %}
+        {% block content %}
+        {{ page.content | safe }}
+        {% endblock %}
     </main>
 
     <hr>

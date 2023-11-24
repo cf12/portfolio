@@ -3,7 +3,7 @@ title = "Brian Xiang"
 template = "index.html"
 +++
 
-hello, my name is <mark>brian xiang</mark> (aka <mark>cf12</mark>).
+hiya, my name is <mark>brian xiang</mark> (aka <mark>cf12</mark>).
 
 i'm an incoming software engineer at
 <mark>capital one</mark> & computer science major at the
@@ -17,8 +17,10 @@ my resume can be found [here](https://cf12.github.io/resume/resume.pdf). you can
 
 recent projects:
 
-- [atarashii-tab](https://github.com/cf12/atarashii-tab): displays wallpapers from r/animewallpaper on your new tab page
-- [kikudle-moe](https://github.com/cf12/kikudle-moe): a daily wordle game for anime openings
+- {{ ghlink(repo="atarashii-tab") }}: displays wallpapers from r/animewallpaper on your new tab page
+- {{ ghlink(repo="kikudle-moe") }}: a daily wordle game for anime openings
+- {{ ghlink(repo="gb12" )}}: (wip) gameboy emulator in Rust
+- {{ ghlink(repo="emulator-chip8" )}}: chip8 cpu emulator in C++
 
 quick links:
 
