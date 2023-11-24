@@ -100,7 +100,6 @@ i might add more here idk i'll have to see. maybe i'll start a blog 👀
         .then(({ items }) => {
             items.slice(0, 5).forEach((e) => {
                 const { artist: { externalIds: { spotify }, name }, playedMs } = e
-                console.log(e)
                 const m = document.createElement('li')
                 const n = document.createElement('a')
                 n.href = `https://open.spotify.com/artist/${spotify}`
