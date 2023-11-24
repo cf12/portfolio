@@ -50,8 +50,8 @@ kinda sketchy and pretty barebones. people freak out at me because i use the [vi
 extension](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) for VSCode exclusively, but i hate how
 ikcy default vim/nvim feel. maybe i'm just an electron shill, idk.
 
-btw, here's a funny clip of [georgehotz](https://geohot.com/) (aka geohot) using vim in vscode. i think it sums up my
-approach to vim (as well as life) pretty well.
+here's a funny clip of [georgehotz](https://geohot.com/) using vim in vscode. i think it sums up my
+approach to vim (and maybe life too) pretty well.
 
 <iframe
     src="https://clips.twitch.tv/embed?clip=TardyFairGrouseEagleEye-bE9w2UC3sa45d6Pj&parent=localhost&parent=cf12.org"
