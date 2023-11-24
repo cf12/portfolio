@@ -3,7 +3,7 @@ title = "Brian Xiang - Links"
 template = "base.html"
 +++
 
-recent projects:
+projects:
 
 - {{ ghlink(repo="atarashii-tab") }}: displays wallpapers from r/animewallpaper on your new tab page
 - {{ ghlink(repo="kikudle-moe") }}: a daily wordle game for anime openings

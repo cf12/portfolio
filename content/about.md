@@ -16,6 +16,8 @@ i'm currently daily-driving a <mark>2020 m1 macbook air</mark> and a <mark>windo
 - [Raycast](https://www.raycast.com/) (launcher alternative)
 - [Tailscale](https://tailscale.com/) (zero-config personal VPN)
 
+if you're interested in my config files, check out my {{ ghlink(repo="dotfiles") }}.
+
 ## vimpossible (to live without)
 
 i'm a heavy vim user, but my [config](https://github.com/cf12/dotfiles/blob/master/src/common/.vimrc) has always been kinda sketchy and pretty barebones. people freak out at me because i use the [vim extension](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) for VSCode exclusively, but i hate how ikcy default vim/nvim feel. maybe i'm just an electron shill, idk.

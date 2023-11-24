@@ -20,7 +20,6 @@ recent projects:
 - {{ ghlink(repo="atarashii-tab") }}: displays wallpapers from r/animewallpaper on your new tab page
 - {{ ghlink(repo="kikudle-moe") }}: a daily wordle game for anime openings
 - {{ ghlink(repo="gb12" )}}: (wip) gameboy emulator in Rust
-- {{ ghlink(repo="emulator-chip8" )}}: chip8 cpu emulator in C++
 
 quick links:
 

@@ -88,12 +88,12 @@ nav {
   color: white;
 
   .nav-left {
-    margin: 48px auto 18px 0;
+    margin: 48px auto 16px 0;
 
     h1 {
       font-size: 3rem;
       margin: 0;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
   }
 
@@ -143,6 +143,8 @@ footer {
 
   color: var(--text-3);
   font-family: Courier, monospace;
+
+  margin-bottom: 32px;
 
   & > *:first-child {
     margin-right: auto;
