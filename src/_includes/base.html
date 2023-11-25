@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="/favicon.svg">
-    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/css/index.css">
     <title>
         {% block title %}
-        {{ page.title }}
+        {{ title }}
         {% endblock title %}
     </title>
     {% block styles %}
@@ -21,7 +21,7 @@
 
     <main>
         {% block content %}
-        {{ page.content | safe }}
+        {{ content }}
         {% endblock %}
     </main>
 

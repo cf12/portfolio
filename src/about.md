@@ -1,7 +1,7 @@
-+++
-title = "Brian Xiang - About"
-template = "base.html"
-+++
+---
+layout: base.html
+title: "Brian Xiang - About"
+---
 
 # about me
 
@@ -17,7 +17,7 @@ my favorite programs:
 - [Raycast](https://www.raycast.com/) (launcher alternative)
 - [Tailscale](https://tailscale.com/) (zero-config personal VPN)
 
-if you're interested in my config files, check out my {{ ghlink(repo="dotfiles") }}.
+if you're interested in my config files, check out my {% ghlink "dotfiles" %}.
 
 ## music
 

@@ -1,8 +1,7 @@
-+++
-title = "Brian Xiang"
-template = "index.html"
-+++
-
+---
+layout: base.html
+title: "Brian Xiang"
+---
 👋 hiya, my name is <mark>brian xiang</mark> (aka <mark>cf12</mark>).
 
 i'm an incoming software engineer at
@@ -17,9 +16,9 @@ my resume can be found [here](https://cf12.github.io/resume/resume.pdf). you can
 
 recent projects:
 
-- {{ ghlink(repo="atarashii-tab") }}: displays wallpapers from r/animewallpaper on your new tab page
-- {{ ghlink(repo="kikudle-moe") }}: a daily wordle game for anime openings
-- {{ ghlink(repo="gb12" )}}: (wip) gameboy emulator in Rust
+- {% ghlink "atarashii-tab" %}: displays wallpapers from r/animewallpaper on your new tab page
+- {% ghlink "kikudle-moe" %}: a daily wordle game for anime openings
+- {% ghlink "gb12" %}: (wip) gameboy emulator in Rust
 
 quick links:
 

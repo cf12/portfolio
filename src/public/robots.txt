@@ -1,0 +1,5 @@
+Sitemap: https://cf12.org/sitemap.xml
+
+User-agent: *
+Allow: /
+Disallow:

@@ -17,15 +17,15 @@
 
   <div class="nav-right">
     <a href="https://github.com/cf12">
-      {{ load_data(path="assets/icons/github.svg") | safe }}
+      {% include "assets/icons/github.svg" %}
     </a>
 
     <a href="https://www.linkedin.com/in/cf12/">
-      {{ load_data(path="assets/icons/linkedin.svg") | safe }}
+      {% include "assets/icons/linkedin.svg" %}
     </a>
 
     <a href="mailto:brian@cf12.org">
-      {{ load_data(path="assets/icons/at.svg") | safe }}
+      {% include "assets/icons/at.svg" %}
     </a>
   </div>
 </nav>
