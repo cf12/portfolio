@@ -155,3 +155,20 @@ footer {
     line-height: 150%;
   }
 }
+
+@media screen and (max-width: 600px) {
+  nav > .nav-right {
+    display: none;
+  }
+
+  footer {
+    & > p {
+      font-size: 0.80rem;
+      line-height: 150%;
+    }
+
+    & > #signature {
+      display: none;
+    }
+  }
+}
