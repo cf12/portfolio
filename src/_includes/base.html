@@ -3,13 +3,19 @@
 
 <head>
     <meta charset="UTF-8" />
+    
     <link rel="icon" href="/favicon.svg">
     <link rel="stylesheet" href="/css/index.css">
+
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:url" content="{{ page.url }}" />
+
     <title>
         {% block title %}
         {{ title }}
         {% endblock title %}
     </title>
+
     {% block styles %}
     {% endblock %}
 </head>

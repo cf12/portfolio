@@ -1,5 +1,5 @@
 ---
-layout: "base.html"
+layout: base.html
 title: "Brian Xiang - Corner"
 ---
 
