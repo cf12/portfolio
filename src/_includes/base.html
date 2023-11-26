@@ -3,16 +3,24 @@
 
 <head>
     <meta charset="UTF-8" />
-    
+
     <link rel="icon" href="/favicon.svg">
     <link rel="stylesheet" href="/css/index.css">
 
-    <meta property="og:title" content="{{ title }}" />
-    <meta property="og:url" content="{{ page.url }}" />
-    <meta property="og:image" content="/img/banner.png" />
+    <meta name="title" content="{{ title }}">
+    <meta name="description" content="{{ description }}">
 
-    <meta property="twitter:image" content="/img/banner.png" />
-    <meta property="twitter:title" content="{{ title }}" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:image" content="{{ site.url }}{{ site.banner }}">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ description }}">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="twitter:image" content="{{ site.url }}{{ site.banner }}">
+    <meta property="twitter:title" content="{{ title }}">
+    <meta property="twitter:description" content="{{ description }}">
 
     <title>
         {% block title %}

@@ -3,5 +3,6 @@
     "url": "https://cf12.org",
     "authorName": "Brian Xiang",
     "description": "Welcome to my portfolio website!",
-    "favicon": "/favicon.svg"
+    "favicon": "/favicon.svg",
+    "banner": "/img/banner.png"
 }

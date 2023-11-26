@@ -1,6 +1,7 @@
 ---
 layout: base.html
 title: "Brian Xiang"
+description: "Welcome to my personal portfolio page!"
 ---
 👋 hiya, my name is <mark>brian xiang</mark> (aka <mark>cf12</mark>).
 
